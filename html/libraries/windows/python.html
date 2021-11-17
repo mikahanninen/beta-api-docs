@@ -226,9 +226,8 @@
 <dt id="RPA.Windows.Windows">
 <em class="property">class </em><code class="sig-prename descclassname">RPA.Windows.</code><code class="sig-name descname">Windows</code><a class="headerlink" href="#RPA.Windows.Windows" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">robotlibcore.DynamicCore</span></code></p>
-<p>The <cite>Windows</cite> is a libraru that can be used for Windows desktop automation.</p>
-<blockquote>
-<div><p>This library is at this moment in “BETA” stage as an alternative
+<p>The <cite>Windows</cite> is a library that can be used for Windows desktop automation.</p>
+<p>This library is at this moment in “BETA” stage as an alternative
 library for <cite>RPA.Desktop.Windows</cite>. Main difference being that this
 library is using <a class="reference external" href="https://github.com/yinkaisheng/Python-UIAutomation-for-Windows">uiautomation</a> dependency instead of <cite>pywinauto</cite>.</p>
 <p><strong>About terminology</strong></p>
@@ -305,11 +304,13 @@ WindowControl objects with the given locator.</p>
 <p>some example locators:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>id:clearButton
 type:Group and name:<span class="s1">&#39;Number pad&#39;</span> &gt; type:Button and index:4
-type:Group and name:<span class="s1">&#39;Number pad&#39;</span> &gt; control:Button index:5 offset:370,0
+type:Group and name:<span class="s1">&#39;Number pad&#39;</span> &gt; control:Button index:5
 id:Units1 &gt; name:<span class="si">${</span><span class="nv">unit</span><span class="si">}</span>
-class:Button
+class:Button offset:370,0
 </pre></div>
 </div>
+<p><strong>Keyboard and mouse</strong></p>
+<p>TODO</p>
 <p><strong>How to inspect</strong></p>
 <p>Most common and recommended by Microsoft, inspector tool for Windows, is <a class="reference external" href="https://github.com/yinkaisheng/Python-UIAutomation-for-Windows">Accessibility Insights</a> that
 can be installed separately. Other options are tools <a class="reference external" href="https://docs.microsoft.com/en-us/windows/win32/winauto/inspect-objects">Inspect Object</a>  and <a class="reference external" href="https://docs.microsoft.com/en-us/windows/win32/winauto/ui-automation-verify">UI Automation Verify</a>, which
@@ -324,19 +325,13 @@ After recording has been stopped, the recorded steps can be retrieved by keyword
 <p>Example task for the recording</p>
 <div class="highlight-robotframework notranslate"><div class="highlight"><pre><span></span><span class="gh">*** Tasks ***</span><span class="p"></span>
 <span class="gu">Record Task</span><span class="p"></span>
-<span class="p">    </span><span class="nf">Log To Console</span><span class="p">    </span>
+<span class="p">    </span><span class="nf">Log To Console</span><span class="p">    </span><span class="s">Record steps for the Task</span><span class="p"></span>
+<span class="p">    </span><span class="nf">Start Recording</span><span class="p"></span>
+<span class="p">    ${</span><span class="nv">recording</span><span class="p">}=    </span><span class="nf">Get Recording</span><span class="p">    </span><span class="s">sleeps=</span><span class="p">${</span><span class="nv">FALSE</span><span class="p">}</span>
+<span class="p">    </span><span class="nf">Log To Console</span><span class="p">    ${</span><span class="nv">recording</span><span class="p">}</span>
 </pre></div>
 </div>
-</div></blockquote>
-<dl class="simple">
-<dt>Record steps for the Task</dt><dd><p>Start Recording
-${recording}=    Get Recording    sleeps=${FALSE}
-Log To Console</p>
-</dd>
-</dl>
-<p>${recording}</p>
-<blockquote>
-<div><p><strong>Examples</strong></p>
+<p><strong>Examples</strong></p>
 <p>Both Robot Framework and Python examples follow.</p>
 <p>The library must be imported first.</p>
 <div class="highlight-robotframework notranslate"><div class="highlight"><pre><span></span><span class="gh">*** Settings ***</span><span class="p"></span>
@@ -350,11 +345,9 @@ Log To Console</p>
 <span class="p">    </span><span class="nf">Click</span><span class="p">    </span><span class="s">id:clearButton</span><span class="p"></span>
 <span class="p">    </span><span class="nf">Send Keys</span><span class="p">   </span><span class="s">96+4=</span><span class="p"></span>
 <span class="p">    ${</span><span class="nv">result</span><span class="p">}=    </span><span class="nf">Get Control Property</span><span class="p">    </span><span class="s">id:CalculatorResults</span><span class="p">    </span><span class="s">name</span><span class="p"></span>
-<span class="p">    </span><span class="nf">Log To Console</span><span class="p">    </span>
+<span class="p">    </span><span class="nf">Log To Console</span><span class="p">    </span><span class="s">n</span><span class="p">${</span><span class="nv">result</span><span class="p">}</span>
 </pre></div>
 </div>
-</div></blockquote>
-<p>${result}</p>
 <dl class="attribute">
 <dt id="RPA.Windows.Windows.ROBOT_LIBRARY_DOC_FORMAT">
 <code class="sig-name descname">ROBOT_LIBRARY_DOC_FORMAT</code><em class="property"> = 'REST'</em><a class="headerlink" href="#RPA.Windows.Windows.ROBOT_LIBRARY_DOC_FORMAT" title="Permalink to this definition">¶</a></dt>
