@@ -1,0 +1,1051 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Python API &mdash; RPA Framework  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+        <script src="../../_static/iframeResizer.min.js"></script>
+        <script src="../../_static/custom.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Images" href="../images/index.html" />
+    <link rel="prev" title="HTTP" href="index.html" />
+	<!-- Cookie consent -->
+<link async rel="stylesheet" type="text/css" href="../../_static/cookie.css"/>
+<script async src="../../_static/cookie.js"></script>
+<!-- Robocorp banner -->
+<link async rel="stylesheet" type="text/css" href="../../_static/robocorp.css"/>
+<script async src="../../_static/robocorp.js"></script>
+<!--            -->
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-151433780-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-151433780-3');
+</script>
+<!--            -->
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> RPA Framework
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Libraries</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../archive/index.html">Archive</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../browser/index.html">Browser</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../browser_playwright/index.html">Browser.Playwright</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../browser_selenium/index.html">Browser.Selenium</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cloud_aws/index.html">Cloud.AWS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cloud_azure/index.html">Cloud.Azure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cloud_google/index.html">Cloud.Google</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../crypto/index.html">Crypto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../database/index.html">Database</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../desktop/index.html">Desktop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../desktop_clipboard/index.html">Desktop.Clipboard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../desktop_operatingsystem/index.html">Desktop.OperatingSystem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../desktop_windows/index.html">Desktop.Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dialogs/index.html">Dialogs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../email_exchange/index.html">Email.Exchange</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../email_imapsmtp/index.html">Email.ImapSmtp</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../excel_application/index.html">Excel.Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../excel_files/index.html">Excel.Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../filesystem/index.html">FileSystem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ftp/index.html">FTP</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">HTTP</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Python API</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../images/index.html">Images</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javaaccessbridge/index.html">JavaAccessBridge</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../json/index.html">JSON</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../netsuite/index.html">Netsuite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../notifier/index.html">Notifier</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../outlook_application/index.html">Outlook.Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pdf/index.html">PDF</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../robocorp_process/index.html">Robocorp.Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../robocorp_vault/index.html">Robocorp.Vault</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../robocorp_workitems/index.html">Robocorp.WorkItems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../robotloglistener/index.html">RobotLogListener</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../salesforce/index.html">Salesforce</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sap/index.html">SAP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tables/index.html">Tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tasks/index.html">Tasks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../twitter/index.html">Twitter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../word_application/index.html">Word.Application</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Project</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../releasenotes.html">Release notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contributing/guide.html">Contribution guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contributing/conventions.html">Project conventions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contributing/todos.html">TODO</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">RPA Framework</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">HTTP</a> &raquo;</li>
+        
+      <li>Python API</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/libraries/http/python.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+	
+           <div itemprop="articleBody">
+            
+  <div class="section" id="python-api">
+<h1>Python API<a class="headerlink" href="#python-api" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-RPA.HTTP">
+<span id="http"></span><h2>HTTP<a class="headerlink" href="#module-RPA.HTTP" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="RPA.HTTP.HTTP">
+<em class="property">class </em><code class="sig-prename descclassname">RPA.HTTP.</code><code class="sig-name descname">HTTP</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#RPA.HTTP.HTTP" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">RequestsLibrary.RequestsLibrary</span></code></p>
+<p>RPA Framework HTTP library that extends functionality of RequestsLibrary,
+for more information see: <a class="reference external" href="https://github.com/MarketSquare/robotframework-requests">https://github.com/MarketSquare/robotframework-requests</a></p>
+<dl class="attribute">
+<dt id="RPA.HTTP.HTTP.DEFAULT_RETRY_METHOD_LIST">
+<code class="sig-name descname">DEFAULT_RETRY_METHOD_LIST</code><em class="property"> = ['HEAD', 'PUT', 'DELETE', 'TRACE', 'OPTIONS', 'GET']</em><a class="headerlink" href="#RPA.HTTP.HTTP.DEFAULT_RETRY_METHOD_LIST" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="RPA.HTTP.HTTP.ROBOT_LIBRARY_DOC_FORMAT">
+<code class="sig-name descname">ROBOT_LIBRARY_DOC_FORMAT</code><em class="property"> = 'ROBOT'</em><a class="headerlink" href="#RPA.HTTP.HTTP.ROBOT_LIBRARY_DOC_FORMAT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="RPA.HTTP.HTTP.ROBOT_LIBRARY_SCOPE">
+<code class="sig-name descname">ROBOT_LIBRARY_SCOPE</code><em class="property"> = 'GLOBAL'</em><a class="headerlink" href="#RPA.HTTP.HTTP.ROBOT_LIBRARY_SCOPE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="RPA.HTTP.HTTP.create_client_cert_session">
+<code class="sig-name descname">create_client_cert_session</code><span class="sig-paren">(</span><em class="sig-param">alias, url, headers={}, cookies={}, client_certs=None, timeout=None, proxies=None, verify=False, debug=0, max_retries=3, backoff_factor=0.1, disable_warnings=0, retry_status_list=[], retry_method_list=['HEAD', 'PUT', 'DELETE', 'TRACE', 'OPTIONS', 'GET']</em><span class="sig-paren">)</span><a class="headerlink" href="#RPA.HTTP.HTTP.create_client_cert_session" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create Session: create a HTTP session to a server</p>
+<p><code class="docutils literal notranslate"><span class="pre">url</span></code> Base url of the server</p>
+<p><code class="docutils literal notranslate"><span class="pre">alias</span></code> Robot Framework alias to identify the session</p>
+<p><code class="docutils literal notranslate"><span class="pre">headers</span></code> Dictionary of default headers</p>
+<p><code class="docutils literal notranslate"><span class="pre">cookies</span></code> Dictionary of cookies</p>
+<p><code class="docutils literal notranslate"><span class="pre">client_certs</span></code> [‘client certificate’, ‘client key’] PEM files containing the client key and certificate</p>
+<p><code class="docutils literal notranslate"><span class="pre">timeout</span></code> Connection timeout</p>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">proxies</span></code> Dictionary mapping protocol or protocol and host to the URL of the proxy</dt><dd><p>(e.g. {‘http’: ‘foo.bar:3128’, ‘http://host.name’: ‘foo.bar:4012’})</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">verify</span></code> Whether the SSL cert will be verified. A CA_BUNDLE path can also be provided.</dt><dd><p>Defaults to False.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">debug</span></code> Enable http verbosity option more information</dt><dd><p><a class="reference external" href="https://docs.python.org/2/library/httplib.html#httplib.HTTPConnection.set_debuglevel">https://docs.python.org/2/library/httplib.html#httplib.HTTPConnection.set_debuglevel</a></p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">max_retries</span></code> Number of maximum retries each connection should attempt.</dt><dd><p>By default it will retry 3 times in case of connection errors only.
+A 0 value will disable any kind of retries regardless of other retry settings.
+In case the number of retries is reached a retry exception is raised.</p>
+</dd>
+</dl>
+<p><code class="docutils literal notranslate"><span class="pre">disable_warnings</span></code> Disable requests warning useful when you have large number of testcases</p>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">backoff_factor</span></code> Introduces a delay time between retries that is longer after each retry.</dt><dd><p>eg. if backoff_factor is set to 0.1
+the sleep between attemps will be: 0.0, 0.2, 0.4
+More info here: <a class="reference external" href="https://urllib3.readthedocs.io/en/latest/reference/urllib3.util.html">https://urllib3.readthedocs.io/en/latest/reference/urllib3.util.html</a></p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">retry_method_list</span></code> List of uppercased HTTP method verbs where retries are allowed.</dt><dd><p>By default retries are allowed only on HTTP requests methods that are considered to be
+idempotent (multiple requests with the same parameters end with the same state).
+eg. set to [‘POST’, ‘GET’] to retry only those kind of requests.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">retry_status_list</span></code> List of integer HTTP status codes that, if returned, a retry is attempted.</dt><dd><p>eg. set to [502, 503] to retry requests if those status are returned.
+Note that max_retries must be greater than 0.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.HTTP.HTTP.create_custom_session">
+<code class="sig-name descname">create_custom_session</code><span class="sig-paren">(</span><em class="sig-param">alias, url, auth, headers={}, cookies={}, timeout=None, proxies=None, verify=False, debug=0, max_retries=3, backoff_factor=0.1, disable_warnings=0, retry_status_list=[], retry_method_list=['HEAD', 'PUT', 'DELETE', 'TRACE', 'OPTIONS', 'GET']</em><span class="sig-paren">)</span><a class="headerlink" href="#RPA.HTTP.HTTP.create_custom_session" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create Session: create a HTTP session to a server</p>
+<p><code class="docutils literal notranslate"><span class="pre">url</span></code> Base url of the server</p>
+<p><code class="docutils literal notranslate"><span class="pre">alias</span></code> Robot Framework alias to identify the session</p>
+<p><code class="docutils literal notranslate"><span class="pre">headers</span></code> Dictionary of default headers</p>
+<p><code class="docutils literal notranslate"><span class="pre">cookies</span></code> Dictionary of cookies</p>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">auth</span></code> A Custom Authentication object to be passed on to the requests library.</dt><dd><p><a class="reference external" href="http://docs.python-requests.org/en/master/user/advanced/#custom-authentication">http://docs.python-requests.org/en/master/user/advanced/#custom-authentication</a></p>
+</dd>
+</dl>
+<p><code class="docutils literal notranslate"><span class="pre">timeout</span></code> Connection timeout</p>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">proxies</span></code> Dictionary mapping protocol or protocol and host to the URL of the proxy</dt><dd><p>(e.g. {‘http’: ‘foo.bar:3128’, ‘http://host.name’: ‘foo.bar:4012’})</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">verify</span></code> Whether the SSL cert will be verified. A CA_BUNDLE path can also be provided.</dt><dd><p>Defaults to False.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">debug</span></code> Enable http verbosity option more information</dt><dd><p><a class="reference external" href="https://docs.python.org/2/library/httplib.html#httplib.HTTPConnection.set_debuglevel">https://docs.python.org/2/library/httplib.html#httplib.HTTPConnection.set_debuglevel</a></p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">max_retries</span></code> Number of maximum retries each connection should attempt.</dt><dd><p>By default it will retry 3 times in case of connection errors only.
+A 0 value will disable any kind of retries regardless of other retry settings.
+In case the number of retries is reached a retry exception is raised.</p>
+</dd>
+</dl>
+<p><code class="docutils literal notranslate"><span class="pre">disable_warnings</span></code> Disable requests warning useful when you have large number of testcases</p>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">backoff_factor</span></code> Introduces a delay time between retries that is longer after each retry.</dt><dd><p>eg. if backoff_factor is set to 0.1
+the sleep between attemps will be: 0.0, 0.2, 0.4
+More info here: <a class="reference external" href="https://urllib3.readthedocs.io/en/latest/reference/urllib3.util.html">https://urllib3.readthedocs.io/en/latest/reference/urllib3.util.html</a></p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">retry_method_list</span></code> List of uppercased HTTP method verbs where retries are allowed.</dt><dd><p>By default retries are allowed only on HTTP requests methods that are considered to be
+idempotent (multiple requests with the same parameters end with the same state).
+eg. set to [‘POST’, ‘GET’] to retry only those kind of requests.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">retry_status_list</span></code> List of integer HTTP status codes that, if returned, a retry is attempted.</dt><dd><p>eg. set to [502, 503] to retry requests if those status are returned.
+Note that max_retries must be greater than 0.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.HTTP.HTTP.create_digest_session">
+<code class="sig-name descname">create_digest_session</code><span class="sig-paren">(</span><em class="sig-param">alias, url, auth, headers={}, cookies={}, timeout=None, proxies=None, verify=False, debug=0, max_retries=3, backoff_factor=0.1, disable_warnings=0, retry_status_list=[], retry_method_list=['HEAD', 'PUT', 'DELETE', 'TRACE', 'OPTIONS', 'GET']</em><span class="sig-paren">)</span><a class="headerlink" href="#RPA.HTTP.HTTP.create_digest_session" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create Session: create a HTTP session to a server</p>
+<p><code class="docutils literal notranslate"><span class="pre">url</span></code> Base url of the server</p>
+<p><code class="docutils literal notranslate"><span class="pre">alias</span></code> Robot Framework alias to identify the session</p>
+<p><code class="docutils literal notranslate"><span class="pre">headers</span></code> Dictionary of default headers</p>
+<p><code class="docutils literal notranslate"><span class="pre">cookies</span></code> Dictionary of cookies</p>
+<p><code class="docutils literal notranslate"><span class="pre">auth</span></code> [‘DOMAIN’, ‘username’, ‘password’] for NTLM Authentication</p>
+<p><code class="docutils literal notranslate"><span class="pre">timeout</span></code> Connection timeout</p>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">proxies</span></code> Dictionary mapping protocol or protocol and host to the URL of the proxy</dt><dd><p>(e.g. {‘http’: ‘foo.bar:3128’, ‘http://host.name’: ‘foo.bar:4012’})</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">verify</span></code> Whether the SSL cert will be verified. A CA_BUNDLE path can also be provided.</dt><dd><p>Defaults to False.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">debug</span></code> Enable http verbosity option more information</dt><dd><p><a class="reference external" href="https://docs.python.org/2/library/httplib.html#httplib.HTTPConnection.set_debuglevel">https://docs.python.org/2/library/httplib.html#httplib.HTTPConnection.set_debuglevel</a></p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">max_retries</span></code> Number of maximum retries each connection should attempt.</dt><dd><p>By default it will retry 3 times in case of connection errors only.
+A 0 value will disable any kind of retries regardless of other retry settings.
+In case the number of retries is reached a retry exception is raised.</p>
+</dd>
+</dl>
+<p><code class="docutils literal notranslate"><span class="pre">disable_warnings</span></code> Disable requests warning useful when you have large number of testcases</p>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">backoff_factor</span></code> Introduces a delay time between retries that is longer after each retry.</dt><dd><p>eg. if backoff_factor is set to 0.1
+the sleep between attemps will be: 0.0, 0.2, 0.4
+More info here: <a class="reference external" href="https://urllib3.readthedocs.io/en/latest/reference/urllib3.util.html">https://urllib3.readthedocs.io/en/latest/reference/urllib3.util.html</a></p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">retry_method_list</span></code> List of uppercased HTTP method verbs where retries are allowed.</dt><dd><p>By default retries are allowed only on HTTP requests methods that are considered to be
+idempotent (multiple requests with the same parameters end with the same state).
+eg. set to [‘POST’, ‘GET’] to retry only those kind of requests.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">retry_status_list</span></code> List of integer HTTP status codes that, if returned, a retry is attempted.</dt><dd><p>eg. set to [502, 503] to retry requests if those status are returned.
+Note that max_retries must be greater than 0.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.HTTP.HTTP.create_ntlm_session">
+<code class="sig-name descname">create_ntlm_session</code><span class="sig-paren">(</span><em class="sig-param">alias, url, auth, headers={}, cookies={}, timeout=None, proxies=None, verify=False, debug=0, max_retries=3, backoff_factor=0.1, disable_warnings=0, retry_status_list=[], retry_method_list=['HEAD', 'PUT', 'DELETE', 'TRACE', 'OPTIONS', 'GET']</em><span class="sig-paren">)</span><a class="headerlink" href="#RPA.HTTP.HTTP.create_ntlm_session" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create Session: create a HTTP session to a server</p>
+<p><code class="docutils literal notranslate"><span class="pre">url</span></code> Base url of the server</p>
+<p><code class="docutils literal notranslate"><span class="pre">alias</span></code> Robot Framework alias to identify the session</p>
+<p><code class="docutils literal notranslate"><span class="pre">headers</span></code> Dictionary of default headers</p>
+<p><code class="docutils literal notranslate"><span class="pre">cookies</span></code> Dictionary of cookies</p>
+<p><code class="docutils literal notranslate"><span class="pre">auth</span></code> [‘DOMAIN’, ‘username’, ‘password’] for NTLM Authentication</p>
+<p><code class="docutils literal notranslate"><span class="pre">timeout</span></code> Connection timeout</p>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">proxies</span></code> Dictionary mapping protocol or protocol and host to the URL of the proxy</dt><dd><p>(e.g. {‘http’: ‘foo.bar:3128’, ‘http://host.name’: ‘foo.bar:4012’})</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">verify</span></code> Whether the SSL cert will be verified. A CA_BUNDLE path can also be provided.</dt><dd><p>Defaults to False.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">debug</span></code> Enable http verbosity option more information</dt><dd><p><a class="reference external" href="https://docs.python.org/2/library/httplib.html#httplib.HTTPConnection.set_debuglevel">https://docs.python.org/2/library/httplib.html#httplib.HTTPConnection.set_debuglevel</a></p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">max_retries</span></code> Number of maximum retries each connection should attempt.</dt><dd><p>By default it will retry 3 times in case of connection errors only.
+A 0 value will disable any kind of retries regardless of other retry settings.
+In case the number of retries is reached a retry exception is raised.</p>
+</dd>
+</dl>
+<p><code class="docutils literal notranslate"><span class="pre">disable_warnings</span></code> Disable requests warning useful when you have large number of testcases</p>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">backoff_factor</span></code> Introduces a delay time between retries that is longer after each retry.</dt><dd><p>eg. if backoff_factor is set to 0.1
+the sleep between attemps will be: 0.0, 0.2, 0.4
+More info here: <a class="reference external" href="https://urllib3.readthedocs.io/en/latest/reference/urllib3.util.html">https://urllib3.readthedocs.io/en/latest/reference/urllib3.util.html</a></p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">retry_method_list</span></code> List of uppercased HTTP method verbs where retries are allowed.</dt><dd><p>By default retries are allowed only on HTTP requests methods that are considered to be
+idempotent (multiple requests with the same parameters end with the same state).
+eg. set to [‘POST’, ‘GET’] to retry only those kind of requests.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">retry_status_list</span></code> List of integer HTTP status codes that, if returned, a retry is attempted.</dt><dd><p>eg. set to [502, 503] to retry requests if those status are returned.
+Note that max_retries must be greater than 0.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.HTTP.HTTP.create_session">
+<code class="sig-name descname">create_session</code><span class="sig-paren">(</span><em class="sig-param">alias, url, headers={}, cookies={}, auth=None, timeout=None, proxies=None, verify=False, debug=0, max_retries=3, backoff_factor=0.1, disable_warnings=0, retry_status_list=[], retry_method_list=['HEAD', 'PUT', 'DELETE', 'TRACE', 'OPTIONS', 'GET']</em><span class="sig-paren">)</span><a class="headerlink" href="#RPA.HTTP.HTTP.create_session" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create Session: create a HTTP session to a server</p>
+<p><code class="docutils literal notranslate"><span class="pre">alias</span></code> Robot Framework alias to identify the session</p>
+<p><code class="docutils literal notranslate"><span class="pre">url</span></code> Base url of the server</p>
+<p><code class="docutils literal notranslate"><span class="pre">headers</span></code> Dictionary of default headers</p>
+<p><code class="docutils literal notranslate"><span class="pre">cookies</span></code> Dictionary of cookies</p>
+<p><code class="docutils literal notranslate"><span class="pre">auth</span></code> List of username &amp; password for HTTP Basic Auth</p>
+<p><code class="docutils literal notranslate"><span class="pre">timeout</span></code> Connection timeout</p>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">proxies</span></code> Dictionary mapping protocol or protocol and host to the URL of the proxy</dt><dd><p>(e.g. {‘http’: ‘foo.bar:3128’, ‘http://host.name’: ‘foo.bar:4012’})</p>
+</dd>
+</dl>
+<p><code class="docutils literal notranslate"><span class="pre">verify</span></code> Whether the SSL cert will be verified. A CA_BUNDLE path can also be provided.</p>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">debug</span></code> Enable http verbosity option more information</dt><dd><p><a class="reference external" href="https://docs.python.org/2/library/httplib.html#httplib.HTTPConnection.set_debuglevel">https://docs.python.org/2/library/httplib.html#httplib.HTTPConnection.set_debuglevel</a></p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">max_retries</span></code> Number of maximum retries each connection should attempt.</dt><dd><p>By default it will retry 3 times in case of connection errors only.
+A 0 value will disable any kind of retries regardless of other retry settings.
+In case the number of retries is reached a retry exception is raised.</p>
+</dd>
+</dl>
+<p><code class="docutils literal notranslate"><span class="pre">disable_warnings</span></code> Disable requests warning useful when you have large number of testcases</p>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">backoff_factor</span></code> Introduces a delay time between retries that is longer after each retry.</dt><dd><p>eg. if backoff_factor is set to 0.1
+the sleep between attemps will be: 0.0, 0.2, 0.4
+More info here: <a class="reference external" href="https://urllib3.readthedocs.io/en/latest/reference/urllib3.util.html">https://urllib3.readthedocs.io/en/latest/reference/urllib3.util.html</a></p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">retry_method_list</span></code> List of uppercased HTTP method verbs where retries are allowed.</dt><dd><p>By default retries are allowed only on HTTP requests methods that are considered to be
+idempotent (multiple requests with the same parameters end with the same state).
+eg. set to [‘POST’, ‘GET’] to retry only those kind of requests.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">retry_status_list</span></code> List of integer HTTP status codes that, if returned, a retry is attempted.</dt><dd><p>eg. set to [502, 503] to retry requests if those status are returned.
+Note that max_retries must be greater than 0.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.HTTP.HTTP.delete_all_sessions">
+<code class="sig-name descname">delete_all_sessions</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#RPA.HTTP.HTTP.delete_all_sessions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Removes all the session objects</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.HTTP.HTTP.delete_on_session">
+<code class="sig-name descname">delete_on_session</code><span class="sig-paren">(</span><em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#RPA.HTTP.HTTP.delete_on_session" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sends a DELETE request on a previously created HTTP Session.</p>
+<p>Session will be identified using the <code class="docutils literal notranslate"><span class="pre">alias</span></code> name.
+The endpoint used to send the request is the <code class="docutils literal notranslate"><span class="pre">url</span></code> parameter.</p>
+<p>By default this keyword fails if a status code with error values is returned in the response,
+this behavior can be modified using the <code class="docutils literal notranslate"><span class="pre">expected_status</span></code> and <code class="docutils literal notranslate"><span class="pre">msg</span></code> parameters,
+read more about it in <cite>Status Should Be</cite> keyword documentation.
+In order to disable this implicit assert mechanism you can pass as <code class="docutils literal notranslate"><span class="pre">expected_status</span></code> the values <code class="docutils literal notranslate"><span class="pre">any</span></code> or
+<code class="docutils literal notranslate"><span class="pre">anything</span></code>.</p>
+<p>Other optional requests arguments can be passed using <code class="docutils literal notranslate"><span class="pre">**kwargs</span></code>
+see the <cite>GET</cite> keyword for the complete list.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.HTTP.HTTP.delete_request">
+<code class="sig-name descname">delete_request</code><span class="sig-paren">(</span><em class="sig-param">alias</em>, <em class="sig-param">uri</em>, <em class="sig-param">data=None</em>, <em class="sig-param">json=None</em>, <em class="sig-param">params=None</em>, <em class="sig-param">headers=None</em>, <em class="sig-param">allow_redirects=None</em>, <em class="sig-param">timeout=None</em><span class="sig-paren">)</span><a class="headerlink" href="#RPA.HTTP.HTTP.delete_request" title="Permalink to this definition">¶</a></dt>
+<dd><p><em>DEPRECATED</em> Please use <cite>DELETE On Session</cite> instead.</p>
+<p>Send a DELETE request on the session object found using the
+given <cite>alias</cite></p>
+<p><code class="docutils literal notranslate"><span class="pre">alias</span></code> that will be used to identify the Session object in the cache</p>
+<p><code class="docutils literal notranslate"><span class="pre">uri</span></code> to send the DELETE request to</p>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">json</span></code> a value that will be json encoded</dt><dd><p>and sent as request data if data is not specified</p>
+</dd>
+</dl>
+<p><code class="docutils literal notranslate"><span class="pre">headers</span></code> a dictionary of headers to use with the request</p>
+<p><code class="docutils literal notranslate"><span class="pre">allow_redirects</span></code> Boolean. Set to True if POST/PUT/DELETE redirect following is allowed.</p>
+<p><code class="docutils literal notranslate"><span class="pre">timeout</span></code> connection timeout</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.HTTP.HTTP.download">
+<code class="sig-name descname">download</code><span class="sig-paren">(</span><em class="sig-param">url: str</em>, <em class="sig-param">target_file: str = None</em>, <em class="sig-param">verify: Union[bool</em>, <em class="sig-param">str] = True</em>, <em class="sig-param">force_new_session: bool = False</em>, <em class="sig-param">overwrite: bool = False</em>, <em class="sig-param">stream: bool = False</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span> &#x2192; dict<a class="headerlink" href="#RPA.HTTP.HTTP.download" title="Permalink to this definition">¶</a></dt>
+<dd><p>An alias for the <code class="docutils literal notranslate"><span class="pre">HTTP</span> <span class="pre">Get</span></code> keyword.</p>
+<p>The difference in use is that the URL is always downloaded based on
+the URL path (even without <code class="docutils literal notranslate"><span class="pre">target_file</span></code>). If there is a filename
+in the path, then that is used as <code class="docutils literal notranslate"><span class="pre">target_file</span></code> to save to. By default,
+the filename will be “downloaded.html”.</p>
+<p><code class="docutils literal notranslate"><span class="pre">url</span></code> target URL for GET request</p>
+<p><code class="docutils literal notranslate"><span class="pre">target_file</span></code> filepath to save request content, default <code class="docutils literal notranslate"><span class="pre">None</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">verify</span></code> if SSL verification should be done, default <code class="docutils literal notranslate"><span class="pre">True</span></code>,
+a CA_BUNDLE path can also be provided</p>
+<p><code class="docutils literal notranslate"><span class="pre">force_new_session</span></code> if new HTTP session should be created, default <code class="docutils literal notranslate"><span class="pre">False</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">overwrite</span></code> used together with <code class="docutils literal notranslate"><span class="pre">target_file</span></code>, if <code class="docutils literal notranslate"><span class="pre">True</span></code> will overwrite
+the target file, default <code class="docutils literal notranslate"><span class="pre">False</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">stream</span></code> if <code class="docutils literal notranslate"><span class="pre">False</span></code>, the response content will be immediately downloaded</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.HTTP.HTTP.get_current_session_alias">
+<code class="sig-name descname">get_current_session_alias</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#RPA.HTTP.HTTP.get_current_session_alias" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get request session alias that was used with the <code class="docutils literal notranslate"><span class="pre">HTTP</span> <span class="pre">Get</span></code> keyword.</p>
+<p>Return name of session alias.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.HTTP.HTTP.get_file_for_streaming_upload">
+<em class="property">static </em><code class="sig-name descname">get_file_for_streaming_upload</code><span class="sig-paren">(</span><em class="sig-param">path</em><span class="sig-paren">)</span><a class="headerlink" href="#RPA.HTTP.HTTP.get_file_for_streaming_upload" title="Permalink to this definition">¶</a></dt>
+<dd><p>Opens and returns a file descriptor of a specified file to be passed as <code class="docutils literal notranslate"><span class="pre">data</span></code> parameter
+to other requests keywords.</p>
+<p>This allows streaming upload of large files without reading them into memory.</p>
+<p>File descriptor is binary mode and read only. Requests keywords will automatically close the file,
+if used outside this library it’s up to the caller to close it.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.HTTP.HTTP.get_on_session">
+<code class="sig-name descname">get_on_session</code><span class="sig-paren">(</span><em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#RPA.HTTP.HTTP.get_on_session" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sends a GET request on a previously created HTTP Session.</p>
+<p>Session will be identified using the <code class="docutils literal notranslate"><span class="pre">alias</span></code> name.
+The endpoint used to retrieve the resource is the <code class="docutils literal notranslate"><span class="pre">url</span></code>, while query
+string parameters can be passed as string, dictionary (or list of tuples or bytes)
+through the <code class="docutils literal notranslate"><span class="pre">params</span></code>.</p>
+<p>By default this keyword fails if a status code with error values is returned in the response,
+this behavior can be modified using the <code class="docutils literal notranslate"><span class="pre">expected_status</span></code> and <code class="docutils literal notranslate"><span class="pre">msg</span></code> parameters,
+read more about it in <cite>Status Should Be</cite> keyword documentation.
+In order to disable this implicit assert mechanism you can pass as <code class="docutils literal notranslate"><span class="pre">expected_status</span></code> the values <code class="docutils literal notranslate"><span class="pre">any</span></code> or
+<code class="docutils literal notranslate"><span class="pre">anything</span></code>.</p>
+<p>Other optional requests arguments can be passed using <code class="docutils literal notranslate"><span class="pre">**kwargs</span></code>
+see the <cite>GET</cite> keyword for the complete list.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.HTTP.HTTP.get_request">
+<code class="sig-name descname">get_request</code><span class="sig-paren">(</span><em class="sig-param">alias</em>, <em class="sig-param">uri</em>, <em class="sig-param">headers=None</em>, <em class="sig-param">data=None</em>, <em class="sig-param">json=None</em>, <em class="sig-param">params=None</em>, <em class="sig-param">allow_redirects=None</em>, <em class="sig-param">timeout=None</em><span class="sig-paren">)</span><a class="headerlink" href="#RPA.HTTP.HTTP.get_request" title="Permalink to this definition">¶</a></dt>
+<dd><p><em>DEPRECATED</em> Please use <cite>GET On Session</cite> instead.</p>
+<p>Send a GET request on the session object found using the
+given <cite>alias</cite></p>
+<p><code class="docutils literal notranslate"><span class="pre">alias</span></code> that will be used to identify the Session object in the cache</p>
+<p><code class="docutils literal notranslate"><span class="pre">uri</span></code> to send the GET request to</p>
+<p><code class="docutils literal notranslate"><span class="pre">params</span></code> url parameters to append to the uri</p>
+<p><code class="docutils literal notranslate"><span class="pre">headers</span></code> a dictionary of headers to use with the request</p>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">data</span></code> a dictionary of key-value pairs that will be urlencoded</dt><dd><p>and sent as GET data
+or binary data that is sent as the raw body content</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">json</span></code> a value that will be json encoded</dt><dd><p>and sent as GET data if data is not specified</p>
+</dd>
+</dl>
+<p><code class="docutils literal notranslate"><span class="pre">allow_redirects</span></code> Boolean. Set to True if POST/PUT/DELETE redirect following is allowed.</p>
+<p><code class="docutils literal notranslate"><span class="pre">timeout</span></code> connection timeout</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.HTTP.HTTP.head_on_session">
+<code class="sig-name descname">head_on_session</code><span class="sig-paren">(</span><em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#RPA.HTTP.HTTP.head_on_session" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sends a HEAD request on a previously created HTTP Session.</p>
+<p>Session will be identified using the <code class="docutils literal notranslate"><span class="pre">alias</span></code> name.
+The endpoint used to retrieve the HTTP headers is the <code class="docutils literal notranslate"><span class="pre">url</span></code>.</p>
+<p><code class="docutils literal notranslate"><span class="pre">allow_redirects</span></code> parameter is not provided, it will be set to <cite>False</cite> (as
+opposed to the default behavior).</p>
+<p>By default this keyword fails if a status code with error values is returned in the response,
+this behavior can be modified using the <code class="docutils literal notranslate"><span class="pre">expected_status</span></code> and <code class="docutils literal notranslate"><span class="pre">msg</span></code> parameters,
+read more about it in <cite>Status Should Be</cite> keyword documentation.
+In order to disable this implicit assert mechanism you can pass as <code class="docutils literal notranslate"><span class="pre">expected_status</span></code> the values <code class="docutils literal notranslate"><span class="pre">any</span></code> or
+<code class="docutils literal notranslate"><span class="pre">anything</span></code>.</p>
+<p>Other optional requests arguments can be passed using <code class="docutils literal notranslate"><span class="pre">**kwargs</span></code>
+see the <cite>GET</cite> keyword for the complete list.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.HTTP.HTTP.head_request">
+<code class="sig-name descname">head_request</code><span class="sig-paren">(</span><em class="sig-param">alias</em>, <em class="sig-param">uri</em>, <em class="sig-param">headers=None</em>, <em class="sig-param">allow_redirects=None</em>, <em class="sig-param">timeout=None</em><span class="sig-paren">)</span><a class="headerlink" href="#RPA.HTTP.HTTP.head_request" title="Permalink to this definition">¶</a></dt>
+<dd><p><em>DEPRECATED</em> Please use <cite>HEAD On Session</cite> instead.</p>
+<p>Send a HEAD request on the session object found using the
+given <cite>alias</cite></p>
+<p><code class="docutils literal notranslate"><span class="pre">alias</span></code> that will be used to identify the Session object in the cache</p>
+<p><code class="docutils literal notranslate"><span class="pre">uri</span></code> to send the HEAD request to</p>
+<p><code class="docutils literal notranslate"><span class="pre">allow_redirects</span></code> Boolean. Set to True if POST/PUT/DELETE redirect following is allowed.</p>
+<p><code class="docutils literal notranslate"><span class="pre">headers</span></code> a dictionary of headers to use with the request</p>
+<p><code class="docutils literal notranslate"><span class="pre">timeout</span></code> connection timeout</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.HTTP.HTTP.http_get">
+<code class="sig-name descname">http_get</code><span class="sig-paren">(</span><em class="sig-param">url: str</em>, <em class="sig-param">target_file: str = None</em>, <em class="sig-param">verify: Union[bool</em>, <em class="sig-param">str] = True</em>, <em class="sig-param">force_new_session: bool = False</em>, <em class="sig-param">overwrite: bool = False</em>, <em class="sig-param">stream: bool = False</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span> &#x2192; dict<a class="headerlink" href="#RPA.HTTP.HTTP.http_get" title="Permalink to this definition">¶</a></dt>
+<dd><p>A helper method for <code class="docutils literal notranslate"><span class="pre">Get</span> <span class="pre">Request</span></code> that will create a session, perform GET
+request, and store the target file, if set by the <code class="docutils literal notranslate"><span class="pre">target_file</span></code> parameter.</p>
+<p>The old session will be used if the URL scheme and the host are the same as
+previously, e.g., ‘<a class="reference external" href="https://www.google.fi">https://www.google.fi</a>’ part of the URL.</p>
+<p><code class="docutils literal notranslate"><span class="pre">url</span></code> target URL for GET request</p>
+<p><code class="docutils literal notranslate"><span class="pre">target_file</span></code> filepath to save request content, default <code class="docutils literal notranslate"><span class="pre">None</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">verify</span></code> if SSL verification should be done, default <code class="docutils literal notranslate"><span class="pre">True</span></code>,
+a CA_BUNDLE path can also be provided</p>
+<p><code class="docutils literal notranslate"><span class="pre">force_new_session</span></code> if new HTTP session should be created, default <code class="docutils literal notranslate"><span class="pre">False</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">overwrite</span></code> used together with <code class="docutils literal notranslate"><span class="pre">target_file</span></code>, if <code class="docutils literal notranslate"><span class="pre">True</span></code> will overwrite
+the target file, default <code class="docutils literal notranslate"><span class="pre">False</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">stream</span></code> if <code class="docutils literal notranslate"><span class="pre">False</span></code>, the response content will be immediately downloaded</p>
+<p>Returns request response.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.HTTP.HTTP.options_on_session">
+<code class="sig-name descname">options_on_session</code><span class="sig-paren">(</span><em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#RPA.HTTP.HTTP.options_on_session" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sends a OPTIONS request on a previously created HTTP Session.</p>
+<p>Session will be identified using the <code class="docutils literal notranslate"><span class="pre">alias</span></code> name.
+The endpoint used to retrieve the resource is the <code class="docutils literal notranslate"><span class="pre">url</span></code>.</p>
+<p>By default this keyword fails if a status code with error values is returned in the response,
+this behavior can be modified using the <code class="docutils literal notranslate"><span class="pre">expected_status</span></code> and <code class="docutils literal notranslate"><span class="pre">msg</span></code> parameters,
+read more about it in <cite>Status Should Be</cite> keyword documentation.
+In order to disable this implicit assert mechanism you can pass as <code class="docutils literal notranslate"><span class="pre">expected_status</span></code> the values <code class="docutils literal notranslate"><span class="pre">any</span></code> or
+<code class="docutils literal notranslate"><span class="pre">anything</span></code>.</p>
+<p>Other optional requests arguments can be passed using <code class="docutils literal notranslate"><span class="pre">**kwargs</span></code>
+see the <cite>GET</cite> keyword for the complete list.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.HTTP.HTTP.options_request">
+<code class="sig-name descname">options_request</code><span class="sig-paren">(</span><em class="sig-param">alias</em>, <em class="sig-param">uri</em>, <em class="sig-param">headers=None</em>, <em class="sig-param">allow_redirects=None</em>, <em class="sig-param">timeout=None</em><span class="sig-paren">)</span><a class="headerlink" href="#RPA.HTTP.HTTP.options_request" title="Permalink to this definition">¶</a></dt>
+<dd><p><em>DEPRECATED</em> Please use <cite>OPTIONS On Session</cite> instead.</p>
+<p>Send an OPTIONS request on the session object found using the
+given <cite>alias</cite></p>
+<p><code class="docutils literal notranslate"><span class="pre">alias</span></code> that will be used to identify the Session object in the cache</p>
+<p><code class="docutils literal notranslate"><span class="pre">uri</span></code> to send the OPTIONS request to</p>
+<p><code class="docutils literal notranslate"><span class="pre">allow_redirects</span></code> Boolean. Set to True if POST/PUT/DELETE redirect following is allowed.</p>
+<p><code class="docutils literal notranslate"><span class="pre">headers</span></code> a dictionary of headers to use with the request</p>
+<p><code class="docutils literal notranslate"><span class="pre">timeout</span></code> connection timeout</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.HTTP.HTTP.patch_on_session">
+<code class="sig-name descname">patch_on_session</code><span class="sig-paren">(</span><em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#RPA.HTTP.HTTP.patch_on_session" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sends a PATCH request on a previously created HTTP Session.</p>
+<p>Session will be identified using the <code class="docutils literal notranslate"><span class="pre">alias</span></code> name.
+The endpoint used to send the request is the <code class="docutils literal notranslate"><span class="pre">url</span></code> parameter, while its body
+can be passed using <code class="docutils literal notranslate"><span class="pre">data</span></code> or <code class="docutils literal notranslate"><span class="pre">json</span></code> parameters.</p>
+<p><code class="docutils literal notranslate"><span class="pre">data</span></code> can be a dictionary, list of tuples, bytes, or file-like object.
+If you want to pass a json body pass a dictionary as <code class="docutils literal notranslate"><span class="pre">json</span></code> parameter.</p>
+<p>By default this keyword fails if a status code with error values is returned in the response,
+this behavior can be modified using the <code class="docutils literal notranslate"><span class="pre">expected_status</span></code> and <code class="docutils literal notranslate"><span class="pre">msg</span></code> parameters,
+read more about it in <cite>Status Should Be</cite> keyword documentation.
+In order to disable this implicit assert mechanism you can pass as <code class="docutils literal notranslate"><span class="pre">expected_status</span></code> the values <code class="docutils literal notranslate"><span class="pre">any</span></code> or
+<code class="docutils literal notranslate"><span class="pre">anything</span></code>.</p>
+<p>Other optional requests arguments can be passed using <code class="docutils literal notranslate"><span class="pre">**kwargs</span></code>
+see the <cite>GET</cite> keyword for the complete list.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.HTTP.HTTP.patch_request">
+<code class="sig-name descname">patch_request</code><span class="sig-paren">(</span><em class="sig-param">alias</em>, <em class="sig-param">uri</em>, <em class="sig-param">data=None</em>, <em class="sig-param">json=None</em>, <em class="sig-param">params=None</em>, <em class="sig-param">headers=None</em>, <em class="sig-param">files=None</em>, <em class="sig-param">allow_redirects=None</em>, <em class="sig-param">timeout=None</em><span class="sig-paren">)</span><a class="headerlink" href="#RPA.HTTP.HTTP.patch_request" title="Permalink to this definition">¶</a></dt>
+<dd><p><em>DEPRECATED</em> Please use <cite>PATCH On Session</cite> instead.</p>
+<p>Send a PATCH request on the session object found using the
+given <cite>alias</cite></p>
+<p><code class="docutils literal notranslate"><span class="pre">alias</span></code> that will be used to identify the Session object in the cache</p>
+<p><code class="docutils literal notranslate"><span class="pre">uri</span></code> to send the PATCH request to</p>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">data</span></code> a dictionary of key-value pairs that will be urlencoded</dt><dd><p>and sent as PATCH data
+or binary data that is sent as the raw body content
+or file descriptor retrieved by Get File For Streaming Upload</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">json</span></code> a value that will be json encoded</dt><dd><p>and sent as PATCH data if data is not specified</p>
+</dd>
+</dl>
+<p><code class="docutils literal notranslate"><span class="pre">headers</span></code> a dictionary of headers to use with the request</p>
+<p><code class="docutils literal notranslate"><span class="pre">files</span></code> a dictionary of file names containing file data to PATCH to the server</p>
+<p><code class="docutils literal notranslate"><span class="pre">allow_redirects</span></code> Boolean. Set to True if POST/PUT/DELETE redirect following is allowed.</p>
+<p><code class="docutils literal notranslate"><span class="pre">params</span></code> url parameters to append to the uri</p>
+<p><code class="docutils literal notranslate"><span class="pre">timeout</span></code> connection timeout</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.HTTP.HTTP.post_on_session">
+<code class="sig-name descname">post_on_session</code><span class="sig-paren">(</span><em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#RPA.HTTP.HTTP.post_on_session" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sends a POST request on a previously created HTTP Session.</p>
+<p>Session will be identified using the <code class="docutils literal notranslate"><span class="pre">alias</span></code> name.
+The endpoint used to send the request is the <code class="docutils literal notranslate"><span class="pre">url</span></code> parameter, while its body
+can be passed using <code class="docutils literal notranslate"><span class="pre">data</span></code> or <code class="docutils literal notranslate"><span class="pre">json</span></code> parameters.</p>
+<p><code class="docutils literal notranslate"><span class="pre">data</span></code> can be a dictionary, list of tuples, bytes, or file-like object.
+If you want to pass a json body pass a dictionary as <code class="docutils literal notranslate"><span class="pre">json</span></code> parameter.</p>
+<p>By default this keyword fails if a status code with error values is returned in the response,
+this behavior can be modified using the <code class="docutils literal notranslate"><span class="pre">expected_status</span></code> and <code class="docutils literal notranslate"><span class="pre">msg</span></code> parameters,
+read more about it in <cite>Status Should Be</cite> keyword documentation.
+In order to disable this implicit assert mechanism you can pass as <code class="docutils literal notranslate"><span class="pre">expected_status</span></code> the values <code class="docutils literal notranslate"><span class="pre">any</span></code> or
+<code class="docutils literal notranslate"><span class="pre">anything</span></code>.</p>
+<p>Other optional requests arguments can be passed using <code class="docutils literal notranslate"><span class="pre">**kwargs</span></code>
+see the <cite>GET</cite> keyword for the complete list.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.HTTP.HTTP.post_request">
+<code class="sig-name descname">post_request</code><span class="sig-paren">(</span><em class="sig-param">alias</em>, <em class="sig-param">uri</em>, <em class="sig-param">data=None</em>, <em class="sig-param">json=None</em>, <em class="sig-param">params=None</em>, <em class="sig-param">headers=None</em>, <em class="sig-param">files=None</em>, <em class="sig-param">allow_redirects=None</em>, <em class="sig-param">timeout=None</em><span class="sig-paren">)</span><a class="headerlink" href="#RPA.HTTP.HTTP.post_request" title="Permalink to this definition">¶</a></dt>
+<dd><p><em>DEPRECATED</em> Please use <cite>POST On Session</cite> instead.</p>
+<p>Send a POST request on the session object found using the
+given <cite>alias</cite></p>
+<p><code class="docutils literal notranslate"><span class="pre">alias</span></code> that will be used to identify the Session object in the cache</p>
+<p><code class="docutils literal notranslate"><span class="pre">uri</span></code> to send the POST request to</p>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">data</span></code> a dictionary of key-value pairs that will be urlencoded</dt><dd><p>and sent as POST data
+or binary data that is sent as the raw body content
+or passed as such for multipart form data if <code class="docutils literal notranslate"><span class="pre">files</span></code> is also defined
+or file descriptor retrieved by Get File For Streaming Upload</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">json</span></code> a value that will be json encoded</dt><dd><p>and sent as POST data if files or data is not specified</p>
+</dd>
+</dl>
+<p><code class="docutils literal notranslate"><span class="pre">params</span></code> url parameters to append to the uri</p>
+<p><code class="docutils literal notranslate"><span class="pre">headers</span></code> a dictionary of headers to use with the request</p>
+<p><code class="docutils literal notranslate"><span class="pre">files</span></code> a dictionary of file names containing file data to POST to the server</p>
+<p><code class="docutils literal notranslate"><span class="pre">allow_redirects</span></code> Boolean. Set to True if POST/PUT/DELETE redirect following is allowed.</p>
+<p><code class="docutils literal notranslate"><span class="pre">timeout</span></code> connection timeout</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.HTTP.HTTP.put_on_session">
+<code class="sig-name descname">put_on_session</code><span class="sig-paren">(</span><em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#RPA.HTTP.HTTP.put_on_session" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sends a PUT request on a previously created HTTP Session.</p>
+<p>Session will be identified using the <code class="docutils literal notranslate"><span class="pre">alias</span></code> name.
+The endpoint used to send the request is the <code class="docutils literal notranslate"><span class="pre">url</span></code> parameter, while its body
+can be passed using <code class="docutils literal notranslate"><span class="pre">data</span></code> or <code class="docutils literal notranslate"><span class="pre">json</span></code> parameters.</p>
+<p><code class="docutils literal notranslate"><span class="pre">data</span></code> can be a dictionary, list of tuples, bytes, or file-like object.
+If you want to pass a json body pass a dictionary as <code class="docutils literal notranslate"><span class="pre">json</span></code> parameter.</p>
+<p>By default this keyword fails if a status code with error values is returned in the response,
+this behavior can be modified using the <code class="docutils literal notranslate"><span class="pre">expected_status</span></code> and <code class="docutils literal notranslate"><span class="pre">msg</span></code> parameters,
+read more about it in <cite>Status Should Be</cite> keyword documentation.
+In order to disable this implicit assert mechanism you can pass as <code class="docutils literal notranslate"><span class="pre">expected_status</span></code> the values <code class="docutils literal notranslate"><span class="pre">any</span></code> or
+<code class="docutils literal notranslate"><span class="pre">anything</span></code>.</p>
+<p>Other optional requests arguments can be passed using <code class="docutils literal notranslate"><span class="pre">**kwargs</span></code>
+see the <cite>GET</cite> keyword for the complete list.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.HTTP.HTTP.put_request">
+<code class="sig-name descname">put_request</code><span class="sig-paren">(</span><em class="sig-param">alias</em>, <em class="sig-param">uri</em>, <em class="sig-param">data=None</em>, <em class="sig-param">json=None</em>, <em class="sig-param">params=None</em>, <em class="sig-param">files=None</em>, <em class="sig-param">headers=None</em>, <em class="sig-param">allow_redirects=None</em>, <em class="sig-param">timeout=None</em><span class="sig-paren">)</span><a class="headerlink" href="#RPA.HTTP.HTTP.put_request" title="Permalink to this definition">¶</a></dt>
+<dd><p><em>DEPRECATED</em> Please use <cite>PUT On Session</cite> instead.</p>
+<p>Send a PUT request on the session object found using the
+given <cite>alias</cite></p>
+<p><code class="docutils literal notranslate"><span class="pre">alias</span></code> that will be used to identify the Session object in the cache</p>
+<p><code class="docutils literal notranslate"><span class="pre">uri</span></code> to send the PUT request to</p>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">data</span></code> a dictionary of key-value pairs that will be urlencoded</dt><dd><p>and sent as PUT data
+or binary data that is sent as the raw body content
+or file descriptor retrieved by Get File For Streaming Upload</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">json</span></code> a value that will be json encoded</dt><dd><p>and sent as PUT data if data is not specified</p>
+</dd>
+</dl>
+<p><code class="docutils literal notranslate"><span class="pre">headers</span></code> a dictionary of headers to use with the request</p>
+<p><code class="docutils literal notranslate"><span class="pre">allow_redirects</span></code> Boolean. Set to True if POST/PUT/DELETE redirect following is allowed.</p>
+<p><code class="docutils literal notranslate"><span class="pre">params</span></code> url parameters to append to the uri</p>
+<p><code class="docutils literal notranslate"><span class="pre">timeout</span></code> connection timeout</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.HTTP.HTTP.request_should_be_successful">
+<code class="sig-name descname">request_should_be_successful</code><span class="sig-paren">(</span><em class="sig-param">response=None</em><span class="sig-paren">)</span><a class="headerlink" href="#RPA.HTTP.HTTP.request_should_be_successful" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fails if response status code is a client or server error (4xx, 5xx).</p>
+<p><code class="docutils literal notranslate"><span class="pre">response</span></code> is the output of other requests keywords like <cite>GET On Session</cite>.
+If omitted the last response will be used.</p>
+<p>In case of failure an HTTPError will be automatically raised.</p>
+<p>For a more versatile assert keyword see <cite>Status Should Be</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.HTTP.HTTP.session_exists">
+<code class="sig-name descname">session_exists</code><span class="sig-paren">(</span><em class="sig-param">alias</em><span class="sig-paren">)</span><a class="headerlink" href="#RPA.HTTP.HTTP.session_exists" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return True if the session has been already created</p>
+<p><code class="docutils literal notranslate"><span class="pre">alias</span></code> that has been used to identify the Session object in the cache</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.HTTP.HTTP.session_less_delete">
+<code class="sig-name descname">session_less_delete</code><span class="sig-paren">(</span><em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#RPA.HTTP.HTTP.session_less_delete" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sends a DELETE request.</p>
+<p>The endpoint used to send the request is the <code class="docutils literal notranslate"><span class="pre">url</span></code> parameter.</p>
+<p>By default this keyword fails if a status code with error values is returned in the response,
+this behavior can be modified using the <code class="docutils literal notranslate"><span class="pre">expected_status</span></code> and <code class="docutils literal notranslate"><span class="pre">msg</span></code> parameters,
+read more about it in <cite>Status Should Be</cite> keyword documentation.
+In order to disable this implicit assert mechanism you can pass as <code class="docutils literal notranslate"><span class="pre">expected_status</span></code> the values <code class="docutils literal notranslate"><span class="pre">any</span></code> or
+<code class="docutils literal notranslate"><span class="pre">anything</span></code>.</p>
+<p>Other optional requests arguments can be passed using <code class="docutils literal notranslate"><span class="pre">**kwargs</span></code>
+see the <cite>GET</cite> keyword for the complete list.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.HTTP.HTTP.session_less_get">
+<code class="sig-name descname">session_less_get</code><span class="sig-paren">(</span><em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#RPA.HTTP.HTTP.session_less_get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sends a GET request.</p>
+<p>The endpoint used to retrieve the resource is the <code class="docutils literal notranslate"><span class="pre">url</span></code>, while query
+string parameters can be passed as string, dictionary (or list of tuples or bytes)
+through the <code class="docutils literal notranslate"><span class="pre">params</span></code>.</p>
+<p>By default this keyword fails if a status code with error values is returned in the response,
+this behavior can be modified using the <code class="docutils literal notranslate"><span class="pre">expected_status</span></code> and <code class="docutils literal notranslate"><span class="pre">msg</span></code> parameters,
+read more about it in <cite>Status Should Be</cite> keyword documentation.
+In order to disable this implicit assert mechanism you can pass as <code class="docutils literal notranslate"><span class="pre">expected_status</span></code> the values <code class="docutils literal notranslate"><span class="pre">any</span></code> or
+<code class="docutils literal notranslate"><span class="pre">anything</span></code>.</p>
+<p>Other optional requests arguments can be passed using <code class="docutils literal notranslate"><span class="pre">**kwargs</span></code> here is a list:</p>
+<div class="line-block">
+<div class="line"><code class="docutils literal notranslate"><span class="pre">data</span></code>     | Dictionary, list of tuples, bytes, or file-like object to send in the body of the request. |</div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">json</span></code>     | A JSON serializable Python object to send in the body of the request. |</div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">headers</span></code>  | Dictionary of HTTP Headers to send with the request. |</div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">cookies</span></code>  | Dict or CookieJar object to send with the request. |</div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">files</span></code>    | Dictionary of file-like-objects (or <code class="docutils literal notranslate"><span class="pre">{'name':</span> <span class="pre">file-tuple}</span></code>) for multipart encoding upload. |</div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">file-tuple</span></code> | can be a 2-tuple <code class="docutils literal notranslate"><span class="pre">('filename',</span> <span class="pre">fileobj)</span></code>, 3-tuple <code class="docutils literal notranslate"><span class="pre">('filename',</span> <span class="pre">fileobj,</span> <span class="pre">'content_type')</span></code> or a 4-tuple <code class="docutils literal notranslate"><span class="pre">('filename',</span> <span class="pre">fileobj,</span> <span class="pre">'content_type',</span> <span class="pre">custom_headers)</span></code>, where <code class="docutils literal notranslate"><span class="pre">'content-type'</span></code> is a string defining the content type of the given file and <code class="docutils literal notranslate"><span class="pre">custom_headers</span></code> a dict-like object containing additional headers to add for the file. |</div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">auth</span></code> | Auth tuple to enable Basic/Digest/Custom HTTP Auth. |</div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">timeout</span></code> | How many seconds to wait for the server to send data before giving up, as a float, or a <code class="docutils literal notranslate"><span class="pre">(connect</span> <span class="pre">timeout,</span> <span class="pre">read</span> <span class="pre">timeout)</span></code> tuple. |</div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">allow_redirects</span></code> | Boolean. Enable/disable GET/OPTIONS/POST/PUT/PATCH/DELETE/HEAD redirection. Defaults to <code class="docutils literal notranslate"><span class="pre">True</span></code>. |</div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">proxies</span></code> | Dictionary mapping protocol or protocol and host to the URL of the proxy (e.g. {‘http’: ‘foo.bar:3128’, ‘http://host.name’: ‘foo.bar:4012’}) |</div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">verify</span></code>  | Either a boolean, in which case it controls whether we verify the server’s TLS certificate, or a string, in which case it must be a path to a CA bundle to use. Defaults to <code class="docutils literal notranslate"><span class="pre">True</span></code>. Warning: if a session has been created with <code class="docutils literal notranslate"><span class="pre">verify=False</span></code> any other requests will not verify the SSL certificate. |</div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">stream</span></code> | if <code class="docutils literal notranslate"><span class="pre">False</span></code>, the response content will be immediately downloaded. |</div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">cert</span></code> | if String, path to ssl client cert file (.pem). If Tuple, (‘cert’, ‘key’) pair. |</div>
+</div>
+<p>For more updated and complete information verify the official Requests api documentation:
+<a class="reference external" href="https://requests.readthedocs.io/en/latest/api/">https://requests.readthedocs.io/en/latest/api/</a></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.HTTP.HTTP.session_less_head">
+<code class="sig-name descname">session_less_head</code><span class="sig-paren">(</span><em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#RPA.HTTP.HTTP.session_less_head" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sends a HEAD request.</p>
+<p>The endpoint used to retrieve the HTTP headers is the <code class="docutils literal notranslate"><span class="pre">url</span></code>.</p>
+<p><code class="docutils literal notranslate"><span class="pre">allow_redirects</span></code> parameter is not provided, it will be set to <cite>False</cite> (as
+opposed to the default behavior).</p>
+<p>By default this keyword fails if a status code with error values is returned in the response,
+this behavior can be modified using the <code class="docutils literal notranslate"><span class="pre">expected_status</span></code> and <code class="docutils literal notranslate"><span class="pre">msg</span></code> parameters,
+read more about it in <cite>Status Should Be</cite> keyword documentation.
+In order to disable this implicit assert mechanism you can pass as <code class="docutils literal notranslate"><span class="pre">expected_status</span></code> the values <code class="docutils literal notranslate"><span class="pre">any</span></code> or
+<code class="docutils literal notranslate"><span class="pre">anything</span></code>.</p>
+<p>Other optional requests arguments can be passed using <code class="docutils literal notranslate"><span class="pre">**kwargs</span></code>
+see the <cite>GET</cite> keyword for the complete list.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.HTTP.HTTP.session_less_options">
+<code class="sig-name descname">session_less_options</code><span class="sig-paren">(</span><em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#RPA.HTTP.HTTP.session_less_options" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sends a OPTIONS request.</p>
+<p>The endpoint used to retrieve the resource is the <code class="docutils literal notranslate"><span class="pre">url</span></code>.</p>
+<p>By default this keyword fails if a status code with error values is returned in the response,
+this behavior can be modified using the <code class="docutils literal notranslate"><span class="pre">expected_status</span></code> and <code class="docutils literal notranslate"><span class="pre">msg</span></code> parameters,
+read more about it in <cite>Status Should Be</cite> keyword documentation.
+In order to disable this implicit assert mechanism you can pass as <code class="docutils literal notranslate"><span class="pre">expected_status</span></code> the values <code class="docutils literal notranslate"><span class="pre">any</span></code> or
+<code class="docutils literal notranslate"><span class="pre">anything</span></code>.</p>
+<p>Other optional requests arguments can be passed using <code class="docutils literal notranslate"><span class="pre">**kwargs</span></code>
+see the <cite>GET</cite> keyword for the complete list.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.HTTP.HTTP.session_less_patch">
+<code class="sig-name descname">session_less_patch</code><span class="sig-paren">(</span><em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#RPA.HTTP.HTTP.session_less_patch" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sends a PUT request.</p>
+<p>The endpoint used to send the request is the <code class="docutils literal notranslate"><span class="pre">url</span></code> parameter, while its body
+can be passed using <code class="docutils literal notranslate"><span class="pre">data</span></code> or <code class="docutils literal notranslate"><span class="pre">json</span></code> parameters.</p>
+<p><code class="docutils literal notranslate"><span class="pre">data</span></code> can be a dictionary, list of tuples, bytes, or file-like object.
+If you want to pass a json body pass a dictionary as <code class="docutils literal notranslate"><span class="pre">json</span></code> parameter.</p>
+<p>By default this keyword fails if a status code with error values is returned in the response,
+this behavior can be modified using the <code class="docutils literal notranslate"><span class="pre">expected_status</span></code> and <code class="docutils literal notranslate"><span class="pre">msg</span></code> parameters,
+read more about it in <cite>Status Should Be</cite> keyword documentation.
+In order to disable this implicit assert mechanism you can pass as <code class="docutils literal notranslate"><span class="pre">expected_status</span></code> the values <code class="docutils literal notranslate"><span class="pre">any</span></code> or
+<code class="docutils literal notranslate"><span class="pre">anything</span></code>.</p>
+<p>Other optional requests arguments can be passed using <code class="docutils literal notranslate"><span class="pre">**kwargs</span></code>
+see the <cite>GET</cite> keyword for the complete list.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.HTTP.HTTP.session_less_post">
+<code class="sig-name descname">session_less_post</code><span class="sig-paren">(</span><em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#RPA.HTTP.HTTP.session_less_post" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sends a POST request.</p>
+<p>The endpoint used to send the request is the <code class="docutils literal notranslate"><span class="pre">url</span></code> parameter, while its body
+can be passed using <code class="docutils literal notranslate"><span class="pre">data</span></code> or <code class="docutils literal notranslate"><span class="pre">json</span></code> parameters.</p>
+<p><code class="docutils literal notranslate"><span class="pre">data</span></code> can be a dictionary, list of tuples, bytes, or file-like object.
+If you want to pass a json body pass a dictionary as <code class="docutils literal notranslate"><span class="pre">json</span></code> parameter.</p>
+<p>By default this keyword fails if a status code with error values is returned in the response,
+this behavior can be modified using the <code class="docutils literal notranslate"><span class="pre">expected_status</span></code> and <code class="docutils literal notranslate"><span class="pre">msg</span></code> parameters,
+read more about it in <cite>Status Should Be</cite> keyword documentation.
+In order to disable this implicit assert mechanism you can pass as <code class="docutils literal notranslate"><span class="pre">expected_status</span></code> the values <code class="docutils literal notranslate"><span class="pre">any</span></code> or
+<code class="docutils literal notranslate"><span class="pre">anything</span></code>.</p>
+<p>Other optional requests arguments can be passed using <code class="docutils literal notranslate"><span class="pre">**kwargs</span></code>
+see the <cite>GET</cite> keyword for the complete list.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.HTTP.HTTP.session_less_put">
+<code class="sig-name descname">session_less_put</code><span class="sig-paren">(</span><em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#RPA.HTTP.HTTP.session_less_put" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sends a PUT request.</p>
+<p>The endpoint used to send the request is the <code class="docutils literal notranslate"><span class="pre">url</span></code> parameter, while its body
+can be passed using <code class="docutils literal notranslate"><span class="pre">data</span></code> or <code class="docutils literal notranslate"><span class="pre">json</span></code> parameters.</p>
+<p><code class="docutils literal notranslate"><span class="pre">data</span></code> can be a dictionary, list of tuples, bytes, or file-like object.
+If you want to pass a json body pass a dictionary as <code class="docutils literal notranslate"><span class="pre">json</span></code> parameter.</p>
+<p>By default this keyword fails if a status code with error values is returned in the response,
+this behavior can be modified using the <code class="docutils literal notranslate"><span class="pre">expected_status</span></code> and <code class="docutils literal notranslate"><span class="pre">msg</span></code> parameters,
+read more about it in <cite>Status Should Be</cite> keyword documentation.
+In order to disable this implicit assert mechanism you can pass as <code class="docutils literal notranslate"><span class="pre">expected_status</span></code> the values <code class="docutils literal notranslate"><span class="pre">any</span></code> or
+<code class="docutils literal notranslate"><span class="pre">anything</span></code>.</p>
+<p>Other optional requests arguments can be passed using <code class="docutils literal notranslate"><span class="pre">**kwargs</span></code>
+see the <cite>GET</cite> keyword for the complete list.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.HTTP.HTTP.status_should_be">
+<code class="sig-name descname">status_should_be</code><span class="sig-paren">(</span><em class="sig-param">expected_status</em>, <em class="sig-param">response=None</em>, <em class="sig-param">msg=None</em><span class="sig-paren">)</span><a class="headerlink" href="#RPA.HTTP.HTTP.status_should_be" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fails if response status code is different than the expected.</p>
+<p><code class="docutils literal notranslate"><span class="pre">expected_status</span></code> could be the code number as an integer or as string.
+But it could also be a named status code like ‘ok’, ‘created’, ‘accepted’ or
+‘bad request’, ‘not found’ etc.</p>
+<p><code class="docutils literal notranslate"><span class="pre">response</span></code> is the output of other requests keywords like <cite>GET</cite> or <cite>GET On Session</cite>.
+If omitted the last response will be used.</p>
+<p>In case of failure an HTTPError will be automatically raised.
+A custom failure message <code class="docutils literal notranslate"><span class="pre">msg</span></code> can be added like in built-in keywords.</p>
+<p>New requests keywords like <cite>GET</cite> or <cite>GET On Session</cite> (starting from 0.8 version) already have an implicit assert
+mechanism that, by default, verifies the response status code.
+<cite>Status Should Be</cite> keyword can be useful when you disable implicit assert using <code class="docutils literal notranslate"><span class="pre">expected_status=anything</span></code>.</p>
+<p>For example when you have a nested keyword that is used for both OK and ERROR responses:</p>
+<div class="line-block">
+<div class="line"><strong>* Test Cases *</strong></div>
+<div class="line"><br /></div>
+<div class="line">Test Get Request And Make Sure Is A 404 Response</div>
+<div class="line-block">
+<div class="line">${resp}=            GET Custom Keyword That Returns OK or ERROR Response  case=notfound</div>
+<div class="line">Status Should Be    404    ${resp}</div>
+<div class="line">Should Be Equal As Strings  NOT FOUND  ${resp.reason}</div>
+<div class="line"><br /></div>
+</div>
+<div class="line">Test Get Request And Make Sure Is OK</div>
+<div class="line-block">
+<div class="line">${resp}=            GET Custom Keyword That Returns OK or ERROR Response  case=pass</div>
+<div class="line">Status Should Be    200    ${resp}</div>
+<div class="line">Should Be Equal As Strings  OK  ${resp.reason}</div>
+<div class="line"><br /></div>
+</div>
+<div class="line"><strong>* Keywords *</strong></div>
+<div class="line"><br /></div>
+<div class="line">GET Custom Keyword That Returns OK or ERROR Response</div>
+<div class="line">[Arguments]  $case</div>
+<div class="line-block">
+<div class="line-block">
+<div class="line">[…]</div>
+</div>
+<div class="line">IF $case == notfound</div>
+<div class="line-block">
+<div class="line">$resp=     GET […] expected_status=Anything</div>
+<div class="line">[Return]   $resp</div>
+</div>
+<div class="line">ELSE</div>
+<div class="line-block">
+<div class="line">[…]</div>
+</div>
+</div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.HTTP.HTTP.to_json">
+<code class="sig-name descname">to_json</code><span class="sig-paren">(</span><em class="sig-param">content</em>, <em class="sig-param">pretty_print=False</em><span class="sig-paren">)</span><a class="headerlink" href="#RPA.HTTP.HTTP.to_json" title="Permalink to this definition">¶</a></dt>
+<dd><p><em>DEPRECATED</em> Please use ${resp.json()} instead. Have a look at the improved HTML output as pretty printing replacement.</p>
+<p>Convert a string to a JSON object</p>
+<p><code class="docutils literal notranslate"><span class="pre">content</span></code> String content to convert into JSON</p>
+<p><code class="docutils literal notranslate"><span class="pre">pretty_print</span></code> If defined, will output JSON is pretty print format</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.HTTP.HTTP.update_session">
+<code class="sig-name descname">update_session</code><span class="sig-paren">(</span><em class="sig-param">alias</em>, <em class="sig-param">headers=None</em>, <em class="sig-param">cookies=None</em><span class="sig-paren">)</span><a class="headerlink" href="#RPA.HTTP.HTTP.update_session" title="Permalink to this definition">¶</a></dt>
+<dd><p>Updates HTTP Session Headers and Cookies.</p>
+<p>Session will be identified using the <code class="docutils literal notranslate"><span class="pre">alias</span></code> name.
+Dictionary of <code class="docutils literal notranslate"><span class="pre">headers</span></code> and <code class="docutils literal notranslate"><span class="pre">cookies</span></code> to be updated and merged into session data.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+	<div id="cookieConsentContainer">
+  <div class="cookieDesc">
+    <p>
+      This website uses cookies to enhance the user experience.
+      By using the website you accept the use of cookies.
+      You can check our <a href="https://robocorp.com/privacy-policy">Privacy Policy</a> to learn more.
+    </p>
+  </div>
+  <div class="cookieButton">
+    <a onClick="cookieDismiss();">
+      I understand
+    </a>
+  </div>
+</div>
+	<div id="robocorpBanner">
+  <div id="bannerContent">
+    <div id="bannerDismiss">
+      <a onClick="bannerDismiss();">
+        <img src="/_static/icon_cross.svg"/>
+      </a>
+    </div>
+    <a href="https://robocorp.com">
+      <img id="bannerLogo" src="https://cdn.robocorp.com/brand/Logo/Negative logo transparent/Negative logo transparent.svg"/>
+    </a>
+    <span id="bannerText">
+      The automation stack for RPA Framework.
+    </span>
+    <a id="bannerButton" href="https://robocorp.com/get-started">
+      Get started <img src="/_static/icon_arrow.svg"/>
+    </a>
+  </div>
+</div>
+
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../images/index.html" class="btn btn-neutral float-right" title="Images" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="HTTP" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020 Robocorp Technologies, Inc.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,1870 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Release notes &mdash; RPA Framework  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/iframeResizer.min.js"></script>
+        <script src="_static/custom.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Contribution guide" href="contributing/guide.html" />
+    <link rel="prev" title="Python API" href="libraries/word_application/python.html" />
+	<!-- Cookie consent -->
+<link async rel="stylesheet" type="text/css" href="_static/cookie.css"/>
+<script async src="_static/cookie.js"></script>
+<!-- Robocorp banner -->
+<link async rel="stylesheet" type="text/css" href="_static/robocorp.css"/>
+<script async src="_static/robocorp.js"></script>
+<!--            -->
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-151433780-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-151433780-3');
+</script>
+<!--            -->
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> RPA Framework
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Libraries</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="libraries/archive/index.html">Archive</a></li>
+<li class="toctree-l1"><a class="reference internal" href="libraries/browser/index.html">Browser</a></li>
+<li class="toctree-l1"><a class="reference internal" href="libraries/browser_playwright/index.html">Browser.Playwright</a></li>
+<li class="toctree-l1"><a class="reference internal" href="libraries/browser_selenium/index.html">Browser.Selenium</a></li>
+<li class="toctree-l1"><a class="reference internal" href="libraries/cloud_aws/index.html">Cloud.AWS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="libraries/cloud_azure/index.html">Cloud.Azure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="libraries/cloud_google/index.html">Cloud.Google</a></li>
+<li class="toctree-l1"><a class="reference internal" href="libraries/crypto/index.html">Crypto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="libraries/database/index.html">Database</a></li>
+<li class="toctree-l1"><a class="reference internal" href="libraries/desktop/index.html">Desktop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="libraries/desktop_clipboard/index.html">Desktop.Clipboard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="libraries/desktop_operatingsystem/index.html">Desktop.OperatingSystem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="libraries/desktop_windows/index.html">Desktop.Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="libraries/dialogs/index.html">Dialogs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="libraries/email_exchange/index.html">Email.Exchange</a></li>
+<li class="toctree-l1"><a class="reference internal" href="libraries/email_imapsmtp/index.html">Email.ImapSmtp</a></li>
+<li class="toctree-l1"><a class="reference internal" href="libraries/excel_application/index.html">Excel.Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="libraries/excel_files/index.html">Excel.Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="libraries/filesystem/index.html">FileSystem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="libraries/ftp/index.html">FTP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="libraries/http/index.html">HTTP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="libraries/images/index.html">Images</a></li>
+<li class="toctree-l1"><a class="reference internal" href="libraries/javaaccessbridge/index.html">JavaAccessBridge</a></li>
+<li class="toctree-l1"><a class="reference internal" href="libraries/json/index.html">JSON</a></li>
+<li class="toctree-l1"><a class="reference internal" href="libraries/netsuite/index.html">Netsuite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="libraries/notifier/index.html">Notifier</a></li>
+<li class="toctree-l1"><a class="reference internal" href="libraries/outlook_application/index.html">Outlook.Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="libraries/pdf/index.html">PDF</a></li>
+<li class="toctree-l1"><a class="reference internal" href="libraries/robocorp_process/index.html">Robocorp.Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="libraries/robocorp_vault/index.html">Robocorp.Vault</a></li>
+<li class="toctree-l1"><a class="reference internal" href="libraries/robocorp_workitems/index.html">Robocorp.WorkItems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="libraries/robotloglistener/index.html">RobotLogListener</a></li>
+<li class="toctree-l1"><a class="reference internal" href="libraries/salesforce/index.html">Salesforce</a></li>
+<li class="toctree-l1"><a class="reference internal" href="libraries/sap/index.html">SAP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="libraries/tables/index.html">Tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="libraries/tasks/index.html">Tasks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="libraries/twitter/index.html">Twitter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="libraries/windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="libraries/word_application/index.html">Word.Application</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Project</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Release notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing/guide.html">Contribution guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing/conventions.html">Project conventions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing/todos.html">TODO</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">RPA Framework</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Release notes</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/releasenotes.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+	
+           <div itemprop="articleBody">
+            
+  <div class="section" id="release-notes">
+<h1>Release notes<a class="headerlink" href="#release-notes" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id1">
+<h2><a class="reference external" href="https://github.com/robocorp/rpaframework/projects/3#column-16713994">Upcoming release</a><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="id2">
+<h2><a class="reference external" href="https://pypi.org/project/rpaframework/#history">Released</a><a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="nov-2021">
+<h3>11.6.3 - 15 Nov 2021<a class="headerlink" href="#nov-2021" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>RPA.Email.ImapSmtp</strong>: Fix email fetch when uid is empty</p></li>
+</ul>
+</div>
+<div class="section" id="id3">
+<h3>11.6.2 - 13 Nov 2021<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>RPA.Email.ImapSmtp</strong>: Fix handling of application/octet-stream attachments</p></li>
+</ul>
+</div>
+<div class="section" id="id4">
+<h3>11.6.1 - 12 Nov 2021<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>RPA.PDF</strong>:</p>
+<ul>
+<li><p>Fix non empty or junk XML dumping on PDF parsing (<a class="reference external" href="https://github.com/robocorp/rpaframework/issues/287">#287</a>)</p></li>
+<li><p>Fixed by <code class="docutils literal notranslate"><span class="pre">rpaframework-pdf</span></code> <strong>0.10.0</strong> (included in this release)</p></li>
+</ul>
+</li>
+<li><p>Library <strong>RPA.Email.ImapSmtp</strong>:</p>
+<ul>
+<li><p>Fix sender name encoding when using <code class="docutils literal notranslate"><span class="pre">Send</span> <span class="pre">Message</span></code> keyword (<a class="reference external" href="https://github.com/robocorp/rpaframework/issues/279">#279</a>)</p></li>
+<li><p>Fix filename encoding when using <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">Attachment</span></code>/<code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">Attachments</span></code> keywords (<a class="reference external" href="https://github.com/robocorp/rpaframework/issues/290">#290</a>)</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="id5">
+<h3>11.6.0 - 4 Nov 2021<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>RPA.Robocorp.WorkItems</strong>: Keyword <code class="docutils literal notranslate"><span class="pre">Parse</span> <span class="pre">Work</span> <span class="pre">Item</span> <span class="pre">From</span> <span class="pre">Email</span></code> for
+retrieving the input item dictionary payload from the sent e-mail JSON body which
+triggered the process (<a class="reference external" href="https://github.com/robocorp/rpaframework/issues/275">#275</a>)</p></li>
+<li><p>Library <strong>RPA.Desktop.Windows</strong>: Fix how keyword <code class="docutils literal notranslate"><span class="pre">Screenshot</span></code> handles filename when
+saving</p></li>
+</ul>
+</div>
+<div class="section" id="id6">
+<h3>11.5.2<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>RPA.JavaAccessBridge</strong>: Raise the causing error (instead of just logging it)
+if initialization fails</p></li>
+</ul>
+</div>
+<div class="section" id="id7">
+<h3>11.5.1<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>RPA.Robocorp.WorkItems</strong>: Keyword <cite>For Each Input Work Item</cite> supports now
+human-friendly parameter names as <cite>items_limit</cite> and <cite>return_results</cite></p></li>
+</ul>
+</div>
+<div class="section" id="id8">
+<h3>11.5.0<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>RPA.Robocorp.WorkItems</strong>:</p>
+<ul>
+<li><p>Keyword <cite>For Each Input Work Item</cite> bugfixes and results collection switch
+(<a class="reference external" href="https://github.com/robocorp/rpaframework/issues/250">#250</a>)</p></li>
+<li><p>Keyword <cite>Release Input Work Item</cite> allows exception passing with type, code and
+name (<a class="reference external" href="https://github.com/robocorp/rpaframework/pull/256">#256</a>)</p></li>
+<li><p>Automatic API call retrying under Control Room for failed requests (<a class="reference external" href="https://github.com/robocorp/rpaframework/issues/252">#252</a>)</p></li>
+<li><p>Default input item during local dev, docs and cloud requests hotfixes (<a class="reference external" href="https://github.com/robocorp/rpaframework/pull/253">#253</a>)</p></li>
+</ul>
+</li>
+<li><p>Library <strong>RPA.Outlook.Application</strong>:</p>
+<ul>
+<li><p>Changes related to (<a class="reference external" href="https://github.com/robocorp/rpaframework/issues/248">#248</a>)</p></li>
+<li><p>Add new keyword <cite>Get Emails</cite></p></li>
+<li><p>Add new keyword <cite>Mark Emails As Read</cite></p></li>
+<li><p>Add new keyword <cite>Move Emails</cite></p></li>
+<li><p>Add new keyword <cite>Save Email Attachments</cite></p></li>
+<li><p>Renamed keyword <cite>Send Email</cite> (old keyword <cite>Send Message</cite> gives Deprecation warning)</p></li>
+<li><p>Renamed keyword <cite>Wait For Email</cite>  (old keyword <cite>Wait For Message</cite> gives Deprecation warning)</p></li>
+</ul>
+</li>
+<li><p>Add warning message if importing Windows platform dependtant library on non-Windows platform</p>
+<ul>
+<li><p><strong>RPA.Desktop.Windows</strong></p></li>
+<li><p><strong>RPA.Excel.Application</strong></p></li>
+<li><p><strong>RPA.Outlook.Application</strong></p></li>
+<li><p><strong>RPA.Word.Application</strong></p></li>
+</ul>
+</li>
+<li><p>Library <strong>RPA.Desktop.Windows</strong>: Add possibility to bypass initial element lookup when
+using <cite>Open Dialog</cite> or <cite>Connect By Handle</cite> keywords</p></li>
+<li><p>Library <strong>RPA.Email.ImapSmtp</strong>: Keyword <cite>List Messages</cite> bugfix</p></li>
+</ul>
+</div>
+<div class="section" id="id9">
+<h3>11.4.0<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>RPA.Robocorp.WorkItems</strong> support on iterating work items for both local
+development and in the cloud:</p>
+<ul>
+<li><p>Add keyword <cite>For Each Input Work Item</cite> for applying a keyword over all input work
+items (<a class="reference external" href="https://github.com/robocorp/rpaframework/pull/241">#241</a>)</p></li>
+<li><p>Add keywords <cite>Get Current Work Item</cite> and <cite>Release Input Work Item</cite> for releasing
+and setting the state of the currently processed input work item (<a class="reference external" href="https://github.com/robocorp/rpaframework/pull/245">#245</a>)</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="id10">
+<h3>11.3.0<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>RPA.Robocorp.Vault</strong>: Supports both .yaml/.json local vault secrets file formats (<a class="reference external" href="https://github.com/robocorp/rpaframework/issues/225">#225</a>)</p></li>
+<li><p>Library <strong>RPA.PDF</strong>: Add possibility to preserve whitespacing in PDF textboxes - <a class="reference external" href="https://github.com/robocorp/rpaframework/issues/235">#235</a></p></li>
+<li><p>Library <strong>RPA.Robocorp.WorkItems</strong>: New environment variables for work items I/O
+during local dev (“RPA_INPUT_WORKITEM_PATH”, “RPA_OUTPUT_WORKITEM_PATH” - <a class="reference external" href="https://github.com/robocorp/rpaframework/pull/234">#234</a>)</p></li>
+<li><p>Library <strong>RPA.Email.ImapSmtp</strong>:</p>
+<ul>
+<li><p>Fix <cite>Move Messages</cite> issue (<a class="reference external" href="https://github.com/robocorp/rpaframework/issues/237">#237</a>)</p></li>
+<li><p>Add keyword <cite>Move Messages By IDs</cite></p></li>
+<li><p>Fix boolean return values for keywords doing definite actions (like Mark As Read, Delete Messages..)</p></li>
+</ul>
+</li>
+<li><p>Library <strong>RPA.Email.Exchange</strong>: Update <cite>exchangelib</cite> dependency to 4.5.1 and pin <cite>tzlocal</cite> dependency to 2.1</p></li>
+</ul>
+</div>
+<div class="section" id="id11">
+<h3>11.2.1<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>RPA.Robocorp.WorkItems</strong>: Handle payloads with non-ascii characters</p></li>
+<li><p>Library <strong>RPA.Dialogs</strong>: Date ISO format for <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Date</span> <span class="pre">Input</span></code> keyword</p></li>
+<li><p>Library <strong>RPA.Desktop</strong>: Always write unicode with <code class="docutils literal notranslate"><span class="pre">Type</span> <span class="pre">text</span></code></p></li>
+</ul>
+</div>
+<div class="section" id="id12">
+<h3>11.2.0<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>RPA.Dialogs</strong>: <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Date</span> <span class="pre">Input</span></code> keyword</p></li>
+<li><p>New library <strong>RPA.Robocorp.Process</strong>: Library support for Control Room Process API</p></li>
+</ul>
+</div>
+<div class="section" id="id13">
+<h3>11.1.3<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>RPA.Salesforce</strong>:</p>
+<ul>
+<li><p>Fix <code class="docutils literal notranslate"><span class="pre">Salesforce</span> <span class="pre">Query</span></code> result being limited to 250 objects</p></li>
+<li><p>Add parameter to <code class="docutils literal notranslate"><span class="pre">Salesforce</span> <span class="pre">Query</span></code> to return result as <code class="docutils literal notranslate"><span class="pre">Table</span></code></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="id14">
+<h3>11.1.2<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>RPA.Email.ImapSmtp</strong>:</p>
+<ul>
+<li><p>Remove newline and carriage return chars from attachment filenames</p></li>
+<li><p>Fix problem with saving attachments which do not have payload</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="id15">
+<h3>11.1.1<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>RPA.Robocorp.WorkItems</strong>: Ensure file-based database has at least one item</p></li>
+<li><p>Library <strong>RPA.Tables</strong>: Fix reversed sort ordering</p></li>
+<li><p>Library <strong>RPA.Windows</strong>: Fix internal argument for <code class="docutils literal notranslate"><span class="pre">Screenshot</span></code> keyword</p></li>
+<li><p>Library <strong>RPA.JSON</strong>: Fix docstring examples</p></li>
+</ul>
+</div>
+<div class="section" id="id16">
+<h3>11.1.0<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>RPA.Email.ImapSmtp</strong>:</p>
+<ul>
+<li><p>Add support for IMAP literal search</p></li>
+<li><p>Add support for Gmail advanced search</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="id17">
+<h3>11.0.0<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Terminology fixes for Robocorp Control Room</p></li>
+<li><p>Renamed library <strong>RPA.Robocloud.Items</strong> to <strong>RPA.Robocorp.WorkItems</strong>:</p>
+<ul>
+<li><p>Previous import works as before, with deprecation warning</p></li>
+<li><p>Removed keywords <code class="docutils literal notranslate"><span class="pre">Load</span> <span class="pre">work</span> <span class="pre">item</span></code> and <code class="docutils literal notranslate"><span class="pre">Load</span> <span class="pre">work</span> <span class="pre">item</span> <span class="pre">from</span> <span class="pre">environment</span></code></p></li>
+<li><p>Added keywords <code class="docutils literal notranslate"><span class="pre">Get</span> <span class="pre">input</span> <span class="pre">work</span> <span class="pre">item</span></code> and <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">output</span> <span class="pre">work</span> <span class="pre">item</span></code></p></li>
+<li><p>Added support for variables and home directory in local database path</p></li>
+<li><p>Changed local work items format</p></li>
+</ul>
+</li>
+<li><p>Renamed library <strong>RPA.Robocloud.Secrets</strong> to <strong>RPA.Robocorp.Vault</strong>:</p>
+<ul>
+<li><p>Previous import works as before, with deprecation warning</p></li>
+<li><p>Added support for variables and home directory in local vault path</p></li>
+</ul>
+</li>
+<li><p>Library <strong>RPA.Email.ImapSmtp</strong>:</p>
+<ul>
+<li><p>Add <cite>uid</cite> into email dictionary</p></li>
+<li><p>Fix email body decoding</p></li>
+<li><p>Fix folder list problem when requesting non-existing folder</p></li>
+</ul>
+</li>
+<li><p>Library <strong>RPA.PDF</strong>:</p>
+<ul>
+<li><p>Handle missing document information</p></li>
+<li><p>Always create output directory when writing to disk</p></li>
+</ul>
+</li>
+<li><p>Library <strong>RPA.Windows</strong>: Fix exception from empty parent attribute</p></li>
+<li><p>Library <strong>RPA.Images</strong>:</p>
+<ul>
+<li><p>Deprecate screenshot keywords, use <code class="docutils literal notranslate"><span class="pre">rpaframework-recognition</span></code> for template matching</p></li>
+<li><p>Use the library <strong>RPA.Desktop</strong> for image-based automation going forward</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="id18">
+<h3>10.9.3<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>RPA.Excel.Files</strong>:</p>
+<ul>
+<li><p>Return empty list when reading empty worksheet (<a class="reference external" href="https://github.com/robocorp/rpaframework/issues/203">#203</a>)</p></li>
+<li><p>Correctly handle header names with non-string values</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="id19">
+<h3>10.9.2<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>RPA.Email.ImapSmtp</strong>:</p>
+<ul>
+<li><p>Fix <code class="docutils literal notranslate"><span class="pre">List</span> <span class="pre">Messages</span></code> error not returning matching emails</p></li>
+<li><p>Fix marking emails as SEEN when using <code class="docutils literal notranslate"><span class="pre">List</span> <span class="pre">Messages</span></code> or <code class="docutils literal notranslate"><span class="pre">Wait</span> <span class="pre">For</span> <span class="pre">Message</span></code></p></li>
+<li><p>Add <code class="docutils literal notranslate"><span class="pre">encoding</span></code> library initialization parameter (default is <code class="docutils literal notranslate"><span class="pre">utf-8</span></code> as it used to be)</p></li>
+<li><p>Add <code class="docutils literal notranslate"><span class="pre">readonly</span></code> parameter to keywords <code class="docutils literal notranslate"><span class="pre">List</span> <span class="pre">Messages</span></code> (True), <code class="docutils literal notranslate"><span class="pre">Wait</span> <span class="pre">For</span> <span class="pre">Message</span></code> (True) and <code class="docutils literal notranslate"><span class="pre">Select</span> <span class="pre">Folder</span></code> (False).
+Default values are in the parenthesis.</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="id20">
+<h3>10.9.0<a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>RPA.Desktop.Windows</strong>: Add COMError protection to keyword <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">From</span> <span class="pre">Search</span></code></p></li>
+<li><p>Library <strong>RPA.Email.ImapSmtp</strong>: Fix possible <cite>None</cite> error when reading email body</p></li>
+<li><p>Library <strong>RPA.Database</strong>: Fix typo in ibm_db connection</p></li>
+<li><p>Library <strong>RPA.JavaAccessBridge</strong>:</p>
+<ul>
+<li><p>Add new library init parameters: <code class="docutils literal notranslate"><span class="pre">ignore_callbacks</span></code> and <code class="docutils literal notranslate"><span class="pre">access_bridge_path</span></code></p></li>
+<li><p>Bump java-access-bridge-wrapper version to 0.7.4</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="id21">
+<h3>10.8.0<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>RPA.HTTP</strong>:</p>
+<ul>
+<li><p>Fix downloading of big files</p></li>
+<li><p>Bump robotframework-requests version to 0.9.1</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="id22">
+<h3>10.7.1<a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Bump robotframework-pythonlibcore version to 3.0.0</p></li>
+</ul>
+</div>
+<div class="section" id="id23">
+<h3>10.6.0<a class="headerlink" href="#id23" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>RPA.Email.Exchange</strong>: Add keyword <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">Message</span></code> to save message in EML format</p></li>
+</ul>
+</div>
+<div class="section" id="id24">
+<h3>10.5.0<a class="headerlink" href="#id24" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>RPA.JavaAccessBridge</strong>: Bump <code class="docutils literal notranslate"><span class="pre">java-access-bridge-wrapper</span></code> to latest version</p></li>
+<li><p>Library <strong>RPA.Database</strong>: Add parameter <code class="docutils literal notranslate"><span class="pre">autocommit</span></code> to <code class="docutils literal notranslate"><span class="pre">connect_to_database</span></code> keyword (now only used with pymssql module)</p></li>
+<li><p>Library <strong>RPA.Email.Exchange</strong>: Fix <code class="docutils literal notranslate"><span class="pre">List</span> <span class="pre">Messages</span></code> when <code class="docutils literal notranslate"><span class="pre">received_by</span></code> is missing from the email</p></li>
+</ul>
+</div>
+<div class="section" id="id25">
+<h3>10.4.0<a class="headerlink" href="#id25" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>New experimental library <strong>RPA.JavaAccessBridge</strong></p></li>
+</ul>
+<p>Library requirements:</p>
+<ul class="simple">
+<li><p>Windows only</p></li>
+<li><p>Java Access Bridge is enabled</p></li>
+<li><p>Environment variable pointing to the Access Bridge DLL file is set</p></li>
+</ul>
+<p>See more details in library documentation.</p>
+<p>Feedback is highly appreciated via Slack or Github issues!</p>
+<ul class="simple">
+<li><p>Library <strong>RPA.Email.ImapSmtp</strong>: Allow sending message with empty account and password</p></li>
+</ul>
+</div>
+<div class="section" id="id26">
+<h3>10.3.0<a class="headerlink" href="#id26" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>RPA.Database</strong>: Return rows for <code class="docutils literal notranslate"><span class="pre">SHOW</span></code> and <code class="docutils literal notranslate"><span class="pre">EXPLAIN</span></code> statements</p></li>
+<li><p>Library <strong>RPA.Desktop.Windows</strong>: Add <code class="docutils literal notranslate"><span class="pre">parent</span></code> as possible locator</p></li>
+</ul>
+</div>
+<div class="section" id="id27">
+<h3>10.2.0<a class="headerlink" href="#id27" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>RPA.Excel.Application</strong>:</p>
+<ul>
+<li><p>Add keyword <code class="docutils literal notranslate"><span class="pre">Export</span> <span class="pre">As</span> <span class="pre">PDF</span></code></p></li>
+<li><p>Add automatic document and application closing to prevent file being locked</p></li>
+</ul>
+</li>
+<li><p>Library <strong>RPA.FTP</strong>: Add keyword parameters to support FTP over TLS/SSL (FTPS)</p></li>
+<li><p>Library <strong>RPA.Desktop.Windows</strong>: Add point of <code class="docutils literal notranslate"><span class="pre">origin</span></code> parameter to <code class="docutils literal notranslate"><span class="pre">Drag</span> <span class="pre">and</span> <span class="pre">Drop</span></code></p></li>
+</ul>
+</div>
+<div class="section" id="rpaframework-google-0-2-3">
+<h3>rpaframework-google: 0.2.3<a class="headerlink" href="#rpaframework-google-0-2-3" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li><p>Fix authentication issue when using Robocorp Vault</p></li>
+<li><p>Fix keyword <code class="docutils literal notranslate"><span class="pre">Synthesize</span> <span class="pre">Speech</span></code></p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="id28">
+<h3>10.1.0<a class="headerlink" href="#id28" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>RPA.Excel.Files</strong>:</p>
+<ul>
+<li><p>Add keyword <code class="docutils literal notranslate"><span class="pre">Set</span> <span class="pre">cell</span> <span class="pre">format</span></code> for adjusting cell number formatting</p></li>
+<li><p>Add new keyword aliases <code class="docutils literal notranslate"><span class="pre">Get</span> <span class="pre">cell</span> <span class="pre">value</span></code> and <code class="docutils literal notranslate"><span class="pre">Set</span> <span class="pre">cell</span> <span class="pre">value</span></code></p></li>
+<li><p>Improve keyword documentation</p></li>
+</ul>
+</li>
+<li><p>Library <strong>RPA.Excel.Application</strong>: Add option to save in legacy formats</p></li>
+<li><p>Library <strong>RPA.Desktop</strong>: Fix issues with <code class="docutils literal notranslate"><span class="pre">Press</span> <span class="pre">keys</span></code> on Windows</p></li>
+</ul>
+</div>
+<div class="section" id="id29">
+<h3>10.0.7<a class="headerlink" href="#id29" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>RPA.Dialogs</strong>: Print full traceback from errors when opening dialog</p></li>
+<li><p>Update optional <code class="docutils literal notranslate"><span class="pre">numpy</span></code> and <code class="docutils literal notranslate"><span class="pre">opencv</span></code> dependencies</p></li>
+</ul>
+</div>
+<div class="section" id="id30">
+<h3>10.0.6<a class="headerlink" href="#id30" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>RPA.Dialogs</strong>:</p>
+<ul>
+<li><p>Add unique name and icon for dialog window</p></li>
+<li><p>Fix MacOS keyboard focus and dock icon issues</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="id31">
+<h3>10.0.5<a class="headerlink" href="#id31" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Bump PyObjC versions from 6.x to 7.x,
+to fix possible API version errors with MacOS</p></li>
+</ul>
+</div>
+<div class="section" id="id32">
+<h3>10.0.4<a class="headerlink" href="#id32" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>RPA.Dialogs</strong>:</p>
+<ul>
+<li><p>Fix automatic height calculation on Windows</p></li>
+<li><p>Fix element clearing if dialog throws exception</p></li>
+<li><p>Fix errors in keyword examples</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="id33">
+<h3>10.0.3<a class="headerlink" href="#id33" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Updated <code class="docutils literal notranslate"><span class="pre">rpaframework-pdf</span></code> dependency</p></li>
+</ul>
+</div>
+<div class="section" id="id34">
+<h3>10.0.2<a class="headerlink" href="#id34" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Fix <code class="docutils literal notranslate"><span class="pre">use-robocorp-vault</span></code> script error when creating <code class="docutils literal notranslate"><span class="pre">devdata/env.json</span></code> file</p></li>
+</ul>
+</div>
+<div class="section" id="id35">
+<h3>10.0.1<a class="headerlink" href="#id35" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Fix <code class="docutils literal notranslate"><span class="pre">TypeError</span></code> errors when creating Tables inside Robocorp Lab</p></li>
+</ul>
+</div>
+<div class="section" id="id36">
+<h3>10.0.0<a class="headerlink" href="#id36" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>RPA.Cloud.Google</strong>:</p>
+<ul>
+<li><p>Available now as <code class="docutils literal notranslate"><span class="pre">rpaframework-google</span></code> package instead of rpaframework extra</p></li>
+<li><p>Added basic support for <code class="docutils literal notranslate"><span class="pre">Gmail</span> <span class="pre">API</span></code></p></li>
+<li><p>Added keyword tags to identify keywords by service in the documentation</p></li>
+<li><p>Fix regression bug with Sheets keyword <code class="docutils literal notranslate"><span class="pre">Insert</span> <span class="pre">Values</span></code></p></li>
+</ul>
+</li>
+<li><p>Library <strong>RPA.Dialogs</strong>:</p>
+<ul>
+<li><p>Open dialogs as native OS windows instead of new browser instances</p></li>
+<li><p>Renamed multiple keywords and arguments, added type hints for all arguments</p></li>
+<li><p>Visual upgrade to all components</p></li>
+<li><p>Available separately as <code class="docutils literal notranslate"><span class="pre">rpaframework-dialogs</span></code> package, but still part of main release</p></li>
+</ul>
+</li>
+<li><p>Library <strong>RPA.Tables</strong>:</p>
+<ul>
+<li><p>Removed support for named rows, which caused confusion and had several shortcomings</p></li>
+<li><p>Added automatic argument conversion for all keywords</p></li>
+<li><p>Added examples for all keywords</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="id37">
+<h3>9.6.0<a class="headerlink" href="#id37" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>RPA.Email.ImapSmtp</strong>:</p>
+<ul>
+<li><p>Return file paths of saved attachments</p></li>
+<li><p>Fix problem with non-ASCII attachment filenames</p></li>
+</ul>
+</li>
+<li><p>Library <strong>RPA.FileSystem</strong>: Fix default argument handling (<a class="reference external" href="https://github.com/robocorp/rpaframework/issues/170">#170</a>)</p></li>
+<li><p>Library <strong>RPA.Word.Application</strong>: Add option to control opening documents in ReadOnly mode (<a class="reference external" href="https://github.com/robocorp/rpaframework/issues/171">#171</a>)</p></li>
+</ul>
+</div>
+<div class="section" id="id38">
+<h3>9.5.0<a class="headerlink" href="#id38" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>RPA.Tables</strong>:</p>
+<ul>
+<li><p>Add <code class="docutils literal notranslate"><span class="pre">encoding</span></code> option for CSV reading and writing</p></li>
+<li><p>Add <code class="docutils literal notranslate"><span class="pre">not</span> <span class="pre">contains</span></code> and <code class="docutils literal notranslate"><span class="pre">not</span> <span class="pre">in</span></code> operators for filtering</p></li>
+</ul>
+</li>
+<li><p>Library <strong>RPA.JSON</strong>: Add indent option to <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">JSON</span> <span class="pre">To</span> <span class="pre">File</span></code></p></li>
+<li><p>Library <strong>RPA.Excel.Files</strong>: Add keyword <code class="docutils literal notranslate"><span class="pre">Get</span> <span class="pre">worksheet</span> <span class="pre">value</span></code></p></li>
+<li><p>Library <strong>RPA.HTTP</strong>: Allow string as <code class="docutils literal notranslate"><span class="pre">verify</span></code> parameter to give path to CA_BUNDLE</p></li>
+</ul>
+</div>
+<div class="section" id="id39">
+<h3>9.4.0<a class="headerlink" href="#id39" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>RPA.PDF</strong>: Add <code class="docutils literal notranslate"><span class="pre">Set</span> <span class="pre">Convert</span> <span class="pre">Settings</span></code> keyword to adjust document analysis settings from default values</p></li>
+</ul>
+</div>
+<div class="section" id="id40">
+<h3>9.3.4<a class="headerlink" href="#id40" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>RPA.PDF</strong>: Add orientation, rotate and format image properties for <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Files</span> <span class="pre">To</span> <span class="pre">PDF</span></code></p></li>
+<li><p>Library <strong>RPA.Cloud.Google</strong>: Fix bug in create file properties and set initial mimetype correctly</p></li>
+</ul>
+</div>
+<div class="section" id="id41">
+<h3>9.3.3<a class="headerlink" href="#id41" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>RPA.Cloud.Google</strong>: Fix mimetype error with <code class="docutils literal notranslate"><span class="pre">Drive</span> <span class="pre">Upload</span> <span class="pre">File</span></code></p></li>
+</ul>
+</div>
+<div class="section" id="id42">
+<h3>9.3.2<a class="headerlink" href="#id42" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>RPA.Email.Exchange</strong>: Fix <code class="docutils literal notranslate"><span class="pre">Empty</span> <span class="pre">Folder</span></code> keyword</p></li>
+</ul>
+</div>
+<div class="section" id="id43">
+<h3>9.3.1<a class="headerlink" href="#id43" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>RPA.Cloud.Google</strong>: Add missing service account support for <code class="docutils literal notranslate"><span class="pre">Drive</span></code> and <code class="docutils literal notranslate"><span class="pre">Apps</span> <span class="pre">Script</span></code></p></li>
+</ul>
+</div>
+<div class="section" id="id44">
+<h3>9.3.0<a class="headerlink" href="#id44" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>RPA.PDF</strong>:</p>
+<ul>
+<li><p>Add keywords <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">Figure</span> <span class="pre">As</span> <span class="pre">Image</span></code> and <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">Figures</span> <span class="pre">As</span> <span class="pre">Images</span></code> to save PDF Figure objects</p></li>
+<li><p>Add keyword <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Files</span> <span class="pre">To</span> <span class="pre">PDF</span></code> to combine images and/or a PDFs (or pages from PDF) to new PDF</p></li>
+<li><p>Improved performance by setting pdfminer log level to INFO</p></li>
+</ul>
+</li>
+<li><p>Library <strong>RPA.Dialogs</strong>:</p>
+<ul>
+<li><p>Add new keyword <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Password</span> <span class="pre">Input</span></code>, see (<a class="reference external" href="https://github.com/robocorp/rpaframework/pull/161">#161</a>)</p></li>
+<li><p>Logging from keyword <code class="docutils literal notranslate"><span class="pre">Request</span> <span class="pre">Response</span></code> is now suppressed in Robot Framework logs</p></li>
+</ul>
+</li>
+</ul>
+<p>Thank you <a class="reference external" href="https://github.com/antusystem">https://github.com/antusystem</a> for submitting the pull request!</p>
+</div>
+<div class="section" id="id45">
+<h3>9.2.1<a class="headerlink" href="#id45" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li><p>Library <strong>Email.ImapSmtp</strong>: Fix issue with saving attachments</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="id46">
+<h3>9.2.0<a class="headerlink" href="#id46" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li><p>Add new script <strong>use-robocorp-vault</strong>, which helps to setup local development run to use Robocorp Vault</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="id47">
+<h3>9.1.0<a class="headerlink" href="#id47" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>RPA.PDF</strong>:</p>
+<ul>
+<li><p>Restore path create feature for keyword <code class="docutils literal notranslate"><span class="pre">HTML</span> <span class="pre">To</span> <span class="pre">PDF</span></code></p></li>
+<li><p>Fix keyword annotation of <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">PDF</span></code>, which caused unavailability of the keyword</p></li>
+<li><p>Update changes to this library in release notes of  <code class="docutils literal notranslate"><span class="pre">8.0.0</span></code></p></li>
+<li><p>Known issue about viewing PDF with form checkbox fields, see (<a class="reference external" href="https://github.com/robocorp/rpaframework/issues/156">#156</a>)</p></li>
+</ul>
+</li>
+<li><p>Library <strong>RPA.Cloud.Google</strong>:</p>
+<ul>
+<li><p>Add Sheets keyword <code class="docutils literal notranslate"><span class="pre">Update</span> <span class="pre">Values</span></code></p></li>
+<li><p>Add Sheets keyword <code class="docutils literal notranslate"><span class="pre">Copy</span> <span class="pre">Sheet</span></code></p></li>
+<li><p>Return responses from all Sheets keywords</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="id48">
+<h3>9.0.0<a class="headerlink" href="#id48" title="Permalink to this headline">¶</a></h3>
+<p>Update to <strong>Robot Framework 4.0</strong>.</p>
+<p>Feature highlights:</p>
+<ul class="simple">
+<li><p>Native IF/ELSE syntax</p></li>
+<li><p>Ability to skip tasks dynamically</p></li>
+<li><p>Argument auto-conversion improvements</p></li>
+<li><p>Documentation generation improvements</p></li>
+<li><p>Removal of task criticality</p></li>
+</ul>
+<p>To see the full list of changes see
+<a class="reference external" href="https://github.com/robotframework/robotframework/blob/master/doc/releasenotes/rf-4.0.rst">the official release notes</a>.</p>
+</div>
+<div class="section" id="id49">
+<h3>8.2.0<a class="headerlink" href="#id49" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>RPA.Robocloud.Secrets</strong>:</p>
+<ul>
+<li><p>Add keyword <code class="docutils literal notranslate"><span class="pre">Set</span> <span class="pre">Secret</span></code> for updating stored secrets</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="id50">
+<h3>8.1.0<a class="headerlink" href="#id50" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>RPA.Email.Exchange</strong>:</p>
+<ul>
+<li><p>Add keyword <code class="docutils literal notranslate"><span class="pre">List</span> <span class="pre">Unread</span> <span class="pre">Messages</span></code></p></li>
+<li><p>Add keyword <code class="docutils literal notranslate"><span class="pre">Move</span> <span class="pre">Message</span></code></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="id51">
+<h3>8.0.1<a class="headerlink" href="#id51" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>RPA.Browser.Selenium</strong>: Fix webdriver creation on Windows</p></li>
+</ul>
+</div>
+<div class="section" id="id52">
+<h3>8.0.0<a class="headerlink" href="#id52" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>RPA.Browser.Selenium</strong>:</p>
+<ul>
+<li><p>Keyword <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">Available</span> <span class="pre">Browser</span></code> has the default option ‘AUTO’ for
+arguments <code class="docutils literal notranslate"><span class="pre">headless</span></code> and <code class="docutils literal notranslate"><span class="pre">download</span></code>. See keyword documentation
+for details.</p></li>
+<li><p>Webdrivers for Chrome/Chromium and Firefox are automatically matched
+to the currently installed browser version.</p></li>
+<li><p>Webdrivers which are still running on Python process exit are closed
+automatically to prevent hanging subprocesses. (<a class="reference external" href="https://github.com/robocorp/rpaframework/issues/94">#94</a>)</p></li>
+<li><p>Webdrivers are stored in the user’s home folder, to speed
+up browser start-up times between reboots.</p></li>
+</ul>
+</li>
+<li><p>Library <strong>RPA.PDF</strong>:</p>
+<ul>
+<li><p>Refactor library into a separate package. (<a class="reference external" href="https://github.com/robocorp/rpaframework/issues/97">#97</a>)</p></li>
+<li><p>Rename keyword <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Image</span> <span class="pre">to</span> <span class="pre">PDF</span></code> to <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Watermark</span> <span class="pre">Image</span> <span class="pre">to</span> <span class="pre">PDF</span></code>.</p></li>
+<li><p>Rename <code class="docutils literal notranslate"><span class="pre">Get</span> <span class="pre">Value</span> <span class="pre">From</span> <span class="pre">Anchor</span></code> to <code class="docutils literal notranslate"><span class="pre">Find</span> <span class="pre">Text</span></code>.</p></li>
+<li><p>Rename <code class="docutils literal notranslate"><span class="pre">Page</span> <span class="pre">Rotate</span></code> to <code class="docutils literal notranslate"><span class="pre">Rotate</span> <span class="pre">Page</span></code>.</p></li>
+<li><p>Rename <code class="docutils literal notranslate"><span class="pre">PDF</span> <span class="pre">Decrypt</span></code> to <code class="docutils literal notranslate"><span class="pre">Decrypt</span> <span class="pre">PDF</span></code>.</p></li>
+<li><p>Rename <code class="docutils literal notranslate"><span class="pre">PDF</span> <span class="pre">Encrypt</span></code> to <code class="docutils literal notranslate"><span class="pre">Encrypt</span> <span class="pre">PDF</span></code>.</p></li>
+<li><p>Rename <code class="docutils literal notranslate"><span class="pre">Update</span> <span class="pre">Field</span> <span class="pre">Values</span></code> to <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">Field</span> <span class="pre">Values</span></code>.</p></li>
+<li><p>Rename <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">PDF</span> <span class="pre">Document</span></code> to <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">PDF</span></code>.</p></li>
+<li><p>Rename <code class="docutils literal notranslate"><span class="pre">Close</span> <span class="pre">PDF</span> <span class="pre">Document</span></code> to <code class="docutils literal notranslate"><span class="pre">Close</span> <span class="pre">PDF</span></code>.</p></li>
+<li><p>Unify keyword signatures, now keywords can be given an input and output paths.
+If no input path given, the library assumes a PDF is already opened by some
+other keyword. If no output path given, the library will output the file
+to <code class="docutils literal notranslate"><span class="pre">output/output.pdf</span></code>.</p></li>
+</ul>
+</li>
+<li><p>Library <strong>RPA.Desktop.Windows</strong>:</p>
+<ul>
+<li><p>Keyword <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">File</span></code> return type changed from boolean to integer,
+to indicate the opened application ID</p></li>
+<li><p>Add <code class="docutils literal notranslate"><span class="pre">object</span></code> key into <code class="docutils literal notranslate"><span class="pre">Get</span> <span class="pre">Window</span> <span class="pre">List</span></code> return data (allows advanced usage)</p></li>
+<li><p>Change how field is emptied with <code class="docutils literal notranslate"><span class="pre">Type</span> <span class="pre">Into</span></code> parameter <code class="docutils literal notranslate"><span class="pre">empty_field=True</span></code></p></li>
+</ul>
+</li>
+<li><p>Library <strong>RPA.Tables</strong>:</p>
+<ul>
+<li><p>Add option to define column name for unknown CSV fields,
+and warn about header and data mismatch</p></li>
+<li><p>Correctly handle source data with <code class="docutils literal notranslate"><span class="pre">NoneType</span></code> columns</p></li>
+</ul>
+</li>
+<li><p>Library <strong>RPA.Word.Application</strong>: Fix saving with Office 2007 and older (<a class="reference external" href="https://github.com/robocorp/rpaframework/issues/146">#146</a>)</p></li>
+<li><p>Library <strong>RPA.Cloud.AWS</strong>:</p>
+<ul>
+<li><p>Add keyword <code class="docutils literal notranslate"><span class="pre">Convert</span> <span class="pre">Textract</span> <span class="pre">Response</span> <span class="pre">To</span> <span class="pre">Model</span></code></p></li>
+<li><p>Add <code class="docutils literal notranslate"><span class="pre">model</span></code> parameter to Keyword <code class="docutils literal notranslate"><span class="pre">Analyze</span> <span class="pre">Document</span></code> for getting modeled response object</p></li>
+</ul>
+</li>
+<li><p>Library <strong>RPA.Email.ImapSmtp</strong>: Set attachment header correctly (<a class="reference external" href="https://github.com/robocorp/rpaframework/issues/148">#148</a>)</p></li>
+</ul>
+</div>
+<div class="section" id="id53">
+<h3>7.6.0<a class="headerlink" href="#id53" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>RPA.Outlook.Application</strong>: Fix <code class="docutils literal notranslate"><span class="pre">ActiveDocument</span></code> bug when closing Outlook</p></li>
+<li><p>Library <strong>RPA.Email.ImapSmtp</strong>: Convert non-literal values in <code class="docutils literal notranslate"><span class="pre">List</span> <span class="pre">Messages</span></code> response to strings</p></li>
+<li><p>Library <strong>RPA.Desktop.Windows</strong>: Add keyword <code class="docutils literal notranslate"><span class="pre">Set</span> <span class="pre">Automation</span> <span class="pre">Speed</span></code></p></li>
+</ul>
+</div>
+<div class="section" id="id54">
+<h3>7.5.0<a class="headerlink" href="#id54" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>RPA.Email.Exchange</strong>:</p>
+<ul>
+<li><p>Fix sub folder bug with <code class="docutils literal notranslate"><span class="pre">Move</span> <span class="pre">Messages</span></code></p></li>
+<li><p>Add keyword <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">Attachments</span></code></p></li>
+<li><p>Add <code class="docutils literal notranslate"><span class="pre">criterion</span></code> parameter to <code class="docutils literal notranslate"><span class="pre">List</span> <span class="pre">Messages</span></code> for filtering</p></li>
+<li><p>Add <code class="docutils literal notranslate"><span class="pre">save_dir</span></code> parameter to <code class="docutils literal notranslate"><span class="pre">List</span> <span class="pre">Messages</span></code> for saving attachments</p></li>
+<li><p>Add more details into returned messages</p></li>
+</ul>
+</li>
+<li><p>Library <strong>RPA.Database</strong>:</p>
+<ul>
+<li><p>Fix bug with <code class="docutils literal notranslate"><span class="pre">Call</span> <span class="pre">Stored</span> <span class="pre">Procedure</span></code></p></li>
+<li><p>Hide details of <code class="docutils literal notranslate"><span class="pre">Connect</span> <span class="pre">To</span> <span class="pre">Database</span></code> from Robot Framework logs</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="id55">
+<h3>7.4.2<a class="headerlink" href="#id55" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>RPA.Email.ImapSmtp</strong>: Fix errors in server folder handling</p></li>
+<li><p>Library <strong>RPA.Desktop</strong>: Use correct default application when opening files on Windows</p></li>
+<li><p>Fix integer handling in <code class="docutils literal notranslate"><span class="pre">Notebook</span> <span class="pre">Print</span></code> core keyword</p></li>
+</ul>
+</div>
+<div class="section" id="id56">
+<h3>7.4.1<a class="headerlink" href="#id56" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>RPA.Outlook.Application</strong>: Fix HTML email body issue</p></li>
+</ul>
+</div>
+<div class="section" id="id57">
+<h3>7.4.0<a class="headerlink" href="#id57" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>RPA.Browser.Selenium</strong>:</p>
+<ul>
+<li><p>Add parameter <code class="docutils literal notranslate"><span class="pre">user_agent</span></code> for keywords <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">Available</span> <span class="pre">Browser</span></code> and <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">Chrome</span> <span class="pre">Browser</span></code></p></li>
+<li><p>Add keyword <code class="docutils literal notranslate"><span class="pre">Execute</span> <span class="pre">CDP</span></code> to execute Chrome DevTools Protocol commands</p></li>
+</ul>
+</li>
+<li><p>Fix issues with Windows library imports on Python 3.9</p></li>
+</ul>
+</div>
+<div class="section" id="id58">
+<h3>7.3.0<a class="headerlink" href="#id58" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>RPA.Desktop.Windows</strong>:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">File</span></code> performs the <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">Dialog</span></code> call only if windowtitle is given</p></li>
+<li><p>Expose <code class="docutils literal notranslate"><span class="pre">timeout</span></code> parameter for <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">File</span></code> keyword</p></li>
+</ul>
+</li>
+<li><p>Library <strong>RPA.Browser.Selenium</strong>:</p>
+<ul>
+<li><p>Keyword <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">Available</span> <span class="pre">Browser</span></code> now prints table of attempts to Notebooks on error</p></li>
+</ul>
+</li>
+<li><p>Library <strong>RPA.JSON</strong>: Add optional default for fetching values</p></li>
+</ul>
+</div>
+<div class="section" id="id59">
+<h3>7.2.0<a class="headerlink" href="#id59" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>RPA.Desktop.Windows</strong>:</p>
+<ul>
+<li><p>Add keyword <code class="docutils literal notranslate"><span class="pre">Refresh</span> <span class="pre">Window</span></code> to support element re-evaluation when UI changes</p></li>
+<li><p>Improve <code class="docutils literal notranslate"><span class="pre">Restore</span> <span class="pre">Dialog</span></code> keyword</p></li>
+<li><p>Add experimental support for combined locators like <code class="docutils literal notranslate"><span class="pre">name:element1</span> <span class="pre">and</span> <span class="pre">type:Button</span></code></p></li>
+<li><p>Add window title wildcard support for keywords starting applications and <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">Dialog</span></code></p></li>
+<li><p>Fix <code class="docutils literal notranslate"><span class="pre">Quit</span> <span class="pre">Application</span></code> error when using process id to quit</p></li>
+<li><p>Add <code class="docutils literal notranslate"><span class="pre">focus</span></code> parameter to <code class="docutils literal notranslate"><span class="pre">Mouse</span> <span class="pre">Click</span></code> keyword</p></li>
+<li><p>Add <code class="docutils literal notranslate"><span class="pre">legacy</span></code> and <code class="docutils literal notranslate"><span class="pre">object</span></code> attributes to element dictionary</p></li>
+<li><p>Fix <code class="docutils literal notranslate"><span class="pre">Wait</span> <span class="pre">For</span> <span class="pre">Element</span></code> error when asserting number of elements to wait</p></li>
+<li><p>Fix <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">File</span></code> by adding parameters to control window it opens</p></li>
+<li><p>Fix <code class="docutils literal notranslate"><span class="pre">Connect</span> <span class="pre">By</span> <span class="pre">Handle</span></code> parameter type to int</p></li>
+</ul>
+</li>
+<li><p>Library <strong>RPA.Desktop.OperatingSystem</strong>: Add keyword <code class="docutils literal notranslate"><span class="pre">Process</span> <span class="pre">ID</span> <span class="pre">Exists</span></code></p></li>
+<li><p>Library <strong>RPA.Browser.Selenium</strong>:</p>
+<ul>
+<li><p>Add keyword <code class="docutils literal notranslate"><span class="pre">Print</span> <span class="pre">to</span> <span class="pre">PDF</span></code></p></li>
+<li><p>Increase headless Chrome window size</p></li>
+</ul>
+</li>
+<li><p>Library <strong>RPA.PDF</strong>:</p>
+<ul>
+<li><p>Add possibility to get textboxes (text and its coordinates) with keyword <code class="docutils literal notranslate"><span class="pre">Get</span> <span class="pre">Text</span> <span class="pre">From</span> <span class="pre">PDF</span></code></p></li>
+<li><p>Add possibility to set anchor to point or area for keyword <code class="docutils literal notranslate"><span class="pre">Get</span> <span class="pre">Value</span> <span class="pre">From</span> <span class="pre">Anchor</span></code></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="id60">
+<h3>7.1.1<a class="headerlink" href="#id60" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>Desktop.Windows</strong>:</p>
+<ul>
+<li><p>Fix <cite>Open Executable</cite> error not taking control of the window</p></li>
+<li><p>Address window resizing issue with <cite>Open Dialog</cite></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="id61">
+<h3>7.1.0<a class="headerlink" href="#id61" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>New library <strong>Crypto</strong> for common hashing and encryption operations</p></li>
+<li><p>Library <strong>Cloud.Google</strong>: Improve help and error messages for <code class="docutils literal notranslate"><span class="pre">rpa-google-oauth</span></code> tool</p></li>
+<li><p>Library <strong>Desktop</strong>: Handle locators with whitespace, allow using return values as arguments</p></li>
+<li><p>Library <strong>Dialogs</strong>: Throw error if user closes browser, add timeout to response</p></li>
+<li><p>Library <strong>Excel.Application</strong>:</p>
+<ul>
+<li><p>Expose <code class="docutils literal notranslate"><span class="pre">header</span></code> argument in <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">Worksheet</span></code></p></li>
+<li><p>Fix issues with worksheet access in keywords</p></li>
+<li><p>Deprecate argument <code class="docutils literal notranslate"><span class="pre">tabname</span></code> in keyword <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">new</span> <span class="pre">sheet</span></code></p></li>
+<li><p>Add more helpful error messages</p></li>
+</ul>
+</li>
+<li><p>Library <strong>FileSystem</strong>: Add keyword for reading file owner</p></li>
+<li><p>Constrain version of <code class="docutils literal notranslate"><span class="pre">comtypes</span></code> dependency to fix issue with Windows DLLs</p></li>
+</ul>
+</div>
+<div class="section" id="id62">
+<h3>7.0.5<a class="headerlink" href="#id62" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Fix issue with pip resolving incompatible chardet version</p></li>
+</ul>
+</div>
+<div class="section" id="id63">
+<h3>7.0.4<a class="headerlink" href="#id63" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>Desktop.Windows</strong>: Remove library destructor actions</p></li>
+</ul>
+</div>
+<div class="section" id="id64">
+<h3>7.0.3<a class="headerlink" href="#id64" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>Desktop.Windows</strong>: Fix possible COM exception when gathering elements from a window</p></li>
+</ul>
+</div>
+<div class="section" id="id65">
+<h3>7.0.2<a class="headerlink" href="#id65" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>Cloud.Google</strong>: Remove unnecessary log message</p></li>
+</ul>
+</div>
+<div class="section" id="id66">
+<h3>7.0.1<a class="headerlink" href="#id66" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>Cloud.Google</strong>: Fix how authentication scopes are initialized</p></li>
+</ul>
+</div>
+<div class="section" id="id67">
+<h3>7.0.0<a class="headerlink" href="#id67" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>Desktop</strong>:</p>
+<ul>
+<li><p>Add initial version of OCR support</p></li>
+<li><p>Add syntax for locator chaining</p></li>
+<li><p>Add built-in buffer time between keyboard/mouse inputs</p></li>
+<li><p>Add built-in wait period for all locators, instead of failing immediately</p></li>
+<li><p>Add preview images for matched locators in Robot Framework log</p></li>
+</ul>
+</li>
+<li><p>Library <strong>Cloud.Google</strong>:</p>
+<ul>
+<li><p>Add support for Apps Script service</p></li>
+<li><p>Add support for Drive service</p></li>
+</ul>
+</li>
+<li><p>Library <strong>Desktop.Windows</strong>: Add more properties into dictionary returned by <code class="docutils literal notranslate"><span class="pre">Get</span> <span class="pre">Window</span> <span class="pre">List</span></code></p></li>
+<li><p>Library <strong>Email.ImapSmtp</strong>:</p>
+<ul>
+<li><p>Add keyword <code class="docutils literal notranslate"><span class="pre">Move</span> <span class="pre">Messages</span></code></p></li>
+<li><p>Add source folder parameter to <code class="docutils literal notranslate"><span class="pre">List</span> <span class="pre">Messages</span></code></p></li>
+<li><p>Add limit to <code class="docutils literal notranslate"><span class="pre">Delete</span> <span class="pre">Messages</span></code></p></li>
+<li><p>Add keywords to add/remove labels from GMail messages</p></li>
+<li><p>Add keyword <code class="docutils literal notranslate"><span class="pre">Do</span> <span class="pre">Message</span> <span class="pre">Actions</span></code> for performing custom set of actions on selected messages</p></li>
+</ul>
+</li>
+<li><p><strong>RPA.Browser</strong> libraries</p>
+<ul>
+<li><p>RPA.Browser.Playwright has been added, enabling use of playwright based robotframework-browser library</p></li>
+<li><p>RPA.Browser was moved to RPA.Browser.Selenium, and the old import RPA.Browser is kept as deprecated alias for now</p></li>
+</ul>
+</li>
+<li><p>Library <strong>Tables</strong>: Correctly handle empty fields when filtering</p></li>
+</ul>
+</div>
+<div class="section" id="id68">
+<h3>6.7.3<a class="headerlink" href="#id68" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Fix issue with pip resolving incompatible chardet version</p></li>
+</ul>
+</div>
+<div class="section" id="id69">
+<h3>6.7.2<a class="headerlink" href="#id69" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Add <code class="docutils literal notranslate"><span class="pre">docutils</span></code> as dependency to fix robotframework-lsp support</p></li>
+</ul>
+</div>
+<div class="section" id="id70">
+<h3>6.7.1<a class="headerlink" href="#id70" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>Desktop</strong>: Fix moving mouse to image template</p></li>
+</ul>
+</div>
+<div class="section" id="id71">
+<h3>6.7.0<a class="headerlink" href="#id71" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>Excel.Files</strong>:</p>
+<ul>
+<li><p>Add keyword for inserting images to worksheets</p></li>
+<li><p>Fix off-by-one issue with <code class="docutils literal notranslate"><span class="pre">Find</span> <span class="pre">Empty</span> <span class="pre">Row</span></code> return value</p></li>
+</ul>
+</li>
+<li><p>Library <strong>Desktop</strong>:</p>
+<ul>
+<li><p>Store screenshots in unique path by default, embed preview in logs</p></li>
+<li><p>Resolve image templates correctly with different working directories</p></li>
+</ul>
+</li>
+<li><p>Library <strong>Excel.Application</strong>:</p>
+<ul>
+<li><p>Add keyword <code class="docutils literal notranslate"><span class="pre">Find</span> <span class="pre">First</span> <span class="pre">Available</span> <span class="pre">Cell</span></code> to return free cell</p></li>
+<li><p>Keyword <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">Workbook</span></code> will set first worksheet active by default</p></li>
+</ul>
+</li>
+<li><p>Library <strong>PDF</strong>: Fix error when parsing figures in the document</p></li>
+<li><p>Library <strong>Database</strong>: Add support for <code class="docutils literal notranslate"><span class="pre">pymssql</span></code> database module</p></li>
+</ul>
+</div>
+<div class="section" id="id72">
+<h3>6.6.0<a class="headerlink" href="#id72" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>Tables</strong>: Add various helper keywords:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">Merge</span> <span class="pre">Tables</span></code> for merging tables, with an optional shared key</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Find</span> <span class="pre">Table</span> <span class="pre">Rows</span></code> for finding rows with a specific column value</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Set</span> <span class="pre">Row</span> <span class="pre">As</span> <span class="pre">Column</span> <span class="pre">Names</span></code> for setting an existing row as header</p></li>
+</ul>
+</li>
+<li><p>Library <strong>Browser</strong>: Add keyword <code class="docutils literal notranslate"><span class="pre">Highlight</span> <span class="pre">Elements</span></code> for highlighting elements that match a selector</p></li>
+<li><p>Library <strong>RPA.Desktop</strong>: Fix macOS coordinate scaling when using image template locators</p></li>
+<li><p>Remove dependency to <code class="docutils literal notranslate"><span class="pre">python-evdev</span></code> on Linux</p></li>
+</ul>
+</div>
+<div class="section" id="id73">
+<h3>6.5.0<a class="headerlink" href="#id73" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>Excel.Application</strong>: Fix for <a class="reference external" href="https://github.com/robocorp/rpaframework/issues/72">finding first available row</a>.</p></li>
+<li><p>Add missing variables for Robot Framework library scope and documentation format</p></li>
+<li><p>Add more verbose library docstrings in general</p></li>
+</ul>
+</div>
+<div class="section" id="id74">
+<h3>6.4.0<a class="headerlink" href="#id74" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>Browser</strong>: Add <code class="docutils literal notranslate"><span class="pre">Set</span> <span class="pre">Download</span> <span class="pre">Directory</span></code> keyword</p></li>
+<li><p>Library <strong>Cloud.AWS</strong>: Add keywords for Textract asynchronous operations regarding
+document analysis and text detection</p></li>
+<li><p>Library <strong>Dialogs</strong>: Default value support for input text element (pull request #70)</p></li>
+<li><p>Library <strong>Desktop.Windows</strong>: <code class="docutils literal notranslate"><span class="pre">Mouse</span> <span class="pre">Click</span></code> keyword supports now also element dictionary
+as target locator</p></li>
+</ul>
+</div>
+<div class="section" id="id75">
+<h3>6.3.1<a class="headerlink" href="#id75" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>Desktop.Windows</strong>: Add parameter to <code class="docutils literal notranslate"><span class="pre">Get</span> <span class="pre">Element</span></code> to prevent
+opening dialog</p></li>
+</ul>
+</div>
+<div class="section" id="id76">
+<h3>6.3.0<a class="headerlink" href="#id76" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>Desktop</strong>: Image template confidence changed to logarithmic scale</p></li>
+<li><p>Library <strong>HTTP</strong>: Directory support for download target</p></li>
+<li><p>Reduce logging in keyboard emulation keywords, e.g. <code class="docutils literal notranslate"><span class="pre">Send</span> <span class="pre">Keys</span></code>, to prevent
+accidentally logging sensitive information</p></li>
+</ul>
+</div>
+<div class="section" id="id77">
+<h3>6.2.0<a class="headerlink" href="#id77" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>Desktop.Windows</strong>: Add timeout parameter for keywords <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">From</span> <span class="pre">Search</span></code>
+and <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">Using</span> <span class="pre">Run</span> <span class="pre">Dialog</span></code></p></li>
+</ul>
+</div>
+<div class="section" id="id78">
+<h3>6.1.0<a class="headerlink" href="#id78" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>New library <strong>JSON</strong> for manipulating JSON objects</p></li>
+</ul>
+</div>
+<div class="section" id="id79">
+<h3>6.0.2<a class="headerlink" href="#id79" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>Desktop</strong>:</p>
+<ul>
+<li><p>Library scope changed to global</p></li>
+<li><p>Obey default image locator confidence</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="id80">
+<h3>6.0.1<a class="headerlink" href="#id80" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>Desktop</strong>: Fix case handling with default locator</p></li>
+</ul>
+</div>
+<div class="section" id="id81">
+<h3>6.0.0<a class="headerlink" href="#id81" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>FileSystem</strong>: Replace <code class="docutils literal notranslate"><span class="pre">force</span></code> arguments with <code class="docutils literal notranslate"><span class="pre">missing_ok</span></code> to match python API</p></li>
+<li><p>Library <strong>Desktop</strong>: Initial release of new cross-platform desktop automation library</p></li>
+<li><p>Library <strong>Dialogs</strong>: Add library initialization arguments to change server port and form stylesheet</p></li>
+<li><p>Library <strong>Robocloud.Items</strong>: Remove invalid assert on file overwrite</p></li>
+<li><p>Library <strong>Browser</strong>:</p>
+<ul>
+<li><p>Add new option to allow missing elements with status keywords such as <code class="docutils literal notranslate"><span class="pre">Is</span> <span class="pre">Element</span> <span class="pre">Visible</span></code></p></li>
+<li><p>Set Chrome argument <code class="docutils literal notranslate"><span class="pre">disable-dev-shm-usage</span></code> by default in all environments</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="id82">
+<h3>5.3.3<a class="headerlink" href="#id82" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>Images</strong>: Fix duplicate region matches, timeout option</p></li>
+<li><p>Library <strong>Robocloud.Items</strong>: Allow saving files with FileAdapter</p></li>
+</ul>
+</div>
+<div class="section" id="id83">
+<h3>5.3.2<a class="headerlink" href="#id83" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>Robocloud.Items</strong>: Fix relative path inputs,
+always return absolute paths.</p></li>
+</ul>
+</div>
+<div class="section" id="id84">
+<h3>5.3.1<a class="headerlink" href="#id84" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>Robocloud.Items</strong>: Fix accessing unsaved files from items</p></li>
+<li><p>Library <strong>Tables</strong>: Fix creating empty table with predefined columns</p></li>
+<li><p>Library <strong>Database</strong>: Fix <code class="docutils literal notranslate"><span class="pre">Query</span></code> keyword bug when SELECT result is empty</p></li>
+</ul>
+</div>
+<div class="section" id="id85">
+<h3>5.3.0<a class="headerlink" href="#id85" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>Robocloud.Items</strong>: Support for files in work items</p></li>
+<li><p>Library <strong>Dialogs</strong>: Type hinting and documentation updates</p></li>
+<li><p>Library <strong>Images</strong>: Raise error when timeout has been reached</p></li>
+</ul>
+</div>
+<div class="section" id="id86">
+<h3>5.2.0<a class="headerlink" href="#id86" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>New library <strong>Dialogs</strong> which allows getting input from the user
+via HTML forms</p></li>
+</ul>
+</div>
+<div class="section" id="id87">
+<h3>5.1.0<a class="headerlink" href="#id87" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>Browser</strong>: Add keyword <code class="docutils literal notranslate"><span class="pre">Get</span> <span class="pre">Browser</span> <span class="pre">Capabilities</span></code></p></li>
+<li><p>Library <strong>Cloud.Google</strong>: Add Google Sheets service support</p></li>
+</ul>
+</div>
+<div class="section" id="id88">
+<h3>5.0.0<a class="headerlink" href="#id88" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>Database</strong>:</p>
+<ul>
+<li><p>Drop dependency robotframework-databaselibrary</p></li>
+<li><p>Some of the old keywords do not exist anymore and some new keywords
+have been added (<em>NOTE. backwards compatibility breaking change</em>)</p></li>
+</ul>
+</li>
+<li><p>Library <strong>PDF</strong>: Keywords <code class="docutils literal notranslate"><span class="pre">Template</span> <span class="pre">HTML</span> <span class="pre">To</span> <span class="pre">PDF</span></code> and <code class="docutils literal notranslate"><span class="pre">HTML</span> <span class="pre">To</span> <span class="pre">PDF</span></code> will now
+create directory structure and overwrite existing file by default.</p></li>
+<li><p>Library <strong>Images</strong>: Remove <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">Format</span></code> option from <code class="docutils literal notranslate"><span class="pre">Take</span> <span class="pre">Screenshot</span></code>
+and <code class="docutils literal notranslate"><span class="pre">Crop</span> <span class="pre">Image</span></code> keywords. Change screenshotting library from <code class="docutils literal notranslate"><span class="pre">pyscreenshot</span></code>
+to <code class="docutils literal notranslate"><span class="pre">mss</span></code>.</p></li>
+</ul>
+</div>
+<div class="section" id="id89">
+<h3>4.2.0<a class="headerlink" href="#id89" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>Browser</strong>:</p>
+<ul>
+<li><p>Add keywords <code class="docutils literal notranslate"><span class="pre">Does</span> <span class="pre">Alert</span> <span class="pre">Contain</span></code> and <code class="docutils literal notranslate"><span class="pre">Does</span> <span class="pre">Alert</span> <span class="pre">Not</span> <span class="pre">Contain</span></code></p></li>
+<li><p>Fix <code class="docutils literal notranslate"><span class="pre">Screenshot</span></code> to explicitly call <code class="docutils literal notranslate"><span class="pre">Notebook</span> <span class="pre">Image</span></code> to insert
+images into notebook when that is available</p></li>
+</ul>
+</li>
+<li><p>Library <strong>Robocloud.Items</strong>: Allow NoneType as default for variables</p></li>
+</ul>
+</div>
+<div class="section" id="id90">
+<h3>4.1.0<a class="headerlink" href="#id90" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>Browser</strong>: Add keyword <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">User</span> <span class="pre">Browser</span></code> which opens URL
+with user’s default browser. Allows using browser’s existing cache. To
+control this browser see keyword <code class="docutils literal notranslate"><span class="pre">Attach</span> <span class="pre">Chrome</span> <span class="pre">Browser</span></code> or use
+<code class="docutils literal notranslate"><span class="pre">Desktop.Windows</span></code> library to control the browser</p></li>
+</ul>
+</div>
+<div class="section" id="id91">
+<h3>4.0.0<a class="headerlink" href="#id91" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Library <strong>Browser</strong>: Change keyword <code class="docutils literal notranslate"><span class="pre">Screenshot</span></code> to embed Base64 image
+string into log and save same Base 64 string to a file as png image
+(<em>NOTE. backwards compatibility breaking change</em>)</p></li>
+<li><p>Library <strong>Desktop.Windows</strong>:</p>
+<ul>
+<li><p>Fix Windows backend handling to be consistent within a library</p></li>
+<li><p>New keyword <code class="docutils literal notranslate"><span class="pre">Set</span> <span class="pre">Windows</span> <span class="pre">Backend</span></code></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="id92">
+<h3>3.0.0<a class="headerlink" href="#id92" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Upgrade <code class="docutils literal notranslate"><span class="pre">Robot</span> <span class="pre">Framework</span></code> to 3.2.2</p></li>
+<li><p>Upgrade <code class="docutils literal notranslate"><span class="pre">pyscreenshot</span></code> to 2.2</p></li>
+<li><p>Library <strong>Email.ImapSmtp</strong>:</p>
+<ul>
+<li><p>Add keyword examples (documentation)</p></li>
+<li><p>Change <code class="docutils literal notranslate"><span class="pre">List</span> <span class="pre">Messages</span></code> to return list of dictionaries containing
+message attributes. In addition there is attribute <cite>Has-Attachments</cite>
+for each message (<em>NOTE. backwards compatibility breaking change</em>)</p></li>
+<li><p>Add keyword <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">Attachment</span></code> which can be used save attachments
+from a message. Can be used when looping through messages received
+by <code class="docutils literal notranslate"><span class="pre">List</span> <span class="pre">Messages</span></code></p></li>
+</ul>
+</li>
+<li><p>Library <strong>Desktop.Windows</strong>:</p>
+<ul>
+<li><p>Add keyword examples (documentation)</p></li>
+<li><p>Add keyword <code class="docutils literal notranslate"><span class="pre">Get</span> <span class="pre">Text</span></code>. Returns dictionary of possible values
+due to many implementation methods</p></li>
+<li><p>Add parameter <cite>empty_field</cite> to keyword <code class="docutils literal notranslate"><span class="pre">Type</span> <span class="pre">Into</span></code> which will
+empty field before typing into a field</p></li>
+<li><p>Add keyword <code class="docutils literal notranslate"><span class="pre">Wait</span> <span class="pre">For</span> <span class="pre">Element</span></code> which will search for element with timeout</p></li>
+<li><p>Add more information about started app instances into application list</p></li>
+</ul>
+</li>
+<li><p>Library <strong>Desktop.OperatingSystem</strong>:</p>
+<ul>
+<li><p>Add keyword examples (documentation)</p></li>
+<li><p>Add keyword <code class="docutils literal notranslate"><span class="pre">Kill</span> <span class="pre">Process</span> <span class="pre">By</span> <span class="pre">PID</span></code> to terminate process using its
+identifier</p></li>
+</ul>
+</li>
+<li><p>Library <strong>Browser</strong>:</p>
+<ul>
+<li><p>Add keyword examples (documentation)</p></li>
+<li><p>Add <cite>proxy</cite> parameter for keywords <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">Available</span> <span class="pre">Browser</span></code>
+and <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">Chrome</span> <span class="pre">Browser</span></code>. Works only for Chrome at the moment</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="id93">
+<h3>2.7.0<a class="headerlink" href="#id93" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><strong>Desktop.Windows</strong>: Fix window dialog handling in <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">Executable</span></code> keyword</p></li>
+<li><p>New <strong>Archive</strong> library for ZIP and TAR operations</p></li>
+<li><p><strong>core.notebook</strong>: Add parameter <cite>count</cite> to control row output from keyword <code class="docutils literal notranslate"><span class="pre">Notebook</span> <span class="pre">Table</span></code></p></li>
+</ul>
+</div>
+<div class="section" id="id94">
+<h3>2.6.0<a class="headerlink" href="#id94" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><strong>Browser</strong>: Do not <cite>EMBED</cite> screenshots when in notebook run mode</p></li>
+<li><p><strong>Excel.Application</strong>: Add keyword <code class="docutils literal notranslate"><span class="pre">Read</span> <span class="pre">From</span> <span class="pre">Cells</span></code></p></li>
+<li><p><strong>RobotLogListener</strong>: Add keyword <code class="docutils literal notranslate"><span class="pre">Mute</span> <span class="pre">Run</span> <span class="pre">On</span> <span class="pre">Failure</span></code> to mute
+SeleniumLibrary’s <code class="docutils literal notranslate"><span class="pre">run_on_failure</span></code> behaviour</p></li>
+<li><p><strong>Email.ImapSmtp</strong>: Fix filetype issue when adding attachments to emails</p></li>
+<li><p><strong>Tables</strong> and <strong>Excel.Files</strong>: Move table trimming actions from <cite>Excel.Files</cite>
+library to <cite>Tables</cite> library. Added parameter <code class="docutils literal notranslate"><span class="pre">trim</span></code> to <cite>Tables</cite> keyword
+<code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">Table</span></code> which is by default <cite>False</cite></p></li>
+<li><p><strong>PDF</strong>: Fix input field setting and saving to PDF</p></li>
+</ul>
+</div>
+<div class="section" id="id95">
+<h3>2.5.1<a class="headerlink" href="#id95" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><strong>Browser</strong>: Fix missing default argument</p></li>
+</ul>
+</div>
+<div class="section" id="id96">
+<h3>2.5.0<a class="headerlink" href="#id96" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><strong>Browser</strong>:</p>
+<ul>
+<li><p>Attempt fallback browser if webdriver unpacking fails</p></li>
+<li><p>Attempt to use webdriver from PATH</p></li>
+<li><p>Add option to define Chrome profile path and name</p></li>
+<li><p>Add option to define Chrome profile preferences</p></li>
+<li><p>Add keyword to attach to existing Chrome instance</p></li>
+<li><p>Add keyword for waiting and clicking elements</p></li>
+<li><p>Disable Chrome’s password manager prompts</p></li>
+</ul>
+</li>
+<li><p><strong>Robocloud.Items</strong>: Allow empty list (or otherwise falsy value) as raw payload</p></li>
+<li><p><strong>Desktop.Windows</strong>:</p>
+<ul>
+<li><p>Add keyword <code class="docutils literal notranslate"><span class="pre">Type</span> <span class="pre">Into</span></code></p></li>
+<li><p>Remove confusing placeholder keyword(s)</p></li>
+</ul>
+</li>
+<li><p><strong>Excel/Word/Outlook.Application</strong>: Use early binding to ensure constants exist</p></li>
+<li><p><strong>Tables</strong>: Fix issues with invalid internal method calls</p></li>
+<li><p><strong>Email.ImapSmtp</strong>:</p>
+<ul>
+<li><p>Use given IMAP port</p></li>
+<li><p>Fix confusing error message if TLS not supported</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="id97">
+<h3>2.4.0<a class="headerlink" href="#id97" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><strong>Browser</strong>: Add alias support for <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">Available</span> <span class="pre">Browser</span></code></p></li>
+<li><p><strong>Browser</strong>: Fix indexing issues with multiple <code class="docutils literal notranslate"><span class="pre">chromedriver</span></code> instances</p></li>
+<li><p><strong>Browser</strong>: Reduce superfluous logging from keywords</p></li>
+<li><p><strong>Robocloud.Items</strong>: Add keywords for reading and writing full payloads</p></li>
+</ul>
+</div>
+<div class="section" id="id98">
+<h3>2.3.0<a class="headerlink" href="#id98" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>New <strong>FTP</strong> library, which interacts with FTP servers</p></li>
+<li><p>Use <strong>RPA.core.notebook* library to output data into Jupyter Notebook
+(in Robocode Lab especially). Support added to keywords in the following
+libraries: **Browser</strong>, <strong>FTP</strong>, <strong>HTTP</strong>, <strong>Images</strong>, <strong>PDF</strong>, <strong>Twitter</strong>,
+<strong>Tables</strong> and <strong>Robocloud.Items</strong></p></li>
+<li><p><strong>Browser</strong> sets default screenshot directory to EMBED which means that when
+using keywords <code class="docutils literal notranslate"><span class="pre">Capture</span> <span class="pre">Page</span> <span class="pre">Screenshot</span></code> or <code class="docutils literal notranslate"><span class="pre">Capture</span> <span class="pre">Element</span> <span class="pre">Screenshot</span></code>
+without <cite>filename</cite> argument the image is embedded into <cite>log.html</cite> as Base64 image</p></li>
+</ul>
+</div>
+<div class="section" id="id99">
+<h3>2.2.0<a class="headerlink" href="#id99" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><strong>Robocloud.Secrets</strong>: Add support for Robocloud end-to-end encryption</p></li>
+<li><p><strong>FileSystem</strong>: Add <code class="docutils literal notranslate"><span class="pre">exist_ok</span></code> argument for <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">directory</span></code> keyword</p></li>
+<li><p><strong>Tasks</strong>: Fix support for FAIL status in schema actions</p></li>
+<li><p><strong>Tasks</strong>: Allow inlining execution graph in log (enabled by default)</p></li>
+<li><p><strong>Excel.Files</strong>: Always fallback to legacy mode on error</p></li>
+<li><p><strong>Tables</strong>: Fix manual override for CSV dialect, document arguments</p></li>
+<li><p><strong>Desktop.Windows</strong>: Attach to windows more reliably, and show helpful message on error</p></li>
+</ul>
+</div>
+<div class="section" id="id100">
+<h3>2.1.0<a class="headerlink" href="#id100" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><strong>FileSystem</strong>: Fix keyword <code class="docutils literal notranslate"><span class="pre">Normalize</span> <span class="pre">Path</span></code> to match built-in library,
+and add new keyword <code class="docutils literal notranslate"><span class="pre">Absolute</span> <span class="pre">Path</span></code> for previous functionality.</p></li>
+<li><p><strong>PDF</strong>: Fix keyword <code class="docutils literal notranslate"><span class="pre">Template</span> <span class="pre">HTML</span> <span class="pre">To</span> <span class="pre">PDF</span></code> to handle HTML content from
+non-English Chrome browser.</p></li>
+<li><p><strong>PDF</strong>: Add keyword <code class="docutils literal notranslate"><span class="pre">HTML</span> <span class="pre">To</span> <span class="pre">PDF</span></code> which takes HTML content as string parameter.</p></li>
+<li><p><strong>Email.Exchange</strong>: Fix <code class="docutils literal notranslate"><span class="pre">Authorize</span></code> when autodiscover is set to False. Add missing parameters
+to keyword.</p></li>
+<li><p>New <strong>Notifier</strong> library, which allows using notification services like Slack, Gmail, Pushover etc.</p></li>
+</ul>
+</div>
+<div class="section" id="id101">
+<h3>2.0.1<a class="headerlink" href="#id101" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><strong>Browser</strong>: Fix for regression in Chrome’s Webdriver version handling</p></li>
+<li><p><strong>Email.ImapSmtp</strong>: Fix how IMAP server is initialized</p></li>
+<li><p>Fix for issue with missing files when upgrading from version 1.x</p></li>
+</ul>
+</div>
+<div class="section" id="id102">
+<h3>2.0.0<a class="headerlink" href="#id102" title="Permalink to this headline">¶</a></h3>
+<p><strong>NOTE:</strong> Changes to <strong>Email.ImapSmtp</strong> and <strong>Email.Exchange</strong> are
+backwards compatibility breaking changes.</p>
+<ul class="simple">
+<li><p><strong>Browser</strong>: Added support for locator aliases</p></li>
+<li><p><strong>Browser</strong>: Upgrade <code class="docutils literal notranslate"><span class="pre">SeleniumTestability</span></code> plugin to 1.1.0 version</p></li>
+<li><p><strong>Browser</strong>: Remove “..controlled by automated..” infobar by default when using Chrome</p></li>
+<li><p><strong>Email.ImapSmtp</strong> library initialization parameter <cite>port</cite> split to <cite>smtp_port</cite> and
+<cite>imap_port</cite> (<em>breaks backwards compatibility</em>)</p></li>
+<li><p><strong>Email.ImapSmtp</strong>: Add keywords for folder management and marking messages
+as read/unread and flag/unflag</p></li>
+<li><p><strong>Email.Exchange</strong> library keyword <code class="docutils literal notranslate"><span class="pre">list_messages</span></code> parameter order changed -
+new order <cite>folder_name</cite>, <cite>count</cite> (<em>breaks backwards compatibility</em>)</p></li>
+<li><p><strong>Email.Exchange</strong>: Add keywords for folder management</p></li>
+<li><p><strong>Email.Exchange</strong>: Add keywords <code class="docutils literal notranslate"><span class="pre">Wait</span> <span class="pre">For</span> <span class="pre">Message</span></code> and <code class="docutils literal notranslate"><span class="pre">Move</span> <span class="pre">Messages</span></code></p></li>
+<li><p>Core functionality separated into <code class="docutils literal notranslate"><span class="pre">rpaframework-core</span></code> package</p></li>
+</ul>
+</div>
+<div class="section" id="id103">
+<h3>1.4.0<a class="headerlink" href="#id103" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><strong>Robocloud.Items</strong>: Add keywords for listing and deleting variables</p></li>
+<li><p><strong>Windows</strong>: Add keyword <code class="docutils literal notranslate"><span class="pre">Get</span> <span class="pre">Window</span> <span class="pre">List</span></code></p></li>
+<li><p><strong>Windows</strong>: Fix keywords <code class="docutils literal notranslate"><span class="pre">Connect</span> <span class="pre">By</span> <span class="pre">PID</span></code> and <code class="docutils literal notranslate"><span class="pre">Connect</span> <span class="pre">By</span> <span class="pre">Handle</span></code></p></li>
+</ul>
+</div>
+<div class="section" id="id104">
+<h3>1.3.0<a class="headerlink" href="#id104" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>New features for <strong>Browser</strong> library</p>
+<ul>
+<li><p>Set headless mode with environment variable <code class="docutils literal notranslate"><span class="pre">RPA_HEADLESS_MODE=1</span></code></p></li>
+<li><p>New boolean returning keywords like <code class="docutils literal notranslate"><span class="pre">Is</span> <span class="pre">Element</span> <span class="pre">Visible</span></code> and <code class="docutils literal notranslate"><span class="pre">Does</span> <span class="pre">Page</span> <span class="pre">Contain</span></code></p></li>
+<li><p>New keyword <code class="docutils literal notranslate"><span class="pre">Get</span> <span class="pre">Element</span> <span class="pre">Status</span></code> to get 4 different element states in a dictionary</p></li>
+<li><p>Added plugin <code class="docutils literal notranslate"><span class="pre">SeleniumTestability</span></code> which can be enabled
+with <code class="docutils literal notranslate"><span class="pre">Library</span>&#160; <span class="pre">RPA.Browser</span>&#160; <span class="pre">use_testability</span></code></p></li>
+<li><p>In total 40 new keywords</p></li>
+</ul>
+</li>
+<li><p><strong>OperatingSystem</strong>: Improve error messages on keywords restricted to specific
+operating systems</p></li>
+</ul>
+</div>
+<div class="section" id="id105">
+<h3>1.2.1<a class="headerlink" href="#id105" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Cloud libraries: Fix <code class="docutils literal notranslate"><span class="pre">use_robocloud_vault</span></code> to support also <code class="docutils literal notranslate"><span class="pre">FileSecrets</span></code></p></li>
+</ul>
+</div>
+<div class="section" id="id106">
+<h3>1.2.0<a class="headerlink" href="#id106" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Add support for Robocloud Vault for the following libraries:</p>
+<ul>
+<li><p><strong>Cloud.AWS</strong></p></li>
+<li><p><strong>Cloud.Azure</strong></p></li>
+<li><p><strong>Cloud.Google</strong></p></li>
+</ul>
+</li>
+<li><p><strong>Images</strong>: Automatically convert points/regions from strings</p></li>
+<li><p><strong>Outlook.Application</strong>: Add keyword <code class="docutils literal notranslate"><span class="pre">Wait</span> <span class="pre">For</span> <span class="pre">Message</span></code></p></li>
+</ul>
+</div>
+<div class="section" id="id107">
+<h3>1.1.0<a class="headerlink" href="#id107" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>New <strong>Tasks</strong> library, which allows using flow control between tasks</p></li>
+<li><p>New <strong>Cloud.Azure</strong> library, which supports following Azure APIs:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">Text</span> <span class="pre">Analytics</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Face</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Computer</span> <span class="pre">Vision</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Speech</span></code></p></li>
+</ul>
+</li>
+<li><p><strong>Cloud.AWS</strong>: Fix parameters and return options for keywords
+<code class="docutils literal notranslate"><span class="pre">Detect</span> <span class="pre">Document</span> <span class="pre">Text</span></code> and <code class="docutils literal notranslate"><span class="pre">Analyze</span> <span class="pre">Document</span></code></p></li>
+</ul>
+</div>
+<div class="section" id="id108">
+<h3>1.0.4<a class="headerlink" href="#id108" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><strong>Excel.Files</strong>: Add keyword for setting cell values</p></li>
+<li><p><strong>Excel.Files</strong>: Mitigate compatibility issues with file extensions</p></li>
+</ul>
+</div>
+<div class="section" id="id109">
+<h3>1.0.3<a class="headerlink" href="#id109" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><strong>Excel.Files</strong>: Fixed double close issue with workbooks</p></li>
+<li><p><strong>Excel.Files</strong>: Ignoring columns with empty header</p></li>
+<li><p><strong>Tables</strong>: Improved handling of non-string columns</p></li>
+</ul>
+</div>
+<div class="section" id="id110">
+<h3>1.0.2<a class="headerlink" href="#id110" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><strong>msoffice</strong>: Fix. Call <cite>close document</cite> only on Word documents</p></li>
+<li><p><strong>Browser</strong>: Fix Geckodriver downloading version based on Chrome version</p></li>
+</ul>
+<p>Thank you <a class="reference external" href="https://github.com/mdp">https://github.com/mdp</a> for providing fix for the <strong>msoffice</strong></p>
+</div>
+<div class="section" id="id111">
+<h3>1.0.1<a class="headerlink" href="#id111" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><strong>Tables</strong>: Added keywords <code class="docutils literal notranslate"><span class="pre">Get</span> <span class="pre">table</span> <span class="pre">slice</span></code> and <code class="docutils literal notranslate"><span class="pre">Rename</span> <span class="pre">table</span> <span class="pre">columns</span></code></p></li>
+<li><p><strong>Excel.Files</strong>: Fixed various issues with appending data to empty worksheet</p></li>
+<li><p><strong>Outlook</strong>: Fix attachment handling</p></li>
+</ul>
+</div>
+<div class="section" id="id112">
+<h3>1.0.0<a class="headerlink" href="#id112" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><strong>MAJOR</strong> change. Package has been renamed to <code class="docutils literal notranslate"><span class="pre">rpaframework</span></code>. The old PyPI package
+will continue to work for a while (not receiving updates anymore), but it will be removed
+before official GA launch in the beginning of July.</p></li>
+</ul>
+</div>
+<div class="section" id="id113">
+<h3>0.11.0<a class="headerlink" href="#id113" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p><strong>Cloud.Google</strong>: Added as optional package, needs to be installed
+with <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">rpa-framework[google]</span></code></p>
+<p>Support for services:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Google</span> <span class="pre">Cloud</span> <span class="pre">Natural</span> <span class="pre">Language</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Google</span> <span class="pre">Cloud</span> <span class="pre">Speech</span> <span class="pre">to</span> <span class="pre">Text</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Google</span> <span class="pre">Cloud</span> <span class="pre">Storage</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Google</span> <span class="pre">Cloud</span> <span class="pre">Text</span> <span class="pre">to</span> <span class="pre">Speech</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Google</span> <span class="pre">Cloud</span> <span class="pre">Translation</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Google</span> <span class="pre">Cloud</span> <span class="pre">Video</span> <span class="pre">Intelligence</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Google</span> <span class="pre">Cloud</span> <span class="pre">Vision</span></code></p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>Excel.Files</strong>: Minor documentation update</p></li>
+</ul>
+</div>
+<div class="section" id="id114">
+<h3>0.10.1<a class="headerlink" href="#id114" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><strong>Email.Exchange</strong>: Fix parameter handling for kw <code class="docutils literal notranslate"><span class="pre">send_message</span></code></p></li>
+</ul>
+</div>
+<div class="section" id="id115">
+<h3>0.10.0<a class="headerlink" href="#id115" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><strong>Email.Exchange</strong>: Add support for <code class="docutils literal notranslate"><span class="pre">HTML</span></code> content, <code class="docutils literal notranslate"><span class="pre">attachments</span></code>, and inline <code class="docutils literal notranslate"><span class="pre">images</span></code></p></li>
+<li><p><strong>Email.ImapSmtp</strong>: Allow sending inline images - parameter <code class="docutils literal notranslate"><span class="pre">images</span></code> for kw <code class="docutils literal notranslate"><span class="pre">Send</span> <span class="pre">Message</span></code></p></li>
+<li><p><strong>HTTP</strong>: Return response of <code class="docutils literal notranslate"><span class="pre">Download</span></code> keyword (including content)</p></li>
+<li><p><strong>Cloud.AWS</strong>: Due to <code class="docutils literal notranslate"><span class="pre">boto3</span></code> dependency size, library requires <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">rpa-framework[aws]</span></code> to use</p></li>
+</ul>
+</div>
+<div class="section" id="id116">
+<h3>0.9.3<a class="headerlink" href="#id116" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>New library: <strong>Cloud.AWS</strong>, supporting following services:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">Comprehend</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">S3</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">SQS</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Textract</span></code></p></li>
+</ul>
+</li>
+<li><p><strong>Tables</strong>: Add keyword <code class="docutils literal notranslate"><span class="pre">Get</span> <span class="pre">table</span> <span class="pre">dimensions</span></code>, allow setting arbitrary cell value</p></li>
+<li><p>New library: <strong>Twitter</strong></p></li>
+</ul>
+</div>
+<div class="section" id="id117">
+<h3>0.9.2<a class="headerlink" href="#id117" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Updated Robot Framework to 3.2.1</p></li>
+</ul>
+</div>
+<div class="section" id="id118">
+<h3>0.9.1<a class="headerlink" href="#id118" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><strong>Email.ImapStmp</strong>: Fix attachment handling for kw <code class="docutils literal notranslate"><span class="pre">Send</span> <span class="pre">Message</span></code></p></li>
+<li><p><strong>Excel.Application</strong>: Add keyword <code class="docutils literal notranslate"><span class="pre">Run</span> <span class="pre">Macro</span></code></p></li>
+<li><p><strong>PDF</strong>: Add keywords:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">Parse</span> <span class="pre">PDF</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Get</span> <span class="pre">input</span> <span class="pre">fields</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Update</span> <span class="pre">field</span> <span class="pre">values</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Set</span> <span class="pre">field</span> <span class="pre">value</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Set</span> <span class="pre">anchor</span> <span class="pre">to</span> <span class="pre">element</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Get</span> <span class="pre">value</span> <span class="pre">from</span> <span class="pre">anchor</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">image</span> <span class="pre">to</span> <span class="pre">PDF</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">PDF</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Dump</span> <span class="pre">PDF</span> <span class="pre">as</span> <span class="pre">XML</span></code></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="id119">
+<h3>0.9.0<a class="headerlink" href="#id119" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><strong>Tables</strong>:</p>
+<ul>
+<li><p><strong>Note</strong>: This change is backwards incompatible</p></li>
+<li><p>Removed limitation of column names being valid Python identifiers</p></li>
+<li><p>Default iteration method changed to dictionaries instead of namedtuples</p></li>
+<li><p>Keywords that return rows or columns now harmonized to return them in
+dictionary format by default, with option to use lists</p></li>
+<li><p>Table head/tail keywords changed to return new Table instance</p></li>
+<li><p>Added keyword for trimming extra whitespace from column names</p></li>
+</ul>
+</li>
+<li><p><strong>Excel.Files</strong>: Trim column names in addition to rows</p></li>
+</ul>
+</div>
+<div class="section" id="id120">
+<h3>0.8.7<a class="headerlink" href="#id120" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><strong>OperatingSystem</strong>: psutils dependency marked as Windows only because
+it has wheel files only for Windows</p></li>
+</ul>
+</div>
+<div class="section" id="id121">
+<h3>0.8.6<a class="headerlink" href="#id121" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><strong>HTTP</strong>:</p>
+<ul>
+<li><p>Add keyword <code class="docutils literal notranslate"><span class="pre">Download</span></code></p></li>
+<li><p>Add <code class="docutils literal notranslate"><span class="pre">overwrite</span></code> option to <code class="docutils literal notranslate"><span class="pre">HTTP</span> <span class="pre">Get</span></code></p></li>
+</ul>
+</li>
+<li><p><strong>FileSystem</strong>:</p>
+<ul>
+<li><p>Fix string interpolation in error messages</p></li>
+<li><p>Add <code class="docutils literal notranslate"><span class="pre">force</span></code> option for file removal keywords</p></li>
+<li><p>Add <code class="docutils literal notranslate"><span class="pre">overwrite</span></code> option for file create keywords</p></li>
+</ul>
+</li>
+<li><p><strong>Tables</strong>: Add keyword <code class="docutils literal notranslate"><span class="pre">Trim</span> <span class="pre">empty</span> <span class="pre">rows</span></code></p></li>
+<li><p><strong>Excel.Files</strong>:</p>
+<ul>
+<li><p>Add keyword <code class="docutils literal notranslate"><span class="pre">Read</span> <span class="pre">worksheet</span> <span class="pre">as</span> <span class="pre">table</span></code></p></li>
+<li><p>Auto-convert integer values in .xls worksheets</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="id122">
+<h3>0.8.5<a class="headerlink" href="#id122" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><strong>PDF</strong>: Add <code class="docutils literal notranslate"><span class="pre">Encrypt</span> <span class="pre">PDF</span></code> and <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Pages</span> <span class="pre">To</span> <span class="pre">Source</span> <span class="pre">PDF</span></code> keywords.</p></li>
+<li><p><strong>Windows</strong>: Add aliases for element locators,
+for better Robocode Lab compatibility</p></li>
+<li><p><strong>HTTP</strong>: Add keyword <code class="docutils literal notranslate"><span class="pre">HTTP</span> <span class="pre">Get</span></code></p></li>
+<li><p><strong>Tables</strong>: Fix missing cell values for sanitized columns</p></li>
+</ul>
+</div>
+<div class="section" id="id123">
+<h3>0.8.4<a class="headerlink" href="#id123" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Fix: <strong>PDF</strong> <code class="docutils literal notranslate"><span class="pre">Template</span> <span class="pre">HTML</span> <span class="pre">to</span> <span class="pre">PDF</span></code> keyword</p></li>
+</ul>
+</div>
+<div class="section" id="id124">
+<h3>0.8.3<a class="headerlink" href="#id124" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Fix: <strong>Windows</strong> <code class="docutils literal notranslate"><span class="pre">drag_and_drop</span></code> keyword</p></li>
+<li><p>New library: <strong>Netsuite</strong></p></li>
+<li><p><strong>PDF</strong>: add new keywords</p></li>
+</ul>
+</div>
+<div class="section" id="id125">
+<h3>0.8.2<a class="headerlink" href="#id125" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><strong>Windows</strong>: Add keyword for clicking image templates</p></li>
+<li><p><strong>Windows</strong>: Add keyword for drag and drop</p></li>
+</ul>
+</div>
+<div class="section" id="id126">
+<h3>0.8.1<a class="headerlink" href="#id126" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><strong>Browser</strong>: Fix <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">Available</span> <span class="pre">Browser</span></code> kw parameter bug</p></li>
+</ul>
+</div>
+<div class="section" id="id127">
+<h3>0.8.0<a class="headerlink" href="#id127" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>New library: <strong>Salesforce</strong></p></li>
+<li><p>New library: <strong>Database</strong></p></li>
+</ul>
+</div>
+<div class="section" id="id128">
+<h3>0.7.5<a class="headerlink" href="#id128" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><strong>Email.ImapSmtp</strong>: Separate how IMAP and SMTP are handled in the library</p></li>
+<li><p><strong>Windows</strong>: Improve documentation for keys</p></li>
+<li><p><strong>Browser</strong>: Manage webdrivermanager download error</p></li>
+</ul>
+</div>
+<div class="section" id="id129">
+<h3>0.7.4<a class="headerlink" href="#id129" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><strong>Browser</strong>: Restructure how driver downloads and logging are handled</p></li>
+</ul>
+</div>
+<div class="section" id="id130">
+<h3>0.7.3<a class="headerlink" href="#id130" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><strong>Browser</strong>: Detect Chrome and chromedriver versions. Download driver if they differ</p></li>
+<li><p><strong>Images</strong>: Don’t template match same region multiple times</p></li>
+<li><p><strong>Tables</strong>:</p>
+<ul>
+<li><p>Added new keywords: <code class="docutils literal notranslate"><span class="pre">Set</span> <span class="pre">table</span> <span class="pre">row</span></code>, <code class="docutils literal notranslate"><span class="pre">Set</span> <span class="pre">table</span> <span class="pre">column</span></code>, <code class="docutils literal notranslate"><span class="pre">Set</span> <span class="pre">table</span> <span class="pre">cell</span></code></p></li>
+<li><p>Renamed keyword <code class="docutils literal notranslate"><span class="pre">Get</span> <span class="pre">cell</span> <span class="pre">value</span></code> to <code class="docutils literal notranslate"><span class="pre">Get</span> <span class="pre">table</span> <span class="pre">cell</span></code></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="id131">
+<h3>0.7.2<a class="headerlink" href="#id131" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><strong>Browser</strong>: Store webdrivers in temporary directory</p></li>
+</ul>
+</div>
+<div class="section" id="id132">
+<h3>0.7.1<a class="headerlink" href="#id132" title="Permalink to this headline">¶</a></h3>
+<p>First public release of RPA Framework</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+	<div id="cookieConsentContainer">
+  <div class="cookieDesc">
+    <p>
+      This website uses cookies to enhance the user experience.
+      By using the website you accept the use of cookies.
+      You can check our <a href="https://robocorp.com/privacy-policy">Privacy Policy</a> to learn more.
+    </p>
+  </div>
+  <div class="cookieButton">
+    <a onClick="cookieDismiss();">
+      I understand
+    </a>
+  </div>
+</div>
+	<div id="robocorpBanner">
+  <div id="bannerContent">
+    <div id="bannerDismiss">
+      <a onClick="bannerDismiss();">
+        <img src="/_static/icon_cross.svg"/>
+      </a>
+    </div>
+    <a href="https://robocorp.com">
+      <img id="bannerLogo" src="https://cdn.robocorp.com/brand/Logo/Negative logo transparent/Negative logo transparent.svg"/>
+    </a>
+    <span id="bannerText">
+      The automation stack for RPA Framework.
+    </span>
+    <a id="bannerButton" href="https://robocorp.com/get-started">
+      Get started <img src="/_static/icon_arrow.svg"/>
+    </a>
+  </div>
+</div>
+
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="contributing/guide.html" class="btn btn-neutral float-right" title="Contribution guide" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="libraries/word_application/python.html" class="btn btn-neutral float-left" title="Python API" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020 Robocorp Technologies, Inc.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

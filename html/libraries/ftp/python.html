@@ -1,0 +1,610 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Python API &mdash; RPA Framework  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+        <script src="../../_static/iframeResizer.min.js"></script>
+        <script src="../../_static/custom.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="HTTP" href="../http/index.html" />
+    <link rel="prev" title="FTP" href="index.html" />
+	<!-- Cookie consent -->
+<link async rel="stylesheet" type="text/css" href="../../_static/cookie.css"/>
+<script async src="../../_static/cookie.js"></script>
+<!-- Robocorp banner -->
+<link async rel="stylesheet" type="text/css" href="../../_static/robocorp.css"/>
+<script async src="../../_static/robocorp.js"></script>
+<!--            -->
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-151433780-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-151433780-3');
+</script>
+<!--            -->
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> RPA Framework
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Libraries</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../archive/index.html">Archive</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../browser/index.html">Browser</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../browser_playwright/index.html">Browser.Playwright</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../browser_selenium/index.html">Browser.Selenium</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cloud_aws/index.html">Cloud.AWS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cloud_azure/index.html">Cloud.Azure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cloud_google/index.html">Cloud.Google</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../crypto/index.html">Crypto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../database/index.html">Database</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../desktop/index.html">Desktop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../desktop_clipboard/index.html">Desktop.Clipboard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../desktop_operatingsystem/index.html">Desktop.OperatingSystem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../desktop_windows/index.html">Desktop.Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dialogs/index.html">Dialogs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../email_exchange/index.html">Email.Exchange</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../email_imapsmtp/index.html">Email.ImapSmtp</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../excel_application/index.html">Excel.Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../excel_files/index.html">Excel.Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../filesystem/index.html">FileSystem</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">FTP</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Python API</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../http/index.html">HTTP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../images/index.html">Images</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javaaccessbridge/index.html">JavaAccessBridge</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../json/index.html">JSON</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../netsuite/index.html">Netsuite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../notifier/index.html">Notifier</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../outlook_application/index.html">Outlook.Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pdf/index.html">PDF</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../robocorp_process/index.html">Robocorp.Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../robocorp_vault/index.html">Robocorp.Vault</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../robocorp_workitems/index.html">Robocorp.WorkItems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../robotloglistener/index.html">RobotLogListener</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../salesforce/index.html">Salesforce</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sap/index.html">SAP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tables/index.html">Tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tasks/index.html">Tasks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../twitter/index.html">Twitter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../word_application/index.html">Word.Application</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Project</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../releasenotes.html">Release notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contributing/guide.html">Contribution guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contributing/conventions.html">Project conventions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contributing/todos.html">TODO</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">RPA Framework</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">FTP</a> &raquo;</li>
+        
+      <li>Python API</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/libraries/ftp/python.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+	
+           <div itemprop="articleBody">
+            
+  <div class="section" id="python-api">
+<h1>Python API<a class="headerlink" href="#python-api" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-RPA.FTP">
+<span id="ftp"></span><h2>FTP<a class="headerlink" href="#module-RPA.FTP" title="Permalink to this headline">¶</a></h2>
+<dl class="exception">
+<dt id="RPA.FTP.AuthenticationException">
+<em class="property">exception </em><code class="sig-prename descclassname">RPA.FTP.</code><code class="sig-name descname">AuthenticationException</code><a class="headerlink" href="#RPA.FTP.AuthenticationException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<p>Raised when server authentication fails</p>
+<dl class="attribute">
+<dt id="RPA.FTP.AuthenticationException.args">
+<code class="sig-name descname">args</code><a class="headerlink" href="#RPA.FTP.AuthenticationException.args" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="RPA.FTP.AuthenticationException.with_traceback">
+<code class="sig-name descname">with_traceback</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#RPA.FTP.AuthenticationException.with_traceback" title="Permalink to this definition">¶</a></dt>
+<dd><p>Exception.with_traceback(tb) –
+set self.__traceback__ to tb and return self.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="RPA.FTP.FTP">
+<em class="property">class </em><code class="sig-prename descclassname">RPA.FTP.</code><code class="sig-name descname">FTP</code><a class="headerlink" href="#RPA.FTP.FTP" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p><cite>FTP</cite> library can be used to access an FTP server,
+and interact with files.</p>
+<p>The library is based on Python’s built-in <a class="reference external" href="https://docs.python.org/3/library/ftplib.html">ftplib</a>.</p>
+<p><strong>Examples</strong></p>
+<p><strong>Robot Framework</strong></p>
+<div class="highlight-robotframework notranslate"><div class="highlight"><pre><span></span><span class="gh">*** Settings ***</span><span class="p"></span>
+<span class="kn">Library</span><span class="p">    </span><span class="nn">RPA.FTP</span><span class="p"></span>
+
+<span class="gh">*** Variables ***</span><span class="p"></span>
+<span class="p">${</span><span class="nv">HOST</span><span class="p">}       </span><span class="s">127.0.0.1</span><span class="p"></span>
+<span class="p">${</span><span class="nv">PORT</span><span class="p">}       </span><span class="s">27345</span><span class="p"></span>
+<span class="p">${</span><span class="nv">USER</span><span class="p">}       </span><span class="s">user</span><span class="p"></span>
+<span class="p">${</span><span class="nv">PASS</span><span class="p">}       </span><span class="s">12345</span><span class="p"></span>
+
+<span class="gh">*** Tasks ***</span><span class="p"></span>
+<span class="gu">List files on the server directory</span><span class="p"></span>
+<span class="p">    </span><span class="nf">Connect</span><span class="p">   ${</span><span class="nv">HOST</span><span class="p">}  ${</span><span class="nv">PORT</span><span class="p">}  ${</span><span class="nv">USER</span><span class="p">}  ${</span><span class="nv">PASS</span><span class="p">}</span>
+<span class="p">    @{</span><span class="nv">files</span><span class="p">}  </span><span class="nf">List Files</span><span class="p"></span>
+<span class="p">    FOR  ${</span><span class="nv">file</span><span class="p">}  IN  @{</span><span class="nv">files</span><span class="p">}</span>
+<span class="p">        </span><span class="nf">Log</span><span class="p">  ${</span><span class="nv">file</span><span class="p">}</span>
+<span class="p">    END</span>
+</pre></div>
+</div>
+<p><strong>Python</strong></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">RPA.FTP</span> <span class="kn">import</span> <span class="n">FTP</span>
+
+<span class="n">library</span> <span class="o">=</span> <span class="n">FTP</span><span class="p">()</span>
+<span class="n">library</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s1">&#39;127.0.0.1&#39;</span><span class="p">,</span> <span class="mi">27345</span><span class="p">,</span> <span class="s1">&#39;user&#39;</span><span class="p">,</span> <span class="s1">&#39;12345&#39;</span><span class="p">)</span>
+<span class="n">files</span> <span class="o">=</span> <span class="n">library</span><span class="o">.</span><span class="n">list_files</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">files</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="attribute">
+<dt id="RPA.FTP.FTP.ROBOT_LIBRARY_DOC_FORMAT">
+<code class="sig-name descname">ROBOT_LIBRARY_DOC_FORMAT</code><em class="property"> = 'REST'</em><a class="headerlink" href="#RPA.FTP.FTP.ROBOT_LIBRARY_DOC_FORMAT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="RPA.FTP.FTP.ROBOT_LIBRARY_SCOPE">
+<code class="sig-name descname">ROBOT_LIBRARY_SCOPE</code><em class="property"> = 'GLOBAL'</em><a class="headerlink" href="#RPA.FTP.FTP.ROBOT_LIBRARY_SCOPE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="RPA.FTP.FTP.abort">
+<code class="sig-name descname">abort</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#RPA.FTP.FTP.abort" title="Permalink to this definition">¶</a></dt>
+<dd><p>Abort a file transfer in progress</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.FTP.FTP.close">
+<code class="sig-name descname">close</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#RPA.FTP.FTP.close" title="Permalink to this definition">¶</a></dt>
+<dd><p>Close connection to the server unilaterally</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.FTP.FTP.connect">
+<code class="sig-name descname">connect</code><span class="sig-paren">(</span><em class="sig-param">host: str</em>, <em class="sig-param">port: int = 21</em>, <em class="sig-param">user: str = None</em>, <em class="sig-param">password: str = None</em>, <em class="sig-param">tls: bool = False</em>, <em class="sig-param">transfer: str = 'passive'</em>, <em class="sig-param">keyfile: str = None</em>, <em class="sig-param">certfile: str = None</em>, <em class="sig-param">timeout: int = None</em>, <em class="sig-param">source_address: Tuple[str</em>, <em class="sig-param">int] = None</em><span class="sig-paren">)</span><a class="headerlink" href="#RPA.FTP.FTP.connect" title="Permalink to this definition">¶</a></dt>
+<dd><p>Connect to FTP server</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>host</strong> – address of the server</p></li>
+<li><p><strong>port</strong> – port of the server, defaults to 21</p></li>
+<li><p><strong>user</strong> – login name, defaults to None</p></li>
+<li><p><strong>password</strong> – login password, defaults to None</p></li>
+<li><p><strong>tls</strong> – connect using TLS support, defaults to False</p></li>
+<li><p><strong>transfer</strong> – mode of the transfer, defaults to “passive”</p></li>
+<li><p><strong>keyfile</strong> – path to private key file</p></li>
+<li><p><strong>certfile</strong> – path to certificate file</p></li>
+<li><p><strong>timeout</strong> – a timeout in seconds for the connection attempt</p></li>
+<li><p><strong>source_address</strong> – socket to bind to as its source address before connecting</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><a class="reference internal" href="#RPA.FTP.AuthenticationException" title="RPA.FTP.AuthenticationException"><strong>AuthenticationException</strong></a> – on authentication error with the server</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.FTP.FTP.cwd">
+<code class="sig-name descname">cwd</code><span class="sig-paren">(</span><em class="sig-param">dirname: str</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#RPA.FTP.FTP.cwd" title="Permalink to this definition">¶</a></dt>
+<dd><p>Change working directory on the server</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>dirname</strong> – name of the directory</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.FTP.FTP.delete">
+<code class="sig-name descname">delete</code><span class="sig-paren">(</span><em class="sig-param">filepath: str</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#RPA.FTP.FTP.delete" title="Permalink to this definition">¶</a></dt>
+<dd><p>Delete file on the server</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>filepath</strong> – path to server file</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.FTP.FTP.download">
+<code class="sig-name descname">download</code><span class="sig-paren">(</span><em class="sig-param">remotefile: str</em>, <em class="sig-param">localfile: str = None</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#RPA.FTP.FTP.download" title="Permalink to this definition">¶</a></dt>
+<dd><p>Download file from FTP server</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>remotefile</strong> – path to remote file on the server</p></li>
+<li><p><strong>localfile</strong> – name of the downloaded file on the local filesystem,
+if <cite>None</cite> will have same name as remote file</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.FTP.FTP.file_size">
+<code class="sig-name descname">file_size</code><span class="sig-paren">(</span><em class="sig-param">filepath: str</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#RPA.FTP.FTP.file_size" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return byte size of the file on the server</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>filepath</strong> – path to server file</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.FTP.FTP.get_welcome_message">
+<code class="sig-name descname">get_welcome_message</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#RPA.FTP.FTP.get_welcome_message" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get server welcome message</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>welcome message</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.FTP.FTP.list_files">
+<code class="sig-name descname">list_files</code><span class="sig-paren">(</span><em class="sig-param">dirname: str = ''</em><span class="sig-paren">)</span> &#x2192; list<a class="headerlink" href="#RPA.FTP.FTP.list_files" title="Permalink to this definition">¶</a></dt>
+<dd><p>List files on the server directory</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>dirname</strong> – name of the directory</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.FTP.FTP.mkd">
+<code class="sig-name descname">mkd</code><span class="sig-paren">(</span><em class="sig-param">dirname: str</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#RPA.FTP.FTP.mkd" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a new directory on the server</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>dirname</strong> – name of the directory</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.FTP.FTP.pwd">
+<code class="sig-name descname">pwd</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#RPA.FTP.FTP.pwd" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get current working directory on the server</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.FTP.FTP.quit">
+<code class="sig-name descname">quit</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#RPA.FTP.FTP.quit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Send QUIT command to the server and close connection</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.FTP.FTP.rename">
+<code class="sig-name descname">rename</code><span class="sig-paren">(</span><em class="sig-param">fromname: str</em>, <em class="sig-param">toname: str</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#RPA.FTP.FTP.rename" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rename file on the server</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>fromname</strong> – current name of the file</p></li>
+<li><p><strong>toname</strong> – new name for the file</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.FTP.FTP.rmd">
+<code class="sig-name descname">rmd</code><span class="sig-paren">(</span><em class="sig-param">dirname: str</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#RPA.FTP.FTP.rmd" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove directory on the server</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>dirname</strong> – name of the directory</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.FTP.FTP.send_command">
+<code class="sig-name descname">send_command</code><span class="sig-paren">(</span><em class="sig-param">command: str</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#RPA.FTP.FTP.send_command" title="Permalink to this definition">¶</a></dt>
+<dd><p>Execute command on the server</p>
+<p>List of FTP commands:
+<a class="reference external" href="https://en.wikipedia.org/wiki/List_of_FTP_commands">https://en.wikipedia.org/wiki/List_of_FTP_commands</a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>command</strong> – name of the command to send</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.FTP.FTP.set_ascii_mode">
+<code class="sig-name descname">set_ascii_mode</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#RPA.FTP.FTP.set_ascii_mode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set transfer mode to ASCII</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.FTP.FTP.set_binary_mode">
+<code class="sig-name descname">set_binary_mode</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#RPA.FTP.FTP.set_binary_mode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set transfer mode to BINARY</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.FTP.FTP.set_debug_level">
+<code class="sig-name descname">set_debug_level</code><span class="sig-paren">(</span><em class="sig-param">level: int = 0</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#RPA.FTP.FTP.set_debug_level" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set debug level for the library</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>level</strong> – integer value of debug level, defaults to 0</p>
+</dd>
+</dl>
+<p>0 - no debugging output
+1 - moderate amount of debugging
+2+ - higher amount of debugging</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.FTP.FTP.upload">
+<code class="sig-name descname">upload</code><span class="sig-paren">(</span><em class="sig-param">localfile: str</em>, <em class="sig-param">remotefile: str</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#RPA.FTP.FTP.upload" title="Permalink to this definition">¶</a></dt>
+<dd><p>Upload file to FTP server</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>localfile</strong> – path to file to upload</p></li>
+<li><p><strong>remotefile</strong> – name of uploaded file in the server</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="exception">
+<dt id="RPA.FTP.FTPException">
+<em class="property">exception </em><code class="sig-prename descclassname">RPA.FTP.</code><code class="sig-name descname">FTPException</code><a class="headerlink" href="#RPA.FTP.FTPException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<p>Raised on general FTP error</p>
+<dl class="attribute">
+<dt id="RPA.FTP.FTPException.args">
+<code class="sig-name descname">args</code><a class="headerlink" href="#RPA.FTP.FTPException.args" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="RPA.FTP.FTPException.with_traceback">
+<code class="sig-name descname">with_traceback</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#RPA.FTP.FTPException.with_traceback" title="Permalink to this definition">¶</a></dt>
+<dd><p>Exception.with_traceback(tb) –
+set self.__traceback__ to tb and return self.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="RPA.FTP.ftpcommand">
+<code class="sig-prename descclassname">RPA.FTP.</code><code class="sig-name descname">ftpcommand</code><span class="sig-paren">(</span><em class="sig-param">f</em><span class="sig-paren">)</span><a class="headerlink" href="#RPA.FTP.ftpcommand" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+	<div id="cookieConsentContainer">
+  <div class="cookieDesc">
+    <p>
+      This website uses cookies to enhance the user experience.
+      By using the website you accept the use of cookies.
+      You can check our <a href="https://robocorp.com/privacy-policy">Privacy Policy</a> to learn more.
+    </p>
+  </div>
+  <div class="cookieButton">
+    <a onClick="cookieDismiss();">
+      I understand
+    </a>
+  </div>
+</div>
+	<div id="robocorpBanner">
+  <div id="bannerContent">
+    <div id="bannerDismiss">
+      <a onClick="bannerDismiss();">
+        <img src="/_static/icon_cross.svg"/>
+      </a>
+    </div>
+    <a href="https://robocorp.com">
+      <img id="bannerLogo" src="https://cdn.robocorp.com/brand/Logo/Negative logo transparent/Negative logo transparent.svg"/>
+    </a>
+    <span id="bannerText">
+      The automation stack for RPA Framework.
+    </span>
+    <a id="bannerButton" href="https://robocorp.com/get-started">
+      Get started <img src="/_static/icon_arrow.svg"/>
+    </a>
+  </div>
+</div>
+
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../http/index.html" class="btn btn-neutral float-right" title="HTTP" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="FTP" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020 Robocorp Technologies, Inc.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

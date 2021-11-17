@@ -1,0 +1,134 @@
+****
+TODO
+****
+
+RPA.Database:
+=============
+
+.. csv-table::
+   :header: "Line", "Message"
+   :widths: 10, 40
+
+   "208", "take autocommit into use for all database modules"
+
+RPA.Desktop.Windows:
+====================
+
+.. csv-table::
+   :header: "Line", "Message"
+   :widths: 10, 40
+
+   "637", "Handle too compled method"
+   "1123", "return more valuable information about what should"
+   "1371", "supporting multiple search criterias at same time to identify ONE element"
+   "1397", "supporting multiple search criterias at same time to identify ONE element"
+
+RPA.Desktop.keywords.application:
+=================================
+
+.. csv-table::
+   :header: "Line", "Message"
+   :widths: 10, 40
+
+   "112", "Move implementations to platform-specific adapters"
+   "168", "Find out way to get actual default application,"
+
+RPA.Desktop.keywords.finder:
+============================
+
+.. csv-table::
+   :header: "Line", "Message"
+   :widths: 10, 40
+
+   "304", "Add run-on-error support and maybe screenshotting matches?"
+
+RPA.Desktop.keywords.mouse:
+===========================
+
+.. csv-table::
+   :header: "Line", "Message"
+   :widths: 10, 40
+
+   "73", "Clamp to screen dimensions?"
+   "106", "mypy should handle enum exhaustivity validation"
+
+RPA.Desktop.keywords.screen:
+============================
+
+.. csv-table::
+   :header: "Line", "Message"
+   :widths: 10, 40
+
+   "180", "Draw a circle instead?"
+
+RPA.Email.ImapSmtp:
+===================
+
+.. csv-table::
+   :header: "Line", "Message"
+   :widths: 10, 40
+
+   "718", "mypy should handle enum exhaustivity validation"
+
+RPA.FileSystem:
+===============
+
+.. csv-table::
+   :header: "Line", "Message"
+   :widths: 10, 40
+
+   "369", "glob support"
+   "389", "Should it remove all subdirectories too?"
+   "416", "glob support"
+   "547", "Convert to proper date"
+   "556", "Convert to proper date"
+   "564", "Convert to human-friendly?"
+
+RPA.JSON:
+=========
+
+.. csv-table::
+   :header: "Line", "Message"
+   :widths: 10, 40
+
+   "133", "Add more logging about affected rows, at least on debug level"
+
+RPA.JavaAccessBridge:
+=====================
+
+.. csv-table::
+   :header: "Line", "Message"
+   :widths: 10, 40
+
+   "202", "add keyword for taking screenshots of elements and window"
+   "203", "implement proper XPath syntax support"
+   "593", "change to use RPA.core.geometry Region/Point"
+
+RPA.Robocorp.Process:
+=====================
+
+.. csv-table::
+   :header: "Line", "Message"
+   :widths: 10, 40
+
+   "136", "Add support for all Process API endpoints"
+
+RPA.Tables:
+===========
+
+.. csv-table::
+   :header: "Line", "Message"
+   :widths: 10, 40
+
+   "2", "Implement column slicing"
+   "3", "Index name conflict in exports/imports"
+   "4", "Return Robot Framework DotDict instead of dict?"
+
+RPA.Tasks:
+==========
+
+.. csv-table::
+   :header: "Line", "Message"
+   :widths: 10, 40
+
+   "674", "Move all result object modifying here"

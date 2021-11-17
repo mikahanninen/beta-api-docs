@@ -1,0 +1,661 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Python API &mdash; RPA Framework  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+        <script src="../../_static/iframeResizer.min.js"></script>
+        <script src="../../_static/custom.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Netsuite" href="../netsuite/index.html" />
+    <link rel="prev" title="JSON" href="index.html" />
+	<!-- Cookie consent -->
+<link async rel="stylesheet" type="text/css" href="../../_static/cookie.css"/>
+<script async src="../../_static/cookie.js"></script>
+<!-- Robocorp banner -->
+<link async rel="stylesheet" type="text/css" href="../../_static/robocorp.css"/>
+<script async src="../../_static/robocorp.js"></script>
+<!--            -->
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-151433780-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-151433780-3');
+</script>
+<!--            -->
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> RPA Framework
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Libraries</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../archive/index.html">Archive</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../browser/index.html">Browser</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../browser_playwright/index.html">Browser.Playwright</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../browser_selenium/index.html">Browser.Selenium</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cloud_aws/index.html">Cloud.AWS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cloud_azure/index.html">Cloud.Azure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cloud_google/index.html">Cloud.Google</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../crypto/index.html">Crypto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../database/index.html">Database</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../desktop/index.html">Desktop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../desktop_clipboard/index.html">Desktop.Clipboard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../desktop_operatingsystem/index.html">Desktop.OperatingSystem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../desktop_windows/index.html">Desktop.Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dialogs/index.html">Dialogs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../email_exchange/index.html">Email.Exchange</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../email_imapsmtp/index.html">Email.ImapSmtp</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../excel_application/index.html">Excel.Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../excel_files/index.html">Excel.Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../filesystem/index.html">FileSystem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ftp/index.html">FTP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../http/index.html">HTTP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../images/index.html">Images</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javaaccessbridge/index.html">JavaAccessBridge</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">JSON</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Python API</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../netsuite/index.html">Netsuite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../notifier/index.html">Notifier</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../outlook_application/index.html">Outlook.Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pdf/index.html">PDF</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../robocorp_process/index.html">Robocorp.Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../robocorp_vault/index.html">Robocorp.Vault</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../robocorp_workitems/index.html">Robocorp.WorkItems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../robotloglistener/index.html">RobotLogListener</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../salesforce/index.html">Salesforce</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sap/index.html">SAP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tables/index.html">Tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tasks/index.html">Tasks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../twitter/index.html">Twitter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../word_application/index.html">Word.Application</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Project</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../releasenotes.html">Release notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contributing/guide.html">Contribution guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contributing/conventions.html">Project conventions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contributing/todos.html">TODO</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">RPA Framework</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">JSON</a> &raquo;</li>
+        
+      <li>Python API</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/libraries/json/python.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+	
+           <div itemprop="articleBody">
+            
+  <div class="section" id="python-api">
+<h1>Python API<a class="headerlink" href="#python-api" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-RPA.JSON">
+<span id="json"></span><h2>JSON<a class="headerlink" href="#module-RPA.JSON" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="RPA.JSON.JSON">
+<em class="property">class </em><code class="sig-prename descclassname">RPA.JSON.</code><code class="sig-name descname">JSON</code><a class="headerlink" href="#RPA.JSON.JSON" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p><cite>JSON</cite> is a library for manipulating <a class="reference external" href="http://json.org/">JSON</a> files and strings.</p>
+<p>JSON is a common data interchange format inspired by a subset of
+the Javascript programming language, but these days is a de facto
+standard in modern web APIs and is language agnostic.</p>
+<p><strong>Serialization</strong></p>
+<p>The term <cite>serialization</cite> refers to the process of converting
+Robot Framework or Python types to JSON or the other way around.</p>
+<p>Basic types can be easily converted between the domains,
+and the mapping is as follows:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 65%" />
+<col style="width: 35%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>JSON</p></th>
+<th class="head"><p>Python</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>object</p></td>
+<td><p>dict</p></td>
+</tr>
+<tr class="row-odd"><td><p>array</p></td>
+<td><p>list</p></td>
+</tr>
+<tr class="row-even"><td><p>string</p></td>
+<td><p>str</p></td>
+</tr>
+<tr class="row-odd"><td><p>number (int)</p></td>
+<td><p>int</p></td>
+</tr>
+<tr class="row-even"><td><p>number (real)</p></td>
+<td><p>float</p></td>
+</tr>
+<tr class="row-odd"><td><p>true</p></td>
+<td><p>True</p></td>
+</tr>
+<tr class="row-even"><td><p>false</p></td>
+<td><p>False</p></td>
+</tr>
+<tr class="row-odd"><td><p>null</p></td>
+<td><p>None</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>About JSONPath</strong></p>
+<p>Reading and writing values from/to JSON serializable objects is done
+using <a class="reference external" href="http://goessner.net/articles/JsonPath/">JSONPath</a>. It’s a syntax designed to quickly and easily refer to
+specific elements in a JSON structure.</p>
+<p>Compared to Python’s normal dictionary access, JSONPath expressions can
+target multiple elements through features such as conditionals and wildcards,
+which can simplify many JSON-related operations. It’s analogous to XPath
+for XML structures.</p>
+<p><strong>Syntax example</strong></p>
+<p>For this example consider the following structure:</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;clients&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Johnny Example&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;email&quot;</span><span class="p">:</span> <span class="s2">&quot;john@example.com&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;orders&quot;</span><span class="p">:</span> <span class="p">[</span>
+          <span class="p">{</span><span class="nt">&quot;address&quot;</span><span class="p">:</span> <span class="s2">&quot;Streetroad 123&quot;</span><span class="p">,</span> <span class="nt">&quot;price&quot;</span><span class="p">:</span> <span class="mf">103.20</span><span class="p">},</span>
+          <span class="p">{</span><span class="nt">&quot;address&quot;</span><span class="p">:</span> <span class="s2">&quot;Streetroad 123&quot;</span><span class="p">,</span> <span class="nt">&quot;price&quot;</span><span class="p">:</span> <span class="mf">98.99</span><span class="p">}</span>
+      <span class="p">]</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Jane Example&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;email&quot;</span><span class="p">:</span> <span class="s2">&quot;jane@example.com&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;orders&quot;</span><span class="p">:</span> <span class="p">[</span>
+          <span class="p">{</span><span class="nt">&quot;address&quot;</span><span class="p">:</span> <span class="s2">&quot;Waypath 321&quot;</span><span class="p">,</span> <span class="nt">&quot;price&quot;</span><span class="p">:</span> <span class="mf">22.00</span><span class="p">},</span>
+          <span class="p">{</span><span class="nt">&quot;address&quot;</span><span class="p">:</span> <span class="s2">&quot;Streetroad 123&quot;</span><span class="p">,</span> <span class="nt">&quot;price&quot;</span><span class="p">:</span> <span class="mf">2330.01</span><span class="p">}</span>
+      <span class="p">]</span>
+    <span class="p">}</span>
+  <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>In the simplest case JSONPath can replace nested access:</p>
+<div class="highlight-robotframework notranslate"><div class="highlight"><pre><span></span><span class="c"># First order of first client, with direct dictionary access</span>
+<span class="c">${value}=</span><span class="p">    </span><span class="c">Set variable</span><span class="p">    </span><span class="c">${json}[&quot;clients&quot;][0][&quot;orders&quot;][0]</span><span class="p"></span>
+
+<span class="c"># JSONPath access</span>
+<span class="c">${value}=</span><span class="p">    </span><span class="c">Get value from JSON</span><span class="p">    </span><span class="c">${json}</span><span class="p">    </span><span class="c">$.clients[0].orders[0]</span><span class="p"></span>
+</pre></div>
+</div>
+<p>But the power comes from complicated expressions:</p>
+<div class="highlight-robotframework notranslate"><div class="highlight"><pre><span></span><span class="c"># Find delivery addresses for all orders</span>
+<span class="c">${prices}=</span><span class="p">        </span><span class="c">Get values from JSON</span><span class="p">    </span><span class="c">$..address</span><span class="p"></span>
+
+<span class="c"># Find orders that cost over 100</span>
+<span class="c">${expensives}=</span><span class="p">    </span><span class="c">Get values from JSON</span><span class="p">    </span><span class="c">$..orders[?(@.price&gt;100)]</span><span class="p"></span>
+</pre></div>
+</div>
+<p><strong>Supported Expressions</strong></p>
+<p>The supported syntax elements are:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 79%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Element</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>$</p></td>
+<td><p>Root object/element</p></td>
+</tr>
+<tr class="row-odd"><td><p>&#64;</p></td>
+<td><p>Current object/element</p></td>
+</tr>
+<tr class="row-even"><td><p>. or []</p></td>
+<td><p>Child operator</p></td>
+</tr>
+<tr class="row-odd"><td><p>..</p></td>
+<td><p>Recursive descent</p></td>
+</tr>
+<tr class="row-even"><td><p>*</p></td>
+<td><p>Wilcard, any element</p></td>
+</tr>
+<tr class="row-odd"><td><p>[n]</p></td>
+<td><p>Array index</p></td>
+</tr>
+<tr class="row-even"><td><p>[a:b:c]</p></td>
+<td><p>Array slice (start, end, step)</p></td>
+</tr>
+<tr class="row-odd"><td><p>[a,b]</p></td>
+<td><p>Union of indices or names</p></td>
+</tr>
+<tr class="row-even"><td><p>?()</p></td>
+<td><p>Apply a filter expression</p></td>
+</tr>
+<tr class="row-odd"><td><p>()</p></td>
+<td><p>Script expression</p></td>
+</tr>
+</tbody>
+</table>
+<p>There are a multitude of different script expressions
+in addition to the elements listed above, which can
+be seen in the <a class="reference external" href="http://goessner.net/articles/JsonPath/">aforementioned article</a>.</p>
+<p>For further library usage examples, see the individual keywords.</p>
+<dl class="attribute">
+<dt id="RPA.JSON.JSON.ROBOT_LIBRARY_DOC_FORMAT">
+<code class="sig-name descname">ROBOT_LIBRARY_DOC_FORMAT</code><em class="property"> = 'REST'</em><a class="headerlink" href="#RPA.JSON.JSON.ROBOT_LIBRARY_DOC_FORMAT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="RPA.JSON.JSON.ROBOT_LIBRARY_SCOPE">
+<code class="sig-name descname">ROBOT_LIBRARY_SCOPE</code><em class="property"> = 'GLOBAL'</em><a class="headerlink" href="#RPA.JSON.JSON.ROBOT_LIBRARY_SCOPE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="RPA.JSON.JSON.add_to_json">
+<code class="sig-name descname">add_to_json</code><span class="sig-paren">(</span><em class="sig-param">doc: Union[Dict[str, Any], List[Any], str, int, float, bool, None], expr: str, value: Union[Dict[str, Any], List[Any], str, int, float, bool, None]</em><span class="sig-paren">)</span><a class="headerlink" href="#RPA.JSON.JSON.add_to_json" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add items into a JSON serializable object and return the result.</p>
+<p>If the target is a list, the values are appended to the end.
+If the target is a dict, the keys are either added or updated.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>doc</strong> – JSON serializable object</p></li>
+<li><p><strong>expr</strong> – JSONPath expression</p></li>
+<li><p><strong>value</strong> – values to either append or update</p></li>
+</ul>
+</dd>
+</dl>
+<p>Example:</p>
+<div class="highlight-robotframework notranslate"><div class="highlight"><pre><span></span><span class="c"># Change the name value for all people</span>
+<span class="c">&amp;{before}=</span><span class="p">    </span><span class="c">Convert string to JSON</span><span class="p">   </span><span class="c">{&quot;People&quot;: [{&quot;Name&quot;: &quot;Mark&quot;}, {&quot;Name&quot;: &quot;Jane&quot;}]}</span><span class="p"></span>
+<span class="c">&amp;{person}=</span><span class="p">    </span><span class="c">Create dictionary</span><span class="p">      </span><span class="c">Name=John</span><span class="p"></span>
+<span class="c">&amp;{after}=</span><span class="p">     </span><span class="c">Add to JSON</span><span class="p">    </span><span class="c">${before}</span><span class="p">   </span><span class="c">$.People</span><span class="p">    </span><span class="c">${person}</span><span class="p"></span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.JSON.JSON.convert_json_to_string">
+<code class="sig-name descname">convert_json_to_string</code><span class="sig-paren">(</span><em class="sig-param">doc: Union[Dict[str, Any], List[Any], str, int, float, bool, None]</em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#RPA.JSON.JSON.convert_json_to_string" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert a JSON serializable object to a string and return it.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>doc</strong> – JSON serializable object</p>
+</dd>
+</dl>
+<p>Example:</p>
+<div class="highlight-robotframework notranslate"><div class="highlight"><pre><span></span><span class="c">${obj}=</span><span class="p">    </span><span class="c">Create dictionary</span><span class="p">    </span><span class="c">Key=Value</span><span class="p"></span>
+<span class="c">${json}=</span><span class="p">   </span><span class="c">Convert JSON to string</span><span class="p">    </span><span class="c">${obj}</span><span class="p"></span>
+<span class="c">Should be equal</span><span class="p">    </span><span class="c">${json}</span><span class="p">     </span><span class="c">{&quot;Key&quot;: &quot;Value&quot;}</span><span class="p"></span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.JSON.JSON.convert_string_to_json">
+<code class="sig-name descname">convert_string_to_json</code><span class="sig-paren">(</span><em class="sig-param">doc: str</em><span class="sig-paren">)</span> &#x2192; Union[Dict[str, Any], List[Any], str, int, float, bool, None]<a class="headerlink" href="#RPA.JSON.JSON.convert_string_to_json" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert a string to a JSON serializable object and return it.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>doc</strong> – JSON string</p>
+</dd>
+</dl>
+<p>Example:</p>
+<div class="highlight-robotframework notranslate"><div class="highlight"><pre><span></span><span class="c">${json}=</span><span class="p">    </span><span class="c">Set variable</span><span class="p">    </span><span class="c">{&quot;Key&quot;: &quot;Value&quot;}</span><span class="p"></span>
+<span class="c">&amp;{obj}=</span><span class="p">     </span><span class="c">Convert string to JSON</span><span class="p">    </span><span class="c">${json}</span><span class="p"></span>
+<span class="c">Should be equal</span><span class="p">    </span><span class="c">${obj.Key}</span><span class="p">    </span><span class="c">Value</span><span class="p"></span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.JSON.JSON.delete_from_json">
+<code class="sig-name descname">delete_from_json</code><span class="sig-paren">(</span><em class="sig-param">doc: Union[Dict[str, Any], List[Any], str, int, float, bool, None], expr: str</em><span class="sig-paren">)</span><a class="headerlink" href="#RPA.JSON.JSON.delete_from_json" title="Permalink to this definition">¶</a></dt>
+<dd><p>Delete values from a JSON serializable object and return the result.
+Will delete all values that match the expression.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>doc</strong> – JSON serializable object or string</p></li>
+<li><p><strong>expr</strong> – JSONPath expression</p></li>
+</ul>
+</dd>
+</dl>
+<p>Example:</p>
+<div class="highlight-robotframework notranslate"><div class="highlight"><pre><span></span><span class="c"># Delete all people</span>
+<span class="c">&amp;{before}=</span><span class="p">    </span><span class="c">Convert string to JSON</span><span class="p">   </span><span class="c">{&quot;People&quot;: [{&quot;Name&quot;: &quot;Mark&quot;}, {&quot;Name&quot;: &quot;Jane&quot;}]}</span><span class="p"></span>
+<span class="c">&amp;{after}=</span><span class="p">     </span><span class="c">Delete from JSON</span><span class="p">    </span><span class="c">${before}</span><span class="p">   </span><span class="c">$.People[*]</span><span class="p"></span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.JSON.JSON.get_value_from_json">
+<code class="sig-name descname">get_value_from_json</code><span class="sig-paren">(</span><em class="sig-param">doc: Union[Dict[str, Any], List[Any], str, int, float, bool, None], expr: str, default: Any = None</em><span class="sig-paren">)</span><a class="headerlink" href="#RPA.JSON.JSON.get_value_from_json" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a single value from a JSON serializable object that matches the given expression.</p>
+<p>Raises a ValueError if there is more than one match.
+Returns the given default argument (or None) if there
+were no matches.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>doc</strong> – JSON serializable object or string</p></li>
+<li><p><strong>expr</strong> – jsonpath expression</p></li>
+</ul>
+</dd>
+</dl>
+<p>Example:</p>
+<div class="highlight-robotframework notranslate"><div class="highlight"><pre><span></span><span class="c"># Get the name value for the first person</span>
+<span class="c">&amp;{people}=</span><span class="p">    </span><span class="c">Convert string to JSON</span><span class="p">   </span><span class="c">{&quot;People&quot;: [{&quot;Name&quot;: &quot;Mark&quot;}, {&quot;Name&quot;: &quot;Jane&quot;}]}</span><span class="p"></span>
+<span class="c">${first}=</span><span class="p">     </span><span class="c">Get value from JSON</span><span class="p">      </span><span class="c">${people}</span><span class="p">   </span><span class="c">$.People[0].Name</span><span class="p"></span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.JSON.JSON.get_values_from_json">
+<code class="sig-name descname">get_values_from_json</code><span class="sig-paren">(</span><em class="sig-param">doc: Union[Dict[str, Any], List[Any], str, int, float, bool, None], expr: str</em><span class="sig-paren">)</span><a class="headerlink" href="#RPA.JSON.JSON.get_values_from_json" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get all values from a JSON serializable object that match the given expression.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>doc</strong> – JSON serializable object or string</p></li>
+<li><p><strong>expr</strong> – JSONPath expression</p></li>
+</ul>
+</dd>
+</dl>
+<p>Example:</p>
+<div class="highlight-robotframework notranslate"><div class="highlight"><pre><span></span><span class="c"># Get all the names for all people</span>
+<span class="c">&amp;{people}=</span><span class="p">    </span><span class="c">Convert string to JSON</span><span class="p">   </span><span class="c">{&quot;People&quot;: [{&quot;Name&quot;: &quot;Mark&quot;}, {&quot;Name&quot;: &quot;Jane&quot;}]}</span><span class="p"></span>
+<span class="c">@{names}=</span><span class="p">     </span><span class="c">Get values from JSON</span><span class="p">     </span><span class="c">${people}</span><span class="p">   </span><span class="c">$.People[*].Name</span><span class="p"></span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.JSON.JSON.load_json_from_file">
+<code class="sig-name descname">load_json_from_file</code><span class="sig-paren">(</span><em class="sig-param">filename: str</em>, <em class="sig-param">encoding='utf-8'</em><span class="sig-paren">)</span> &#x2192; Union[Dict[str, Any], List[Any], str, int, float, bool, None]<a class="headerlink" href="#RPA.JSON.JSON.load_json_from_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load JSON data from a file, and return it as JSON serializable object.
+Depending on the input file the object can be either a dictionary,
+a list, or a scalar value.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filename</strong> – path to input file</p></li>
+<li><p><strong>encoding</strong> – file character encoding</p></li>
+</ul>
+</dd>
+</dl>
+<p>Example:</p>
+<div class="highlight-robotframework notranslate"><div class="highlight"><pre><span></span><span class="c">&amp;{auth}=</span><span class="p">    </span><span class="c">Load JSON from file</span><span class="p">    </span><span class="c">auth.json</span><span class="p"></span>
+<span class="c">Log</span><span class="p">   </span><span class="c">Current auth token: ${auth.token}</span><span class="p"></span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.JSON.JSON.save_json_to_file">
+<code class="sig-name descname">save_json_to_file</code><span class="sig-paren">(</span><em class="sig-param">doc: Union[Dict[str, Any], List[Any], str, int, float, bool, None], filename: str, indent: int = None, encoding='utf-8'</em><span class="sig-paren">)</span><a class="headerlink" href="#RPA.JSON.JSON.save_json_to_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save a JSON serializable object or a string containg
+a JSON value into a file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>doc</strong> – JSON serializable object or string</p></li>
+<li><p><strong>filename</strong> – path to output file</p></li>
+<li><p><strong>indent</strong> – if given this value is used for json file indent</p></li>
+<li><p><strong>encoding</strong> – file character encoding</p></li>
+</ul>
+</dd>
+</dl>
+<p>Example:</p>
+<div class="highlight-robotframework notranslate"><div class="highlight"><pre><span></span><span class="c"># Save dictionary to file</span>
+<span class="c">${john}=</span><span class="p">    </span><span class="c">Create dictionary</span><span class="p">    </span><span class="c">name=John</span><span class="p">    </span><span class="c">mail=john@example.com</span><span class="p"></span>
+<span class="c">Save JSON to file</span><span class="p">    </span><span class="c">${john}</span><span class="p">    </span><span class="c">john.json</span><span class="p"></span>
+
+<span class="c"># Save string to file</span>
+<span class="c">${mark}=</span><span class="p">    </span><span class="c">Set variable</span><span class="p">    </span><span class="c">{&quot;name&quot;: &quot;Mark&quot;, &quot;mail&quot;: &quot;mark@example.com&quot;}</span><span class="p"></span>
+<span class="c">Save JSON to file</span><span class="p">    </span><span class="c">${mark}</span><span class="p">    </span><span class="c">mark.json</span><span class="p"></span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.JSON.JSON.update_value_to_json">
+<code class="sig-name descname">update_value_to_json</code><span class="sig-paren">(</span><em class="sig-param">doc: Union[Dict[str, Any], List[Any], str, int, float, bool, None], expr: str, value: Union[Dict[str, Any], List[Any], str, int, float, bool, None]</em><span class="sig-paren">)</span><a class="headerlink" href="#RPA.JSON.JSON.update_value_to_json" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update existing values in a JSON serializable object and return the result.
+Will change all values that match the expression.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>doc</strong> – JSON or string</p></li>
+<li><p><strong>expr</strong> – JSONPath expression</p></li>
+<li><p><strong>value</strong> – New value for the matching item(s)</p></li>
+</ul>
+</dd>
+</dl>
+<p>Example:</p>
+<div class="highlight-robotframework notranslate"><div class="highlight"><pre><span></span><span class="c"># Change the name key for all people</span>
+<span class="c">&amp;{before}=</span><span class="p">    </span><span class="c">Convert string to JSON</span><span class="p">   </span><span class="c">{&quot;People&quot;: [{&quot;Name&quot;: &quot;Mark&quot;}, {&quot;Name&quot;: &quot;Jane&quot;}]}</span><span class="p"></span>
+<span class="c">&amp;{after}=</span><span class="p">     </span><span class="c">Update value to JSON</span><span class="p">     </span><span class="c">${before}</span><span class="p">   </span><span class="c">$.People[*].Name</span><span class="p">    </span><span class="c">JohnMalkovich</span><span class="p"></span>
+</pre></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+	<div id="cookieConsentContainer">
+  <div class="cookieDesc">
+    <p>
+      This website uses cookies to enhance the user experience.
+      By using the website you accept the use of cookies.
+      You can check our <a href="https://robocorp.com/privacy-policy">Privacy Policy</a> to learn more.
+    </p>
+  </div>
+  <div class="cookieButton">
+    <a onClick="cookieDismiss();">
+      I understand
+    </a>
+  </div>
+</div>
+	<div id="robocorpBanner">
+  <div id="bannerContent">
+    <div id="bannerDismiss">
+      <a onClick="bannerDismiss();">
+        <img src="/_static/icon_cross.svg"/>
+      </a>
+    </div>
+    <a href="https://robocorp.com">
+      <img id="bannerLogo" src="https://cdn.robocorp.com/brand/Logo/Negative logo transparent/Negative logo transparent.svg"/>
+    </a>
+    <span id="bannerText">
+      The automation stack for RPA Framework.
+    </span>
+    <a id="bannerButton" href="https://robocorp.com/get-started">
+      Get started <img src="/_static/icon_arrow.svg"/>
+    </a>
+  </div>
+</div>
+
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../netsuite/index.html" class="btn btn-neutral float-right" title="Netsuite" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="JSON" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020 Robocorp Technologies, Inc.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

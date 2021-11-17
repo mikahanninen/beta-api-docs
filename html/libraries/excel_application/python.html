@@ -1,0 +1,588 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Python API &mdash; RPA Framework  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+        <script src="../../_static/iframeResizer.min.js"></script>
+        <script src="../../_static/custom.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Excel.Files" href="../excel_files/index.html" />
+    <link rel="prev" title="Excel.Application" href="index.html" />
+	<!-- Cookie consent -->
+<link async rel="stylesheet" type="text/css" href="../../_static/cookie.css"/>
+<script async src="../../_static/cookie.js"></script>
+<!-- Robocorp banner -->
+<link async rel="stylesheet" type="text/css" href="../../_static/robocorp.css"/>
+<script async src="../../_static/robocorp.js"></script>
+<!--            -->
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-151433780-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-151433780-3');
+</script>
+<!--            -->
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> RPA Framework
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Libraries</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../archive/index.html">Archive</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../browser/index.html">Browser</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../browser_playwright/index.html">Browser.Playwright</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../browser_selenium/index.html">Browser.Selenium</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cloud_aws/index.html">Cloud.AWS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cloud_azure/index.html">Cloud.Azure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cloud_google/index.html">Cloud.Google</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../crypto/index.html">Crypto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../database/index.html">Database</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../desktop/index.html">Desktop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../desktop_clipboard/index.html">Desktop.Clipboard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../desktop_operatingsystem/index.html">Desktop.OperatingSystem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../desktop_windows/index.html">Desktop.Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dialogs/index.html">Dialogs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../email_exchange/index.html">Email.Exchange</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../email_imapsmtp/index.html">Email.ImapSmtp</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Excel.Application</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Python API</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../excel_files/index.html">Excel.Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../filesystem/index.html">FileSystem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ftp/index.html">FTP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../http/index.html">HTTP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../images/index.html">Images</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javaaccessbridge/index.html">JavaAccessBridge</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../json/index.html">JSON</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../netsuite/index.html">Netsuite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../notifier/index.html">Notifier</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../outlook_application/index.html">Outlook.Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pdf/index.html">PDF</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../robocorp_process/index.html">Robocorp.Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../robocorp_vault/index.html">Robocorp.Vault</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../robocorp_workitems/index.html">Robocorp.WorkItems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../robotloglistener/index.html">RobotLogListener</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../salesforce/index.html">Salesforce</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sap/index.html">SAP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tables/index.html">Tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tasks/index.html">Tasks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../twitter/index.html">Twitter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../word_application/index.html">Word.Application</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Project</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../releasenotes.html">Release notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contributing/guide.html">Contribution guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contributing/conventions.html">Project conventions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contributing/todos.html">TODO</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">RPA Framework</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Excel.Application</a> &raquo;</li>
+        
+      <li>Python API</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/libraries/excel_application/python.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+	
+           <div itemprop="articleBody">
+            
+  <div class="section" id="python-api">
+<h1>Python API<a class="headerlink" href="#python-api" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-RPA.Excel.Application">
+<span id="excel-application"></span><h2>Excel.Application<a class="headerlink" href="#module-RPA.Excel.Application" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="RPA.Excel.Application.Application">
+<em class="property">class </em><code class="sig-prename descclassname">RPA.Excel.Application.</code><code class="sig-name descname">Application</code><span class="sig-paren">(</span><em class="sig-param">autoexit: bool = True</em><span class="sig-paren">)</span><a class="headerlink" href="#RPA.Excel.Application.Application" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p><cite>Excel.Application</cite> is a library for controlling an Excel application.</p>
+<p><strong>Examples</strong></p>
+<p><strong>Robot Framework</strong></p>
+<div class="highlight-robotframework notranslate"><div class="highlight"><pre><span></span><span class="gh">*** Settings ***</span><span class="p"></span>
+<span class="kn">Library</span><span class="p">             </span><span class="nn">RPA.Excel.Application</span><span class="p"></span>
+<span class="kn">Task Setup</span><span class="p">          </span><span class="nf">Open Application</span><span class="p"></span>
+<span class="kn">Task Teardown</span><span class="p">       </span><span class="nf">Quit Application</span><span class="p"></span>
+
+<span class="gh">*** Tasks ***</span><span class="p"></span>
+<span class="gu">Manipulate Excel application</span><span class="p"></span>
+<span class="p">    </span><span class="nf">Open Workbook</span><span class="p">           </span><span class="s">workbook.xlsx</span><span class="p"></span>
+<span class="p">    </span><span class="nf">Set Active Worksheet</span><span class="p">    </span><span class="s">sheetname=new stuff</span><span class="p"></span>
+<span class="p">    </span><span class="nf">Write To Cells</span><span class="p">          </span><span class="s">row=1</span><span class="p"></span>
+<span class="p">    ...                     </span><span class="s">column=1</span><span class="p"></span>
+<span class="p">    ...                     </span><span class="s">value=my data</span><span class="p"></span>
+<span class="p">    </span><span class="nf">Save Excel</span><span class="p"></span>
+
+<span class="gu">Run Excel Macro</span><span class="p"></span>
+<span class="p">    </span><span class="nf">Open Workbook</span><span class="p">   </span><span class="s">orders_with_macro.xlsm</span><span class="p"></span>
+<span class="p">    </span><span class="nf">Run Macro</span><span class="p">       </span><span class="s">Sheet1.CommandButton1_Click</span><span class="p"></span>
+
+<span class="gu">Export Workbook as PDF</span><span class="p"></span>
+<span class="p">    </span><span class="nf">Open Workbook</span><span class="p">           </span><span class="s">workbook.xlsx</span><span class="p"></span>
+<span class="p">    </span><span class="nf">Export as PDF</span><span class="p">           </span><span class="s">workbook.pdf</span><span class="p"></span>
+</pre></div>
+</div>
+<p><strong>Python</strong></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">RPA.Excel.Application</span> <span class="kn">import</span> <span class="n">Application</span>
+
+<span class="n">app</span> <span class="o">=</span> <span class="n">Application</span><span class="p">()</span>
+
+<span class="n">app</span><span class="o">.</span><span class="n">open_application</span><span class="p">()</span>
+<span class="n">app</span><span class="o">.</span><span class="n">open_workbook</span><span class="p">(</span><span class="s1">&#39;workbook.xlsx&#39;</span><span class="p">)</span>
+<span class="n">app</span><span class="o">.</span><span class="n">set_active_worksheet</span><span class="p">(</span><span class="n">sheetname</span><span class="o">=</span><span class="s1">&#39;new stuff&#39;</span><span class="p">)</span>
+<span class="n">app</span><span class="o">.</span><span class="n">write_to_cells</span><span class="p">(</span><span class="n">row</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">column</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="s1">&#39;new data&#39;</span><span class="p">)</span>
+<span class="n">app</span><span class="o">.</span><span class="n">save_excel</span><span class="p">()</span>
+<span class="n">app</span><span class="o">.</span><span class="n">quit_application</span><span class="p">()</span>
+</pre></div>
+</div>
+<dl class="attribute">
+<dt id="RPA.Excel.Application.Application.ROBOT_LIBRARY_DOC_FORMAT">
+<code class="sig-name descname">ROBOT_LIBRARY_DOC_FORMAT</code><em class="property"> = 'REST'</em><a class="headerlink" href="#RPA.Excel.Application.Application.ROBOT_LIBRARY_DOC_FORMAT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="RPA.Excel.Application.Application.ROBOT_LIBRARY_SCOPE">
+<code class="sig-name descname">ROBOT_LIBRARY_SCOPE</code><em class="property"> = 'GLOBAL'</em><a class="headerlink" href="#RPA.Excel.Application.Application.ROBOT_LIBRARY_SCOPE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="RPA.Excel.Application.Application.add_new_sheet">
+<code class="sig-name descname">add_new_sheet</code><span class="sig-paren">(</span><em class="sig-param">sheetname: str</em>, <em class="sig-param">tabname: str = None</em>, <em class="sig-param">create_workbook: bool = True</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#RPA.Excel.Application.Application.add_new_sheet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add new worksheet to workbook. Workbook is created by default if
+it does not exist.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>sheetname</strong> – name for sheet</p></li>
+<li><p><strong>tabname</strong> – name for tab (deprecated)</p></li>
+<li><p><strong>create_workbook</strong> – create workbook if True, defaults to True</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>ValueError</strong> – error is raised if workbook does not exist and
+<cite>create_workbook</cite> is False</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.Excel.Application.Application.add_new_workbook">
+<code class="sig-name descname">add_new_workbook</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#RPA.Excel.Application.Application.add_new_workbook" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds new workbook for Excel application</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.Excel.Application.Application.close_document">
+<code class="sig-name descname">close_document</code><span class="sig-paren">(</span><em class="sig-param">save_changes: bool = False</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#RPA.Excel.Application.Application.close_document" title="Permalink to this definition">¶</a></dt>
+<dd><p>Close the active document (if open).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.Excel.Application.Application.export_as_pdf">
+<code class="sig-name descname">export_as_pdf</code><span class="sig-paren">(</span><em class="sig-param">pdf_filename: str</em>, <em class="sig-param">excel_filename: str = None</em><span class="sig-paren">)</span><a class="headerlink" href="#RPA.Excel.Application.Application.export_as_pdf" title="Permalink to this definition">¶</a></dt>
+<dd><p>Export Excel as PDF file</p>
+<p>If Excel filename is not given, the currently open workbook
+will be exported as PDF.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>pdf_filename</strong> – PDF filename to save</p></li>
+<li><p><strong>excel_filename</strong> – Excel filename to open</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.Excel.Application.Application.find_first_available_cell">
+<code class="sig-name descname">find_first_available_cell</code><span class="sig-paren">(</span><em class="sig-param">worksheet: Any = None</em>, <em class="sig-param">row: int = 1</em>, <em class="sig-param">column: int = 1</em><span class="sig-paren">)</span> &#x2192; Any<a class="headerlink" href="#RPA.Excel.Application.Application.find_first_available_cell" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find first available free cell</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>worksheet</strong> – worksheet to handle, defaults to active worksheet if None</p></li>
+<li><p><strong>row</strong> – starting row for search, defaults to 1</p></li>
+<li><p><strong>column</strong> – starting column for search, defaults to 1</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>tuple (row, column) or (None, None) if not found</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.Excel.Application.Application.find_first_available_row">
+<code class="sig-name descname">find_first_available_row</code><span class="sig-paren">(</span><em class="sig-param">worksheet: Any = None</em>, <em class="sig-param">row: int = 1</em>, <em class="sig-param">column: int = 1</em><span class="sig-paren">)</span> &#x2192; Any<a class="headerlink" href="#RPA.Excel.Application.Application.find_first_available_row" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find first available free row</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>worksheet</strong> – worksheet to handle, defaults to active worksheet if None</p></li>
+<li><p><strong>row</strong> – starting row for search, defaults to 1</p></li>
+<li><p><strong>column</strong> – starting column for search, defaults to 1</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>row or None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.Excel.Application.Application.open_application">
+<code class="sig-name descname">open_application</code><span class="sig-paren">(</span><em class="sig-param">visible: bool = False</em>, <em class="sig-param">display_alerts: bool = False</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#RPA.Excel.Application.Application.open_application" title="Permalink to this definition">¶</a></dt>
+<dd><p>Open the Excel application.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>visible</strong> – show window after opening</p></li>
+<li><p><strong>display_alerts</strong> – show alert popups</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.Excel.Application.Application.open_workbook">
+<code class="sig-name descname">open_workbook</code><span class="sig-paren">(</span><em class="sig-param">filename: str</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#RPA.Excel.Application.Application.open_workbook" title="Permalink to this definition">¶</a></dt>
+<dd><p>Open Excel by filename</p>
+<p>By default sets active worksheet to sheet number 1</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>filename</strong> – path to filename</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.Excel.Application.Application.quit_application">
+<code class="sig-name descname">quit_application</code><span class="sig-paren">(</span><em class="sig-param">save_changes: bool = False</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#RPA.Excel.Application.Application.quit_application" title="Permalink to this definition">¶</a></dt>
+<dd><p>Quit the application.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.Excel.Application.Application.read_from_cells">
+<code class="sig-name descname">read_from_cells</code><span class="sig-paren">(</span><em class="sig-param">worksheet: Any = None</em>, <em class="sig-param">row: int = None</em>, <em class="sig-param">column: int = None</em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#RPA.Excel.Application.Application.read_from_cells" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read value from cell.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>worksheet</strong> – worksheet to handle, defaults to active worksheet if None</p></li>
+<li><p><strong>row</strong> – target row, defaults to None</p></li>
+<li><p><strong>column</strong> – target row, defaults to None</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>ValueError</strong> – if cell is not given</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.Excel.Application.Application.run_macro">
+<code class="sig-name descname">run_macro</code><span class="sig-paren">(</span><em class="sig-param">macro_name: str</em>, <em class="sig-param">*args: Any</em><span class="sig-paren">)</span><a class="headerlink" href="#RPA.Excel.Application.Application.run_macro" title="Permalink to this definition">¶</a></dt>
+<dd><p>Run Excel macro with given name</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>macro_name</strong> – macro to run</p></li>
+<li><p><strong>*args</strong> – <p>arguments to pass to macro</p>
+</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.Excel.Application.Application.save_excel">
+<code class="sig-name descname">save_excel</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#RPA.Excel.Application.Application.save_excel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Saves Excel file</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.Excel.Application.Application.save_excel_as">
+<code class="sig-name descname">save_excel_as</code><span class="sig-paren">(</span><em class="sig-param">filename: str</em>, <em class="sig-param">autofit: bool = False</em>, <em class="sig-param">file_format=None</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#RPA.Excel.Application.Application.save_excel_as" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save Excel with name if workbook is open</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filename</strong> – where to save file</p></li>
+<li><p><strong>autofit</strong> – autofit cell widths if True, defaults to False</p></li>
+<li><p><strong>file_format</strong> – format of file</p></li>
+</ul>
+</dd>
+</dl>
+<p><strong>Note:</strong> Changing the file extension for the path does not
+affect the actual format. To use an older format, use
+the <code class="docutils literal notranslate"><span class="pre">file_format</span></code> argument with one of the following values:</p>
+<p><a class="reference external" href="https://docs.microsoft.com/en-us/office/vba/api/excel.xlfileformat">https://docs.microsoft.com/en-us/office/vba/api/excel.xlfileformat</a></p>
+<p>Examples:</p>
+<div class="highlight-robotframework notranslate"><div class="highlight"><pre><span></span><span class="c"># Save workbook in modern format</span>
+<span class="c">Save excel as</span><span class="p">    </span><span class="c">orders.xlsx</span><span class="p"></span>
+
+<span class="c"># Save workbook in Excel 97 format (format from above URL)</span>
+<span class="c">Save excel as</span><span class="p">    </span><span class="c">legacy.xls</span><span class="p">   </span><span class="c">file_format=${56}</span><span class="p"></span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.Excel.Application.Application.set_active_worksheet">
+<code class="sig-name descname">set_active_worksheet</code><span class="sig-paren">(</span><em class="sig-param">sheetname: str = None</em>, <em class="sig-param">sheetnumber: int = None</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#RPA.Excel.Application.Application.set_active_worksheet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set active worksheet by either its sheet number or name</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>sheetname</strong> – name of Excel sheet, defaults to None</p></li>
+<li><p><strong>sheetnumber</strong> – index of Excel sheet, defaults to None</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.Excel.Application.Application.write_to_cells">
+<code class="sig-name descname">write_to_cells</code><span class="sig-paren">(</span><em class="sig-param">worksheet: Any = None</em>, <em class="sig-param">row: int = None</em>, <em class="sig-param">column: int = None</em>, <em class="sig-param">value: str = None</em>, <em class="sig-param">number_format: str = None</em>, <em class="sig-param">formula: str = None</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#RPA.Excel.Application.Application.write_to_cells" title="Permalink to this definition">¶</a></dt>
+<dd><p>Write value, number_format and/or formula into cell.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>worksheet</strong> – worksheet to handle, defaults to active worksheet if None</p></li>
+<li><p><strong>row</strong> – target row, defaults to None</p></li>
+<li><p><strong>column</strong> – target row, defaults to None</p></li>
+<li><p><strong>value</strong> – possible value to set, defaults to None</p></li>
+<li><p><strong>number_format</strong> – possible number format to set, defaults to None</p></li>
+<li><p><strong>formula</strong> – possible format to set, defaults to None</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>ValueError</strong> – if cell is not given</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="RPA.Excel.Application.catch_com_error">
+<code class="sig-prename descclassname">RPA.Excel.Application.</code><code class="sig-name descname">catch_com_error</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#RPA.Excel.Application.catch_com_error" title="Permalink to this definition">¶</a></dt>
+<dd><p>Try to convert COM errors to human readable format.</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+	<div id="cookieConsentContainer">
+  <div class="cookieDesc">
+    <p>
+      This website uses cookies to enhance the user experience.
+      By using the website you accept the use of cookies.
+      You can check our <a href="https://robocorp.com/privacy-policy">Privacy Policy</a> to learn more.
+    </p>
+  </div>
+  <div class="cookieButton">
+    <a onClick="cookieDismiss();">
+      I understand
+    </a>
+  </div>
+</div>
+	<div id="robocorpBanner">
+  <div id="bannerContent">
+    <div id="bannerDismiss">
+      <a onClick="bannerDismiss();">
+        <img src="/_static/icon_cross.svg"/>
+      </a>
+    </div>
+    <a href="https://robocorp.com">
+      <img id="bannerLogo" src="https://cdn.robocorp.com/brand/Logo/Negative logo transparent/Negative logo transparent.svg"/>
+    </a>
+    <span id="bannerText">
+      The automation stack for RPA Framework.
+    </span>
+    <a id="bannerButton" href="https://robocorp.com/get-started">
+      Get started <img src="/_static/icon_arrow.svg"/>
+    </a>
+  </div>
+</div>
+
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../excel_files/index.html" class="btn btn-neutral float-right" title="Excel.Files" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="Excel.Application" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020 Robocorp Technologies, Inc.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

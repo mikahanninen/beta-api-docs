@@ -1,0 +1,593 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Python API &mdash; RPA Framework  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+        <script src="../../_static/iframeResizer.min.js"></script>
+        <script src="../../_static/custom.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Desktop" href="../desktop/index.html" />
+    <link rel="prev" title="Database" href="index.html" />
+	<!-- Cookie consent -->
+<link async rel="stylesheet" type="text/css" href="../../_static/cookie.css"/>
+<script async src="../../_static/cookie.js"></script>
+<!-- Robocorp banner -->
+<link async rel="stylesheet" type="text/css" href="../../_static/robocorp.css"/>
+<script async src="../../_static/robocorp.js"></script>
+<!--            -->
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-151433780-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-151433780-3');
+</script>
+<!--            -->
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> RPA Framework
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Libraries</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../archive/index.html">Archive</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../browser/index.html">Browser</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../browser_playwright/index.html">Browser.Playwright</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../browser_selenium/index.html">Browser.Selenium</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cloud_aws/index.html">Cloud.AWS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cloud_azure/index.html">Cloud.Azure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cloud_google/index.html">Cloud.Google</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../crypto/index.html">Crypto</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Database</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Python API</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../desktop/index.html">Desktop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../desktop_clipboard/index.html">Desktop.Clipboard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../desktop_operatingsystem/index.html">Desktop.OperatingSystem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../desktop_windows/index.html">Desktop.Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dialogs/index.html">Dialogs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../email_exchange/index.html">Email.Exchange</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../email_imapsmtp/index.html">Email.ImapSmtp</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../excel_application/index.html">Excel.Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../excel_files/index.html">Excel.Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../filesystem/index.html">FileSystem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ftp/index.html">FTP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../http/index.html">HTTP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../images/index.html">Images</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javaaccessbridge/index.html">JavaAccessBridge</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../json/index.html">JSON</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../netsuite/index.html">Netsuite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../notifier/index.html">Notifier</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../outlook_application/index.html">Outlook.Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pdf/index.html">PDF</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../robocorp_process/index.html">Robocorp.Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../robocorp_vault/index.html">Robocorp.Vault</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../robocorp_workitems/index.html">Robocorp.WorkItems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../robotloglistener/index.html">RobotLogListener</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../salesforce/index.html">Salesforce</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sap/index.html">SAP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tables/index.html">Tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tasks/index.html">Tasks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../twitter/index.html">Twitter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../windows/index.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../word_application/index.html">Word.Application</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Project</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../releasenotes.html">Release notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contributing/guide.html">Contribution guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contributing/conventions.html">Project conventions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contributing/todos.html">TODO</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">RPA Framework</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Database</a> &raquo;</li>
+        
+      <li>Python API</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/libraries/database/python.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+	
+           <div itemprop="articleBody">
+            
+  <div class="section" id="python-api">
+<h1>Python API<a class="headerlink" href="#python-api" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-RPA.Database">
+<span id="database"></span><h2>Database<a class="headerlink" href="#module-RPA.Database" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="RPA.Database.Configuration">
+<em class="property">class </em><code class="sig-prename descclassname">RPA.Database.</code><code class="sig-name descname">Configuration</code><a class="headerlink" href="#RPA.Database.Configuration" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class to handle configuration from config files
+and class init</p>
+<dl class="method">
+<dt id="RPA.Database.Configuration.all_but_empty">
+<code class="sig-name descname">all_but_empty</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#RPA.Database.Configuration.all_but_empty" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="RPA.Database.Configuration.get">
+<code class="sig-name descname">get</code><span class="sig-paren">(</span><em class="sig-param">param</em>, <em class="sig-param">default=None</em><span class="sig-paren">)</span><a class="headerlink" href="#RPA.Database.Configuration.get" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="RPA.Database.Configuration.get_connection_parameters_as_string">
+<code class="sig-name descname">get_connection_parameters_as_string</code><span class="sig-paren">(</span><em class="sig-param">conf=None</em><span class="sig-paren">)</span><a class="headerlink" href="#RPA.Database.Configuration.get_connection_parameters_as_string" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="RPA.Database.Configuration.parse_arguments">
+<code class="sig-name descname">parse_arguments</code><span class="sig-paren">(</span><em class="sig-param">module_name</em>, <em class="sig-param">database</em>, <em class="sig-param">username</em>, <em class="sig-param">password</em>, <em class="sig-param">host</em>, <em class="sig-param">port</em>, <em class="sig-param">charset</em>, <em class="sig-param">config_file: str</em><span class="sig-paren">)</span><a class="headerlink" href="#RPA.Database.Configuration.parse_arguments" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="RPA.Database.Configuration.set_default_port">
+<code class="sig-name descname">set_default_port</code><span class="sig-paren">(</span><em class="sig-param">port</em><span class="sig-paren">)</span><a class="headerlink" href="#RPA.Database.Configuration.set_default_port" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="RPA.Database.Configuration.set_val">
+<code class="sig-name descname">set_val</code><span class="sig-paren">(</span><em class="sig-param">param</em>, <em class="sig-param">value</em><span class="sig-paren">)</span><a class="headerlink" href="#RPA.Database.Configuration.set_val" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="RPA.Database.Database">
+<em class="property">class </em><code class="sig-prename descclassname">RPA.Database.</code><code class="sig-name descname">Database</code><a class="headerlink" href="#RPA.Database.Database" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p><cite>Database</cite> is a library for handling different database operations.</p>
+<p>All database operations are supported. Keywords <cite>Query</cite> and <cite>Get Rows</cite>
+return values by default in <cite>RPA.Table</cite> format.</p>
+<p>Library is compatible with any Database API Specification 2.0 module.</p>
+<p>References:</p>
+<ul class="simple">
+<li><p>Database API Specification 2.0 - <a class="reference external" href="http://www.python.org/dev/peps/pep-0249/">http://www.python.org/dev/peps/pep-0249/</a></p></li>
+<li><p>Lists of DB API 2.0 - <a class="reference external" href="http://wiki.python.org/moin/DatabaseInterfaces">http://wiki.python.org/moin/DatabaseInterfaces</a></p></li>
+<li><p>Python Database Programming - <a class="reference external" href="http://wiki.python.org/moin/DatabaseProgramming/">http://wiki.python.org/moin/DatabaseProgramming/</a></p></li>
+</ul>
+<p><strong>Examples</strong></p>
+<p><strong>Robot Framework</strong></p>
+<div class="highlight-robotframework notranslate"><div class="highlight"><pre><span></span><span class="gh">*** Settings ***</span><span class="p"></span>
+<span class="kn">Library</span><span class="p">         </span><span class="nn">RPA.Database</span><span class="p"></span>
+
+<span class="gh">*** Tasks ***</span><span class="p"></span>
+<span class="gu">Get Orders From Database</span><span class="p"></span>
+<span class="p">    </span><span class="nf">Connect To Database</span><span class="p">  </span><span class="s">pymysql</span><span class="p">  </span><span class="s">tester</span><span class="p">  </span><span class="s">user</span><span class="p">  </span><span class="s">password</span><span class="p">  </span><span class="s">127.0.0.1</span><span class="p"></span>
+<span class="p">    @{</span><span class="nv">orders</span><span class="p">}            </span><span class="nf">Query</span><span class="p">    </span><span class="s">Select * FROM incoming_orders</span><span class="p"></span>
+<span class="p">    FOR   ${</span><span class="nv">order</span><span class="p">}  IN  @{</span><span class="nv">orders</span><span class="p">}</span>
+<span class="p">        </span><span class="nf">Handle Order</span><span class="p">  ${</span><span class="nv">order</span><span class="p">}</span>
+<span class="p">    END</span>
+</pre></div>
+</div>
+<p><strong>Python</strong></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">RPA.Database</span> <span class="kn">import</span> <span class="n">Database</span>
+<span class="kn">from</span> <span class="nn">RPA.Robocorp.Vault</span> <span class="kn">import</span> <span class="n">FileSecrets</span>
+
+<span class="n">filesecrets</span> <span class="o">=</span> <span class="n">FileSecrets</span><span class="p">(</span><span class="s2">&quot;secrets.json&quot;</span><span class="p">)</span>
+<span class="n">secrets</span> <span class="o">=</span> <span class="n">filesecrets</span><span class="o">.</span><span class="n">get_secret</span><span class="p">(</span><span class="s2">&quot;databasesecrets&quot;</span><span class="p">)</span>
+
+<span class="n">db</span> <span class="o">=</span> <span class="n">Database</span><span class="p">()</span>
+<span class="n">db</span><span class="o">.</span><span class="n">connect_to_database</span><span class="p">(</span><span class="s1">&#39;pymysql&#39;</span><span class="p">,</span>
+                    <span class="n">secrets</span><span class="p">[</span><span class="s2">&quot;DATABASE&quot;</span><span class="p">],</span>
+                    <span class="n">secrets</span><span class="p">[</span><span class="s2">&quot;USERNAME&quot;</span><span class="p">],</span>
+                    <span class="n">secrets</span><span class="p">[</span><span class="s2">&quot;PASSWORD&quot;</span><span class="p">],</span>
+                    <span class="s1">&#39;127.0.0.1&#39;</span>
+                    <span class="p">)</span>
+<span class="n">orders</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">&quot;SELECT * FROM incoming_orders&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">order</span> <span class="ow">in</span> <span class="n">orders</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">order</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="attribute">
+<dt id="RPA.Database.Database.ROBOT_LIBRARY_DOC_FORMAT">
+<code class="sig-name descname">ROBOT_LIBRARY_DOC_FORMAT</code><em class="property"> = 'REST'</em><a class="headerlink" href="#RPA.Database.Database.ROBOT_LIBRARY_DOC_FORMAT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="RPA.Database.Database.ROBOT_LIBRARY_SCOPE">
+<code class="sig-name descname">ROBOT_LIBRARY_SCOPE</code><em class="property"> = 'GLOBAL'</em><a class="headerlink" href="#RPA.Database.Database.ROBOT_LIBRARY_SCOPE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="RPA.Database.Database.call_stored_procedure">
+<code class="sig-name descname">call_stored_procedure</code><span class="sig-paren">(</span><em class="sig-param">name</em>, <em class="sig-param">params=None</em>, <em class="sig-param">sanstran=False</em><span class="sig-paren">)</span><a class="headerlink" href="#RPA.Database.Database.call_stored_procedure" title="Permalink to this definition">¶</a></dt>
+<dd><p>Call stored procedure with name and params.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – procedure name</p></li>
+<li><p><strong>params</strong> – parameters for the procedure as a list, defaults to None</p></li>
+<li><p><strong>sanstran</strong> – run command without an explicit transaction commit or rollback,
+defaults to False</p></li>
+</ul>
+</dd>
+</dl>
+<p>Example:</p>
+<div class="highlight-robotframework notranslate"><div class="highlight"><pre><span></span><span class="c">@{params}</span><span class="p">     </span><span class="c">Create List</span><span class="p">   </span><span class="c">FirstParam</span><span class="p">   </span><span class="c">SecondParam</span><span class="p">   </span><span class="c">ThirdParam</span><span class="p"></span>
+<span class="c">@{results}</span><span class="p">    </span><span class="c">Call Stored Procedure</span><span class="p">   </span><span class="c">mystpr</span><span class="p">  </span><span class="c">${params}</span><span class="p"></span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.Database.Database.connect_to_database">
+<code class="sig-name descname">connect_to_database</code><span class="sig-paren">(</span><em class="sig-param">module_name: str = None</em>, <em class="sig-param">database: str = None</em>, <em class="sig-param">username: str = None</em>, <em class="sig-param">password: str = None</em>, <em class="sig-param">host: str = None</em>, <em class="sig-param">port: int = None</em>, <em class="sig-param">charset: str = None</em>, <em class="sig-param">config_file: str = 'db.cfg'</em>, <em class="sig-param">autocommit: bool = False</em><span class="sig-paren">)</span><a class="headerlink" href="#RPA.Database.Database.connect_to_database" title="Permalink to this definition">¶</a></dt>
+<dd><p>Connect to database using DB API 2.0 module.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>module_name</strong> – database module to use</p></li>
+<li><p><strong>database</strong> – name of the database</p></li>
+<li><p><strong>username</strong> – of the user accessing the database</p></li>
+<li><p><strong>password</strong> – of the user accessing the database</p></li>
+<li><p><strong>host</strong> – SQL server address</p></li>
+<li><p><strong>port</strong> – SQL server port</p></li>
+<li><p><strong>charset</strong> – for example, “utf-8”, defaults to None</p></li>
+<li><p><strong>config_file</strong> – location of configuration file, defaults to “db.cfg”</p></li>
+<li><p><strong>autocommit</strong> – set autocommit value for connect (only with pymssql atm)</p></li>
+</ul>
+</dd>
+</dl>
+<p>Example:</p>
+<div class="highlight-robotframework notranslate"><div class="highlight"><pre><span></span><span class="c">Connect To Database</span><span class="p">  </span><span class="c">pymysql</span><span class="p">  </span><span class="c">database</span><span class="p">  </span><span class="c">username</span><span class="p">  </span><span class="c">password</span><span class="p">  </span><span class="c">host</span><span class="p">  </span><span class="c">port</span><span class="p"></span>
+<span class="c">Connect To Database</span><span class="p">  </span><span class="c">${CURDIR}${/}resources${/}dbconfig.cfg</span><span class="p"></span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.Database.Database.description">
+<code class="sig-name descname">description</code><span class="sig-paren">(</span><em class="sig-param">table</em><span class="sig-paren">)</span><a class="headerlink" href="#RPA.Database.Database.description" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get description of the SQL table</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>table</strong> – name of the SQL table</p>
+</dd>
+</dl>
+<p>Example:</p>
+<div class="highlight-robotframework notranslate"><div class="highlight"><pre><span></span><span class="c">Connect To Database</span><span class="p">    </span><span class="c">pymysql</span><span class="p">  </span><span class="c">mydb</span><span class="p">  </span><span class="c">user</span><span class="p">  </span><span class="c">pass</span><span class="p">  </span><span class="c">127.0.0.1</span><span class="p"></span>
+<span class="c">${db_description}</span><span class="p">      </span><span class="c">Description</span><span class="p">  </span><span class="c">mytable</span><span class="p"></span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.Database.Database.disconnect_from_database">
+<code class="sig-name descname">disconnect_from_database</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#RPA.Database.Database.disconnect_from_database" title="Permalink to this definition">¶</a></dt>
+<dd><p>Close connection to SQL database</p>
+<p>Example:</p>
+<div class="highlight-robotframework notranslate"><div class="highlight"><pre><span></span><span class="c">Connect To Database</span><span class="p">    </span><span class="c">pymysql</span><span class="p">  </span><span class="c">mydb</span><span class="p">  </span><span class="c">user</span><span class="p">  </span><span class="c">pass</span><span class="p">  </span><span class="c">127.0.0.1</span><span class="p"></span>
+<span class="c">${result}</span><span class="p">              </span><span class="c">Query</span><span class="p">   </span><span class="c">Select firstname, lastname FROM table</span><span class="p"></span>
+<span class="c">Disconnect From Database</span><span class="p"></span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.Database.Database.execute_sql_script">
+<code class="sig-name descname">execute_sql_script</code><span class="sig-paren">(</span><em class="sig-param">filename</em>, <em class="sig-param">sanstran=False</em>, <em class="sig-param">encoding='utf-8'</em><span class="sig-paren">)</span><a class="headerlink" href="#RPA.Database.Database.execute_sql_script" title="Permalink to this definition">¶</a></dt>
+<dd><p>Execute content of SQL script as SQL commands.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filename</strong> – filepath to SQL script to execute</p></li>
+<li><p><strong>sanstran</strong> – run command without an explicit transaction commit or rollback,
+defaults to False</p></li>
+<li><p><strong>encoding</strong> – character encoding of file</p></li>
+</ul>
+</dd>
+</dl>
+<p>Example:</p>
+<div class="highlight-robotframework notranslate"><div class="highlight"><pre><span></span><span class="c">Execute SQL Script</span><span class="p">   </span><span class="c">script.sql</span><span class="p"></span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.Database.Database.get_number_of_rows">
+<code class="sig-name descname">get_number_of_rows</code><span class="sig-paren">(</span><em class="sig-param">table</em>, <em class="sig-param">conditions=None</em><span class="sig-paren">)</span><a class="headerlink" href="#RPA.Database.Database.get_number_of_rows" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get number of rows in a table. Conditions can be given
+as arguments for WHERE clause.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>table</strong> – name of the SQL table</p></li>
+<li><p><strong>conditions</strong> – restrictions for selections, defaults to None</p></li>
+</ul>
+</dd>
+</dl>
+<p>Example:</p>
+<div class="highlight-robotframework notranslate"><div class="highlight"><pre><span></span><span class="c">${count}</span><span class="p">   </span><span class="c">Get Number Of Rows</span><span class="p">  </span><span class="c">tablename</span><span class="p"></span>
+<span class="c">${count}</span><span class="p">   </span><span class="c">Get Number Of Rows</span><span class="p">  </span><span class="c">tablename</span><span class="p">  </span><span class="c">column1=5 and column2=&#39;x&#39;</span><span class="p"></span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.Database.Database.get_rows">
+<code class="sig-name descname">get_rows</code><span class="sig-paren">(</span><em class="sig-param">table</em>, <em class="sig-param">columns=None</em>, <em class="sig-param">conditions=None</em>, <em class="sig-param">as_table=True</em><span class="sig-paren">)</span><a class="headerlink" href="#RPA.Database.Database.get_rows" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get rows from table. Columns and conditions can be
+set to filter result.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>table</strong> – name of the SQL table</p></li>
+<li><p><strong>columns</strong> – name of columns to return, defaults to <cite>None</cite>
+means that all columns are returned</p></li>
+<li><p><strong>conditions</strong> – limiting result by WHERE clause, defaults to <cite>None</cite></p></li>
+<li><p><strong>as_table</strong> – if result should be instance of <code class="docutils literal notranslate"><span class="pre">Table</span></code>, defaults to <cite>True</cite>
+<cite>False</cite> means that return type would be <cite>list</cite></p></li>
+</ul>
+</dd>
+</dl>
+<p>Example:</p>
+<div class="highlight-robotframework notranslate"><div class="highlight"><pre><span></span><span class="c">@{res}</span><span class="p">   </span><span class="c">Get Rows</span><span class="p">  </span><span class="c">tablename</span><span class="p">  </span><span class="c">arvo</span><span class="p"></span>
+<span class="c">@{res}</span><span class="p">   </span><span class="c">Get Rows</span><span class="p">  </span><span class="c">tablename</span><span class="p">  </span><span class="c">arvo</span><span class="p">  </span><span class="c">columns=id,name</span><span class="p"></span>
+<span class="c">@{res}</span><span class="p">   </span><span class="c">Get Rows</span><span class="p">  </span><span class="c">tablename</span><span class="p">  </span><span class="c">columns=id</span><span class="p">  </span><span class="c">conditions=column1=&#39;newvalue&#39;</span><span class="p"></span>
+<span class="c">@{res}</span><span class="p">   </span><span class="c">Get Rows</span><span class="p">  </span><span class="c">tablename</span><span class="p">  </span><span class="c">conditions=column2=&#39;updatedvalue&#39;</span><span class="p"></span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.Database.Database.query">
+<code class="sig-name descname">query</code><span class="sig-paren">(</span><em class="sig-param">statement: str</em>, <em class="sig-param">assertion: str = None</em>, <em class="sig-param">sanstran: bool = False</em>, <em class="sig-param">as_table: bool = True</em><span class="sig-paren">)</span><a class="headerlink" href="#RPA.Database.Database.query" title="Permalink to this definition">¶</a></dt>
+<dd><p>Make a SQL query.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>statement</strong> – SQL statement to execute</p></li>
+<li><p><strong>assertion</strong> – assert on query result, row_count or columns.
+Works only for SELECT statements Defaults to None.</p></li>
+<li><p><strong>sanstran</strong> – run command without an explicit transaction commit or rollback,
+defaults to False</p></li>
+<li><p><strong>as_table</strong> – if result should be instance of <code class="docutils literal notranslate"><span class="pre">Table</span></code>, defaults to <cite>True</cite>
+<cite>False</cite> means that return type would be <cite>list</cite></p></li>
+</ul>
+</dd>
+</dl>
+<p>Example:</p>
+<div class="highlight-robotframework notranslate"><div class="highlight"><pre><span></span><span class="c">@{res}</span><span class="p">   </span><span class="c">Query</span><span class="p">   </span><span class="c">Select firstname, lastname FROM table</span><span class="p"></span>
+<span class="c">FOR</span><span class="p">  </span><span class="c">${row}</span><span class="p">  </span><span class="c">IN</span><span class="p">  </span><span class="c">@{RES}</span><span class="p"></span>
+<span class="p">    </span><span class="c">Log</span><span class="p">   </span><span class="c">${row}</span><span class="p"></span>
+<span class="c">END</span><span class="p"></span>
+<span class="c">@{res}</span><span class="p">   </span><span class="c">Query</span><span class="p">  </span><span class="c">Select * FROM table</span><span class="p">  </span><span class="c">row_count &gt; ${EXPECTED}</span><span class="p"></span>
+<span class="c">@{res}</span><span class="p">   </span><span class="c">Query</span><span class="p">  </span><span class="c">Select * FROM table</span><span class="p">  </span><span class="c">&#39;arvo&#39; in columns</span><span class="p"></span>
+<span class="c">@{res}</span><span class="p">   </span><span class="c">Query</span><span class="p">  </span><span class="c">Select * FROM table</span><span class="p">  </span><span class="c">columns == [&#39;id&#39;, &#39;arvo&#39;]</span><span class="p"></span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="RPA.Database.Database.set_auto_commit">
+<code class="sig-name descname">set_auto_commit</code><span class="sig-paren">(</span><em class="sig-param">autocommit=True</em><span class="sig-paren">)</span><a class="headerlink" href="#RPA.Database.Database.set_auto_commit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set database auto commit mode.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>autocommit</strong> – boolean value for auto commit, defaults to True</p>
+</dd>
+</dl>
+<p>Example:</p>
+<div class="highlight-robotframework notranslate"><div class="highlight"><pre><span></span><span class="c">Set Auto Commit</span><span class="p">             </span><span class="c"># auto commit is set on</span>
+<span class="c">Set Auto Commit</span><span class="p">   </span><span class="c">False</span><span class="p">     </span><span class="c"># auto commit is turned off</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+	<div id="cookieConsentContainer">
+  <div class="cookieDesc">
+    <p>
+      This website uses cookies to enhance the user experience.
+      By using the website you accept the use of cookies.
+      You can check our <a href="https://robocorp.com/privacy-policy">Privacy Policy</a> to learn more.
+    </p>
+  </div>
+  <div class="cookieButton">
+    <a onClick="cookieDismiss();">
+      I understand
+    </a>
+  </div>
+</div>
+	<div id="robocorpBanner">
+  <div id="bannerContent">
+    <div id="bannerDismiss">
+      <a onClick="bannerDismiss();">
+        <img src="/_static/icon_cross.svg"/>
+      </a>
+    </div>
+    <a href="https://robocorp.com">
+      <img id="bannerLogo" src="https://cdn.robocorp.com/brand/Logo/Negative logo transparent/Negative logo transparent.svg"/>
+    </a>
+    <span id="bannerText">
+      The automation stack for RPA Framework.
+    </span>
+    <a id="bannerButton" href="https://robocorp.com/get-started">
+      Get started <img src="/_static/icon_arrow.svg"/>
+    </a>
+  </div>
+</div>
+
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../desktop/index.html" class="btn btn-neutral float-right" title="Desktop" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="Database" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020 Robocorp Technologies, Inc.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
