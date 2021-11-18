@@ -231,15 +231,19 @@
 library for <cite>RPA.Desktop.Windows</cite>. Main difference being that this
 library is using <a class="reference external" href="https://github.com/yinkaisheng/Python-UIAutomation-for-Windows">uiautomation</a> dependency instead of <cite>pywinauto</cite>.</p>
 <p><strong>About terminology</strong></p>
-<p>The most used term in uiautomation package is “Control” which in the library context
-maps to objects of the application like for example Window, Button or ListItem.</p>
+<p><strong>*ControlType*</strong></p>
+<p>Value referred to by locator keys <cite>type:</cite> or <cite>control</cite>. Represents type of application
+object, which can be e.g. <cite>Window</cite>, <cite>Button</cite> or <cite>ListItem</cite>.</p>
+<p><strong>*Element*</strong></p>
+<p>Entity of an application structure (e.g. certain button in a window), which can be
+identified by a locator.</p>
 <p><strong>Locators</strong></p>
 <p>Locators are based on different strategies that can used identify Control object.</p>
 <p>Available strategies that can be used for the locators:</p>
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 21%" />
-<col style="width: 79%" />
+<col style="width: 19%" />
+<col style="width: 81%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Key</p></th>
@@ -280,13 +284,16 @@ maps to objects of the application like for example Window, Button or ListItem.<
 <tr class="row-even"><td><p>executable</p></td>
 <td><p>target window by its executable name</p></td>
 </tr>
-<tr class="row-odd"><td><p>desktop</p></td>
+<tr class="row-odd"><td><p>handle</p></td>
+<td><p>target window handle (int)</p></td>
+</tr>
+<tr class="row-even"><td><p>desktop</p></td>
 <td><p>target desktop</p></td>
 </tr>
-<tr class="row-even"><td><p>process</p></td>
-<td><p>target window by its executable’s process id</p></td>
+<tr class="row-odd"><td><p>process</p></td>
+<td><p><em>NOT YET SUPPORTED</em> target window by its executable’s process id</p></td>
 </tr>
-<tr class="row-odd"><td><p>depth</p></td>
+<tr class="row-even"><td><p>depth</p></td>
 <td><p>searchDepth (int) for finding Control (default 8)</p></td>
 </tr>
 </tbody>
@@ -316,21 +323,8 @@ class:Button offset:370,0
 can be installed separately. Other options are tools <a class="reference external" href="https://docs.microsoft.com/en-us/windows/win32/winauto/inspect-objects">Inspect Object</a>  and <a class="reference external" href="https://docs.microsoft.com/en-us/windows/win32/winauto/ui-automation-verify">UI Automation Verify</a>, which
 can be accessed by installing Windows SDK.</p>
 <p><strong>Recording</strong></p>
-<p>Library provides some rudimentary keywords for inspecting and recording locators for
-Control objects.</p>
-<p>Keyword <code class="docutils literal notranslate"><span class="pre">Inspect</span> <span class="pre">Element</span></code> will return list of steps that can be used to interact with Control object.</p>
-<p>Recording can be activated by <code class="docutils literal notranslate"><span class="pre">Start</span> <span class="pre">Recording</span></code> which then activate mode where upon mouse click
-Control under mouse pointer will be inspected. Recording can be stopped at any time by keyboard <cite>ESC</cite>.
-After recording has been stopped, the recorded steps can be retrieved by keyword <code class="docutils literal notranslate"><span class="pre">Get</span> <span class="pre">Recording</span></code>.</p>
-<p>Example task for the recording</p>
-<div class="highlight-robotframework notranslate"><div class="highlight"><pre><span></span><span class="gh">*** Tasks ***</span><span class="p"></span>
-<span class="gu">Record Task</span><span class="p"></span>
-<span class="p">    </span><span class="nf">Log To Console</span><span class="p">    </span><span class="s">Record steps for the Task</span><span class="p"></span>
-<span class="p">    </span><span class="nf">Start Recording</span><span class="p"></span>
-<span class="p">    ${</span><span class="nv">recording</span><span class="p">}=    </span><span class="nf">Get Recording</span><span class="p">    </span><span class="s">sleeps=</span><span class="p">${</span><span class="nv">FALSE</span><span class="p">}</span>
-<span class="p">    </span><span class="nf">Log To Console</span><span class="p">    ${</span><span class="nv">recording</span><span class="p">}</span>
-</pre></div>
-</div>
+<p>The package provides some rudimentary inspecting and recording via script SCRIPT_NAME</p>
+<p>ADD GUIDE HERE</p>
 <p><strong>Examples</strong></p>
 <p>Both Robot Framework and Python examples follow.</p>
 <p>The library must be imported first.</p>
@@ -344,7 +338,7 @@ After recording has been stopped, the recorded steps can be retrieved by keyword
 <span class="p">    </span><span class="nf">Control Window</span><span class="p">    </span><span class="s">name:Calculator</span><span class="p"></span>
 <span class="p">    </span><span class="nf">Click</span><span class="p">    </span><span class="s">id:clearButton</span><span class="p"></span>
 <span class="p">    </span><span class="nf">Send Keys</span><span class="p">   </span><span class="s">96+4=</span><span class="p"></span>
-<span class="p">    ${</span><span class="nv">result</span><span class="p">}=    </span><span class="nf">Get Control Property</span><span class="p">    </span><span class="s">id:CalculatorResults</span><span class="p">    </span><span class="s">name</span><span class="p"></span>
+<span class="p">    ${</span><span class="nv">result</span><span class="p">}=    </span><span class="nf">Access Attribute or Method</span><span class="p">    </span><span class="s">id:CalculatorResults</span><span class="p">    </span><span class="s">Name</span><span class="p"></span>
 <span class="p">    </span><span class="nf">Log To Console</span><span class="p">    </span><span class="s">n</span><span class="p">${</span><span class="nv">result</span><span class="p">}</span>
 </pre></div>
 </div>
