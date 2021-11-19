@@ -231,19 +231,17 @@
 library for <cite>RPA.Desktop.Windows</cite>. Main difference being that this
 library is using <a class="reference external" href="https://github.com/yinkaisheng/Python-UIAutomation-for-Windows">uiautomation</a> dependency instead of <cite>pywinauto</cite>.</p>
 <p><strong>About terminology</strong></p>
-<p><strong>*ControlType*</strong></p>
-<p>Value referred to by locator keys <cite>type:</cite> or <cite>control</cite>. Represents type of application
+<p><strong>ControlType</strong> is a value referred to by locator keys <cite>type:</cite> or <cite>control</cite>. Represents type of application
 object, which can be e.g. <cite>Window</cite>, <cite>Button</cite> or <cite>ListItem</cite>.</p>
-<p><strong>*Element*</strong></p>
-<p>Entity of an application structure (e.g. certain button in a window), which can be
+<p><strong>Element</strong> is an entity of an application structure (e.g. certain button in a window), which can be
 identified by a locator.</p>
 <p><strong>Locators</strong></p>
 <p>Locators are based on different strategies that can used identify Control object.</p>
 <p>Available strategies that can be used for the locators:</p>
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 19%" />
-<col style="width: 81%" />
+<col style="width: 16%" />
+<col style="width: 84%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Key</p></th>
@@ -288,7 +286,7 @@ identified by a locator.</p>
 <td><p>target window handle (int)</p></td>
 </tr>
 <tr class="row-even"><td><p>desktop</p></td>
-<td><p>target desktop</p></td>
+<td><p><em>SPECIAL</em> target desktop, no value for the key e.g. <cite>desktop and name:Calculator</cite></p></td>
 </tr>
 <tr class="row-odd"><td><p>process</p></td>
 <td><p><em>NOT YET SUPPORTED</em> target window by its executable’s process id</p></td>
@@ -298,17 +296,29 @@ identified by a locator.</p>
 </tr>
 </tbody>
 </table>
-<p>Getting control over application object (Control) is done usually by first executing
-keyword <code class="docutils literal notranslate"><span class="pre">Control</span> <span class="pre">Window</span></code> which by default will search from desktop ControlType
-WindowControl objects with the given locator.</p>
-<p>Keyword <code class="docutils literal notranslate"><span class="pre">Control</span> <span class="pre">Window</span></code> can also be used to target application child WindowControl objects.</p>
+<p><strong>About root element on locators</strong></p>
+<p>Locators work on currently active <cite>root element</cite>. At the start <cite>root element</cite> is the whole
+desktop. There are different ways on changing this root element.</p>
+<p>Keyword <code class="docutils literal notranslate"><span class="pre">Control</span> <span class="pre">Window</span></code> is the most common method of setting certain system window
+as a root element for further actions using locators.</p>
+<p>Locators themselves support cascading syntax (denoted by character <cite>&gt;</cite> in the locator string),
+which can denote root element in “parent (root) &amp; child” terms.</p>
+<p>For example.</p>
+<div class="highlight-robotframework notranslate"><div class="highlight"><pre><span></span><span class="c">Click</span><span class="p">  </span><span class="c">id:controls &gt; id:activate</span><span class="p"></span>
+</pre></div>
+</div>
+<p>On the above example the left side of the <cite>&gt;</cite> character, <cite>id:controls</cite>, represents the root element
+(can be called as “parent element” in this case). Right side of the locator string, <cite>id:activate</cite>,
+represents “child” element and it will be searched under the “parent element”.</p>
+<p>This way element search is more efficient, because search are restricted to certain section of element
+tree which can be quite huge especially on the desktop level and in certain applications.</p>
 <p>Keyword examples:</p>
 <div class="highlight-robotframework notranslate"><div class="highlight"><pre><span></span><span class="c">Control Window</span><span class="p">    </span><span class="c">name:Calculator</span><span class="p"></span>
 <span class="c">Control Window</span><span class="p">    </span><span class="c">Calculator</span><span class="p">  </span><span class="c"># will execute search by &#39;name:Calculator&#39;</span>
 <span class="c">Control Window</span><span class="p">    </span><span class="c">executable:Spotify.exe</span><span class="p"></span>
 </pre></div>
 </div>
-<p>some example locators:</p>
+<p>some example locators, <cite>and</cite> can be omitted ie. space ` ` between locator keys means the same thing as <cite>and</cite>:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>id:clearButton
 type:Group and name:<span class="s1">&#39;Number pad&#39;</span> &gt; type:Button and index:4
 type:Group and name:<span class="s1">&#39;Number pad&#39;</span> &gt; control:Button index:5
@@ -316,8 +326,19 @@ id:Units1 &gt; name:<span class="si">${</span><span class="nv">unit</span><span 
 class:Button offset:370,0
 </pre></div>
 </div>
+<p><strong>About locator restrictions</strong></p>
+<p>Visual locators are not supported in this library and they can’t be used in the same chain with these
+Windows locators. Visual locators are supported by the <cite>RPA.Desktop</cite> library. Locator chaining (image and
+Windows locators) support will be added in the future.</p>
+<p>Locator syntax does not yet support OR operation (only AND operations).</p>
+<p><strong>About search depth</strong></p>
+<p>The library does element search depth by default to the level of 8. This means that locator will look into
+8 levels of elements under element tree of the root element. This can lead into situation where element
+can’t be found. To fix this it is recommended to set root element which can be found within 8 levels OR
+defining <cite>depth</cite> in the locator string to a bigger value, e.g. <cite>id:deeplyNestedButton depth:16</cite>. Useful
+keywords for setting root element are <code class="docutils literal notranslate"><span class="pre">Control</span> <span class="pre">Window</span></code>, <code class="docutils literal notranslate"><span class="pre">Set</span> <span class="pre">Anchor</span></code> and <code class="docutils literal notranslate"><span class="pre">Get</span> <span class="pre">Element</span></code>.</p>
 <p><strong>Keyboard and mouse</strong></p>
-<p>Keyword</p>
+<p>TBD</p>
 <p><strong>How to inspect</strong></p>
 <p>Most common and recommended by Microsoft, inspector tool for Windows, is <a class="reference external" href="https://github.com/yinkaisheng/Python-UIAutomation-for-Windows">Accessibility Insights</a> that
 can be installed separately. Other options are tools <a class="reference external" href="https://docs.microsoft.com/en-us/windows/win32/winauto/inspect-objects">Inspect Object</a>  and <a class="reference external" href="https://docs.microsoft.com/en-us/windows/win32/winauto/ui-automation-verify">UI Automation Verify</a>, which
@@ -339,7 +360,7 @@ can be accessed by installing Windows SDK.</p>
 <span class="p">    </span><span class="nf">Click</span><span class="p">    </span><span class="s">id:clearButton</span><span class="p"></span>
 <span class="p">    </span><span class="nf">Send Keys</span><span class="p">   </span><span class="s">96+4=</span><span class="p"></span>
 <span class="p">    ${</span><span class="nv">result</span><span class="p">}=    </span><span class="nf">Access Attribute or Method</span><span class="p">    </span><span class="s">id:CalculatorResults</span><span class="p">    </span><span class="s">Name</span><span class="p"></span>
-<span class="p">    </span><span class="nf">Log To Console</span><span class="p">    </span><span class="s">n</span><span class="p">${</span><span class="nv">result</span><span class="p">}</span>
+<span class="p">    </span><span class="nf">Log To Console</span><span class="p">    ${</span><span class="nv">result</span><span class="p">}</span>
 </pre></div>
 </div>
 <dl class="attribute">
